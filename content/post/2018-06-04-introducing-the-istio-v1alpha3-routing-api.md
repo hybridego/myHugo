@@ -1,11 +1,10 @@
 ---
 showonlyimage: true
-title:      "Istio v1aplha3 routing API介绍(译文）"
-subtitle:   ""
-excerpt: "介绍Istio v1alpha3 routing API及其设计原则"
-description: "介绍Istio v1alpha3 routing API及其设计原则"
+title:      "Introduction to Istio v1alpha3 Routing API"
+excerpt: "Introduction to the Istio v1alpha3 routing API and its design principles"
+description: "Introduction to the Istio v1alpha3 routing API and its design principles"
 date:       2018-06-04
-author:     "赵化冰"
+author:     "Lionel.J"
 image: "/img/2018-06-04-introducing-the-istio-v1alpha3-routing-api/background.jpg"
 publishDate: 2018-06-04
 tags:
@@ -15,15 +14,14 @@ categories: [ Tech ]
 URL: "/2018/06/04/introducing-the-istio-v1alpha3-routing-api/"
 ---
 
-到目前为止，Istio提供了一个简单的API来进行流量管理，该API包括了四种资源：RouteRule，DestinationPolicy，EgressRule和Ingress（直接使用了Kubernets的Ingress资源）。借助此API，用户可以轻松管理Istio服务网格中的流量。该API允许用户将请求路由到特定版本的服务，为弹性测试注入延迟和失败，添加超时和断路器等等，所有这些功能都不必更改应用程序本身的代码。
+So far, Istio has provided a simple API for traffic management, which includes four resources: RouteRule, DestinationPolicy, EgressRule, and Ingress (which directly uses Kubernetes' Ingress resource). With this API, users can easily manage traffic within the Istio service mesh. The API allows users to route requests to specific versions of a service, inject delays and failures for resilience testing, add timeouts and circuit breakers, and more—all without having to modify the application code itself.
 
 <!--more-->
-虽然目前API的功能已被证明是Istio非常引人注目的一部分，但用户的反馈也表明，这个API确实有一些缺点，尤其是在使用它来管理包含数千个服务的非常大的应用程序，以及使用HTTP以外的协议时。 此外，使用Kubernetes Ingress资源来配置外部流量的方式已被证明不能满足需求。
+Although the current API has proven to be one of Istio's most compelling features, user feedback has also highlighted some shortcomings—especially when managing very large applications with thousands of services or when using protocols other than HTTP. In addition, configuring external traffic using the Kubernetes Ingress resource has been shown to be insufficient for many needs.
 
-为了解决上述缺陷和其他的一些问题，Istio引入了新的流量管理API v1alpha3，新版本的API将完全取代之前的API。 尽管v1alpha3和之前的模型在本质上是基本相同的，但它并不向后兼容的，基于旧API的模型需要进行手动转换。 Istio接下来的几个版本中会提供一个新旧模型的转换工具。
+To address these and other issues, Istio introduced the new traffic management API v1alpha3, which will completely replace the previous API. While v1alpha3 is fundamentally similar to the earlier model, it is not backward compatible, and models based on the old API will require manual conversion. Istio will provide a migration tool for converting between the old and new models in upcoming releases.
 
-
-为了证明该非兼容升级的必要性，v1alpha3 API经历了漫长而艰苦的社区评估过程，以希望新的API能够大幅改进，并经得起时间考验。 在本文中，我们将介绍新的配置模型，并试图解释其后面的一些动机和设计原则。
+To justify this non-backward-compatible upgrade, the v1alpha3 API underwent a lengthy and rigorous community evaluation process, with the hope that the new API would bring significant improvements and stand the test of time. In this article, we introduce the new configuration model and attempt to explain some of the motivations and design principles behind it.
 
 ## 设计原则
 路由模型的重构过程中遵循了一些关键的设计原则：
