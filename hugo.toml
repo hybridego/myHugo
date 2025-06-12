@@ -42,9 +42,9 @@ home = ["HTML", "RSS", "Algolia"]
   algolia_apiKey = ""
 
   # Sidebar settings
-  sidebar_about_description = "Software Developer, Open Source Enthusiast and Life Adventurer"
+  sidebar_about_description = "Software Developer, Embedded Systems Engineer, Linux Application Developer, Open Source Enthusiast and Life Adventurer"
   #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
-  sidebar_avatar = "img/zhaohuabing.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "img/lionelj.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
   featured_condition_size = 1 
@@ -72,7 +72,7 @@ home = ["HTML", "RSS", "Algolia"]
   # reward_guide = "If you found this article helpful, feel free to reward."
 
   friends = true
-  bookmarks = false
+  bookmarks = true
   about_me = true
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
@@ -84,11 +84,11 @@ home = ["HTML", "RSS", "Algolia"]
   email          = "hybridego@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
-  #twitter       = "full profile url in twitter"
-  linkedin       = "https://www.linkedin.com/in/yourlinkedinid"
+  twitter       = "https://x.com/LioJeon"
+  linkedin       = "https://www.linkedin.com/in/hocheol-jeon-5569b067/"
   stackoverflow  = "https://stackoverflow.com/users/yourstackoverflowid"
   #instagram     = "full profile url in instagram"
-  github         = "https://github.com/yourgithub"
+  github         = "https://github.com/hybridego"
   wechat         = "your wechat qr code image"
   #medium        = "full profile url in medium"
   #slack         = "full workspace url in slack"
@@ -101,22 +101,25 @@ home = ["HTML", "RSS", "Algolia"]
   #git           = "full profile url for git user"
   
   [[params.friend_link]]
-  title = "Linda的博客"
-  href =  "https://zhaozhihan.com"
+  title = "Lionel's Blog"
+  href =  "https://hybridego.net/"
 
   [[params.bookmark_link]]
-  title =  "Martin Fowler"
-  href =  "https://martinfowler.com"
+  title =  "NotebookLM"
+  href =  "hhttps://notebooklm.google/"
   [[params.bookmark_link]]
-  title = "ServiceMesher"
-  href =  "http://www.servicemesher.com"
+  title = "Perplexity"
+  href =  "https://www.perplexity.ai/"
   [[params.bookmark_link]]
-  title =  "Pxhere"
-  href = "https://pxhere.com"
+  title =  "chatgpt"
+  href = "https://chatgpt.com/"
   [[params.bookmark_link]]
-  title = "unsplash"
-  href = "https://unsplash.com"
-  
+  title = "claude"
+  href = "https://claude.ai/new"
+  [[params.bookmark_link]]
+  title = "Grok"
+  href = "https://grok.com/"
+
   [[params.additional_menus]]
   title =  "ARCHIVE"
   href =  "/archive/"
