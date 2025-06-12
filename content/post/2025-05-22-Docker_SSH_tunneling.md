@@ -1,14 +1,23 @@
-+++
-author = "Lionel.J"
-title = 'Docker SSH tunneling'
-date = '2025-05-21T23:11:23+09:00'
-description = "How to setup ssh tunneling to docker container."
-draft = false
-tags = [
-    "docker",
-    "ssh", "tunneling", "vscode", "SSH Remote"
-]
-+++
+---
+author: "Lionel.J"
+showonlyimage: true
+title:      "Docker SSH tunneling"
+subtitle:   ""
+excerpt: ""
+description: "How to setup ssh tunneling to docker container."
+date:       2025-05-21T23:11:23+09:00
+publishDate: 2025-05-21
+tags:
+    - docker 
+    - ssh
+    - tunneling
+    - vscode
+    - SSH Remote
+
+categories: [ Tech ]
+URL: "/2025/05/21/Docker-SSH-tunneling/"
+draft: false
+---
 
 ## Docker 와 ssh 터널링 설정
 
