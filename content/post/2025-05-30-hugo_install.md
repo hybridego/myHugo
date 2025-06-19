@@ -1,13 +1,16 @@
-+++
-author = "Lionel.J"
-title = 'Hugo install'
-date = '2025-05-26T14:16:23+09:00'
-description = "How to install hugo"
-draft = false
-tags = [
-    "go", "golang", "hugo", "github", "github actions", "github.io", "blog"
-]
-+++
+---
+author: Lionel.J
+title: Hugo install
+subtitle: How to install hugo
+description: 간단히 Hugo를 설치하는 방법을 정리합니다.
+date: 2025-05-26T14:16:23+09:00
+publishDate: 2025-06-13
+image: ""
+tags: [go, golang, hugo, github, github actions, github.io, blog]
+categories: [ Tech ]
+URL: "/2025/06/13/Unicast_Broadcast_Multicast_SubnetMask"
+draft: false
+---
 
 1. hugo 설치
    `winget install Hugo.Hugo.Extended`
