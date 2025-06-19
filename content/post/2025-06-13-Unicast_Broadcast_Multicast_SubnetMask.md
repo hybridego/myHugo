@@ -1,19 +1,19 @@
 ---
-author:      Lionel.J
-title:       Unicast, Broadcast, Multicast, SubnetMask
-subtitle:    Unicast, Broadcast, Multicast, SubnetMask 에 대한 간략한 설명
+author: Lionel.J
+title: Unicast, Broadcast, Multicast, SubnetMask
+subtitle: Unicast, Broadcast, Multicast, SubnetMask 에 대한 간략한 설명
 description: 네트워크에서 유니캐스트(1:1), 멀티캐스트(1:N, 클래스D), 브로드캐스트(전체)와 서브넷 마스크(/xx) 개념을 이해하면 효율적 통신과 관리를 할 수 있다.
-date:       2025-06-13T10:13:23+09:00
+date: 2025-06-13T10:13:23+09:00
 publishDate: 2025-06-13
-image:       ""
-tags:        
+image: ""
+tags:
   - Unicast
   - Broadcast
   - Multicast
   - SubnetMask
-categories:  [ "Tech" ]
-URL:         "/2025/06/13/Unicast_Broadcast_Multicast_SubnetMask"
-draft:       false
+categories: [ Tech ]
+URL: "/2025/06/13/Unicast_Broadcast_Multicast_SubnetMask"
+draft: false
 ---
 
 #  유니캐스트, 브로드캐스트, 멀티캐스트와 서브넷 마스크
