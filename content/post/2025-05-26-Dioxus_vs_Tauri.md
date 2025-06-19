@@ -1,13 +1,17 @@
-+++
-author = "Lionel.J"
-title = 'Dioxus vs Tauri'
-date = '2025-05-26T10:11:23+09:00'
-description = "Brief Comparison of Dioxus and Tauri"
-draft = false
-tags = [
-    "Dioxus", "Rust", "Tauri"
-]
-+++
+---
+author: Lionel.J
+title: Dioxus vs Tauri
+subtitle: Brief Comparison of Dioxus and Tauri
+description: Dioxus 와 Tauri의 간단한 비교
+date: 2025-05-26T10:11:23+09:00
+publishDate: 2025-05-26
+image: ""
+tags: [Dioxus, Tauri, rust]
+categories: [ Tech ]
+URL: "/2025/05/26/Dioxus_vs_Tauri"
+draft: false
+---
+
 
 # Dioxus와 Tauri 비교
 
