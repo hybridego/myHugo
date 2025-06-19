@@ -1,9 +1,9 @@
 ---
-author: "Lionel.J"
+author: Lionel.J
 showonlyimage: true
-title:      "Docker SSH tunneling"
-description: "How to setup ssh tunneling to docker container."
-date:       2025-05-21T23:11:23+09:00
+title: Docker SSH tunneling
+description: How to setup ssh tunneling to docker container.
+date: 2025-05-21T23:11:23+09:00
 publishDate: 2025-05-21
 tags:
     - docker 
@@ -11,7 +11,7 @@ tags:
     - tunneling
     - vscode
     - SSH Remote
-image: "/img/2025-05-22-Docker_SSH_tunneling/background.jpg"
+image: /img/2025-05-22-Docker_SSH_tunneling/background.jpg
 categories: [ Tech ]
 URL: "/2025/05/21/Docker_SSH_tunneling"
 draft: false
