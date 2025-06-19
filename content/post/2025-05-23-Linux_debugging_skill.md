@@ -1,14 +1,16 @@
-+++
-author = "Lionel.J"
-title = 'linux debugging'
-date = '2025-05-23T07:42:23+09:00'
-description = "Linux debugging skil"
-draft = false
-tags = [
-    "linux",
-    "debugging", "debug", "valgind", "ASAN", "LD_PRELOAD", "RAII"
-]
-+++
+---
+author: Lionel.J
+title: linux debugging
+subtitle: Linux debugging skil
+description: 리눅스 디버깅 하는 몇가지 방법
+date: 2025-05-23T07:42:23+09:00
+publishDate: 2025-05-23
+image: ""
+tags: [linux, debugging, debug, valgind, ASAN, LD_PRELOAD, RAII]
+categories: [ Tech ]
+URL: "/2025/05/23/Linux_debugging_skil"
+draft: false
+---
 
 # 리눅스 환경에서의 메모리 디버깅 스킬
 
