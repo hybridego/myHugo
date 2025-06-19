@@ -1,13 +1,16 @@
-+++
-author = "Lionel.J"
-title = 'Cargo troubleshooting'
-date = '2025-05-26T12:52:23+09:00'
-description = "cargo install - SSL connection error"
-draft = false
-tags = [
-    "rust", "cargo", "SSL Connection error"
-]
-+++
+---
+author: Lionel.J
+title: Cargo troubleshooting
+subtitle: cargo install - SSL connection error
+description: cargo install 할 때 SSL 연결 에러 나는 문제 해결
+date: 2025-05-26T12:52:23+09:00
+publishDate: 2025-05-26
+image: ""
+tags: [cargo, rust, SSL Connection error]
+categories: [ Tech ]
+URL: "/2025/05/26/Cargo_troubleshooting"
+draft: false
+---
 
 ## Cargo install troubleshooting
 
