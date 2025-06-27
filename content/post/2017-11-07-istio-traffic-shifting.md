@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      "使用Istio实现应用流量转移"
-subtitle:   "本文翻译自istio官方文档"
-description: "本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。"
-excerpt: "本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。"
+title:      "Istio를 사용하여 애플리케이션 트래픽 전환 구현"
+subtitle:   "이 문서는 Istio 공식 문서를 번역한 것입니다."
+description: "이 작업은 애플리케이션 트래픽을 이전 버전의 서비스에서 새 버전으로 점진적으로 마이그레이션하는 방법을 보여줍니다. Istio를 통해 다양한 가중치 규칙(10%, 20%, ··· 100%)을 사용하여 트래픽을 이전 버전 서비스에서 새 버전 서비스로 원활하게 마이그레이션할 수 있습니다."
+excerpt: "이 작업은 애플리케이션 트래픽을 이전 버전의 서비스에서 새 버전으로 점진적으로 마이그레이션하는 방법을 보여줍니다. Istio를 통해 다양한 가중치 규칙(10%, 20%, ··· 100%)을 사용하여 트래픽을 이전 버전 서비스에서 새 버전 서비스로 원활하게 마이그레이션할 수 있습니다."
 date:     2017-11-07
-author:     "赵化冰"
+author:     "Lionel.J"
 image: "/img/istio-traffic-shifting/crossroads.png"
 categories: [ "Tech"]
 tags:
@@ -13,82 +13,82 @@ tags:
 URL: "/2017/11/07/istio-traffic-shifting/"
 ---
 
-关于Istio的更多内容请参考[istio中文文档](http://istio.doczh.cn/)。
+Istio에 대한 더 많은 내용은 [Istio 중국어 문서](http://istio.doczh.cn/)를 참조하십시오.
 
-原文参见[Traffic Shifting](https://istio.io/docs/tasks/traffic-management/traffic-shifting.html)。
+원문은 [Traffic Shifting](https://istio.io/docs/tasks/traffic-management/traffic-shifting.html)을 참조하십시오.
 
-本任务将演示如何将应用流量逐渐从旧版本的服务迁移到新版本。通过Istio，可以使用一系列不同权重的规则（10%，20%，··· 100%）将流量平缓地从旧版本服务迁移到新版本服务。
+이 작업은 애플리케이션 트래픽을 이전 버전의 서비스에서 새 버전으로 점진적으로 마이그레이션하는 방법을 보여줍니다. Istio를 통해 다양한 가중치 규칙(10%, 20%, ··· 100%)을 사용하여 트래픽을 이전 버전 서비스에서 새 버전 서비스로 원활하게 마이그레이션할 수 있습니다.
 <!--more-->
-为简单起见，本任务将采用两步将流量从`reviews:v1` 迁移到 `reviews:v3`，权重分别为50%，100%。
+간단히 하기 위해, 이 작업에서는 `reviews:v1`에서 `reviews:v3`으로 트래픽을 50%, 100%의 가중치로 두 단계에 걸쳐 마이그레이션합니다.
 
 
-# 开始之前
+# 시작하기 전에
 
-* 参照文档[安装指南](http://istio.doczh.cn/docs/setup/kubernetes/index.html)中的步骤安装Istio。
+* 문서 [설치 가이드](http://istio.doczh.cn/docs/setup/kubernetes/index.html)의 단계에 따라 Istio를 설치하십시오.
 
-* 部署[BookInfo](http://istio.doczh.cn/docs/guides/bookinfo.html) 示例应用程序。
+* [BookInfo](http://istio.doczh.cn/docs/guides/bookinfo.html) 예제 애플리케이션을 배포하십시오.
 
->  请注意：本文档假设示采用kubernetes部署示例应用程序。所有的示例命令行都采用规则yaml文件（例如`samples/bookinfo/kube/route-rule-all-v1.yaml`）指定的kubernetes版本。如果在不同的环境下运行本任务，请将`kube`修改为运行环境中相应的目录（例如，对基于Consul的运行环境，目录就是`samples/bookinfo/consul/route-rule-all-v1.yaml`）。
+> 참고: 이 문서는 예제 애플리케이션이 Kubernetes에 배포되었다고 가정합니다. 모든 예제 명령줄은 규칙 yaml 파일(예: `samples/bookinfo/kube/route-rule-all-v1.yaml`)에 지정된 Kubernetes 버전을 사용합니다. 다른 환경에서 이 작업을 실행하는 경우 `kube`를 해당 환경의 디렉토리(예: Consul 기반 환경의 경우 `samples/bookinfo/consul/route-rule-all-v1.yaml`)로 변경하십시오.
 
 
-# 基于权重的版本路由
+# 가중치 기반 버전 라우팅
 
-1. 将所有微服务的缺省版本设置为v1.
+1. 모든 마이크로서비스의 기본 버전을 v1으로 설정합니다.
 
    ```bash
    istioctl create -f samples/bookinfo/kube/route-rule-all-v1.yaml
    ```
 
-1. 在浏览器中打开http://$GATEWAY_URL/productpage,  确认`reviews` 服务目前的活动版本是v1。
+1. 브라우저에서 http://$GATEWAY_URL/productpage를 열어 `reviews` 서비스의 현재 활성 버전이 v1인지 확인합니다.
 
-   可以看到浏览器中出现BooInfo应用的productpage页面。
-   注意`productpage`显示的评价内容不带星级。这是由于`reviews:v1`不会访问`ratings`服务。
+   브라우저에 BookInfo 애플리케이션의 productpage 페이지가 나타납니다.
+   `productpage`에 표시되는 리뷰 내용에 별표가 없는 것을 확인하십시오. 이는 `reviews:v1`이 `ratings` 서비스에 접근하지 않기 때문입니다.
 
-   > 请注意：如果之前执行过 [配置请求路由](http://istio.doczh.cn/docs/tasks/traffic-management/request-routing.html)任务，则需要先注销测试用户“jason”或者删除之前单独为该用户创建的测试规则：
+   > 참고: 이전에 [요청 라우팅 구성](http://istio.doczh.cn/docs/tasks/traffic-management/request-routing.html) 작업을 수행했다면, 테스트 사용자 "jason"을 로그아웃하거나 이전에 해당 사용자를 위해 생성된 테스트 규칙을 삭제해야 합니다.
 
      ```bash
      istioctl delete routerule reviews-test-v2
      ```
 
-1. 首先，使用下面的命令把50%的流量从`reviews:v1`转移到`reviews:v3`:
+1. 먼저, 다음 명령을 사용하여 `reviews:v1`에서 `reviews:v3`으로 트래픽의 50%를 전환합니다.
 
    ```bash
    istioctl replace -f samples/bookinfo/kube/route-rule-reviews-50-v3.yaml
    ```
 
-   注意这里使用了`istioctl replace`而不是`create`。
+   여기서는 `create` 대신 `istioctl replace`를 사용했습니다.
 
-1. 在浏览器中多次刷新`productpage`页面，大约有50%的几率会看到页面中出现带红星的评价内容。
+1. 브라우저에서 `productpage` 페이지를 여러 번 새로 고치면 약 50%의 확률로 빨간 별이 있는 리뷰 내용이 페이지에 나타나는 것을 볼 수 있습니다.
 
-   > 请注意：在目前的Envoy sidecar实现中，可能需要刷新`productpage`很多次才能看到流量分发的效果。在看到页面出现变化前，有可能需要刷新15次或者更多。如果修改规则，将90%的流量路由到v3，可以看到更明显的效果。
+   > 참고: 현재 Envoy 사이드카 구현에서는 트래픽 분배 효과를 확인하기 위해 `productpage`를 여러 번 새로 고쳐야 할 수 있습니다. 페이지가 변경되기 전에 15번 이상 새로 고쳐야 할 수도 있습니다. 규칙을 수정하여 트래픽의 90%를 v3으로 라우팅하면 더 명확한 효과를 볼 수 있습니다.
 
-1. 当v3版本的`reviews`服务已经稳定运行后，可以将100%的流量路由到`reviews:v3`：
+1. v3 버전의 `reviews` 서비스가 안정적으로 실행된 후, 트래픽의 100%를 `reviews:v3`으로 라우팅할 수 있습니다.
 
    ```bash
    istioctl replace -f samples/bookinfo/kube/route-rule-reviews-v3.yaml
    ```
 
-   此时，以任何用户登录到`productpage`页面，都可以看到带红星的评价信息。
+   이제 어떤 사용자로 `productpage` 페이지에 로그인하더라도 빨간 별이 있는 리뷰 정보를 볼 수 있습니다.
 
-# 理解原理
+# 원리 이해하기
 
-在这个任务中，我们使用了Istio的带权重路由的特性将流量从老版本的`reviews`服务逐渐迁移到了新版本服务中。
+이 작업에서 우리는 Istio의 가중치 기반 라우팅 기능을 사용하여 이전 버전의 `reviews` 서비스에서 새 버전 서비스로 트래픽을 점진적으로 마이그레이션했습니다.
 
-注意该方式和使用容器编排平台的部署特性来进行版本迁移是完全不同的。容器编排平台使用了实例scaling来对流量进行管理。而通过Istio，两个版本的`reviews`服务可以独立地进行scale up和scale down，并不会影响这两个版本服务之间的流量分发。
+이 방식은 컨테이너 오케스트레이션 플랫폼의 배포 기능을 사용하여 버전 마이그레이션을 수행하는 것과는 완전히 다릅니다. 컨테이너 오케스트레이션 플랫폼은 인스턴스 스케일링을 사용하여 트래픽을 관리합니다. 반면 Istio를 사용하면 두 버전의 `reviews` 서비스를 독립적으로 스케일 업 및 스케일 다운할 수 있으며, 이는 두 버전 서비스 간의 트래픽 분배에 영향을 미치지 않습니다.
 
-想了解更多支持scaling的按版本路由功能，请查看[Canary Deployments using Istio](https://istio.io/blog/canary-deployments-using-istio.html)。
+스케일링을 지원하는 버전별 라우팅 기능에 대한 자세한 내용은 [Istio를 사용한 카나리 배포](https://istio.io/blog/canary-deployments-using-istio.html)를 참조하십시오.
 
-# 清理
+# 정리
 
-* 删除路由规则。
+* 라우팅 규칙을 삭제합니다.
 
   ```bash
   istioctl delete -f samples/bookinfo/kube/route-rule-all-v1.yaml
   ```
 
-* 如果不打算尝试后面的任务，请参照[BookInfo cleanup](http://istio.doczh.cn/docs/guides/bookinfo.html#cleanup) 中的步骤关闭应用程序。
+* 이후 작업을 시도할 계획이 없다면 [BookInfo 정리](http://istio.doczh.cn/docs/guides/bookinfo.html#cleanup)의 단계에 따라 애플리케이션을 종료하십시오.
 
 
-# 进阶阅读
+# 추가 자료
 
-* 更多的内容请参见[请求路由](http://istio.doczh.cn/docs/concepts/traffic-management/rules-configuration.html)。
+* 더 많은 내용은 [요청 라우팅](http://istio.doczh.cn/docs/concepts/traffic-management/rules-configuration.html)을 참조하십시오.
