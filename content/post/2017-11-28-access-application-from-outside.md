@@ -1,8 +1,8 @@
 ---
 layout:     post 
-title:      "如何从外部访问Kubernetes集群中的应用？"
+title:      "Kubernetes 클러스터 외부에서 애플리케이션에 접근하는 방법은 무엇인가요?"
 subtitle:   ""
-description: "我们知道，kubernetes的Cluster Network属于私有网络，只能在cluster Network内部才能访问部署的应用，那如何才能将Kubernetes集群中的应用暴露到外部网络，为外部用户提供服务呢？本文探讨了从外部网络访问kubernetes cluster中应用的几种实现方式。"
+description: "Kubernetes의 클러스터 네트워크는 사설 네트워크에 속하며, 배포된 애플리케이션은 클러스터 네트워크 내부에서만 접근할 수 있다는 것을 알고 있습니다. 그렇다면 Kubernetes 클러스터의 애플리케이션을 외부 네트워크에 노출하여 외부 사용자에게 서비스를 제공하는 방법은 무엇일까요? 이 글에서는 외부 네트워크에서 Kubernetes 클러스터의 애플리케이션에 접근하는 몇 가지 구현 방식을 탐구합니다."
 date:       2017-11-28 12:00:00
 author:     "赵化冰"
 image: "https://img.zhaohuabing.com/post-bg-2015.jpg"
@@ -13,44 +13,43 @@ URL: "/2017/11/28/access-application-from-outside/"
 categories: [ Tech ]
 ---
 
-## 前言
+## 서론
 
-我们知道，kubernetes的Cluster Network属于私有网络，只能在cluster Network内部才能访问部署的应用，那如何才能将Kubernetes集群中的应用暴露到外部网络，为外部用户提供服务呢？本文探讨了从外部网络访问kubernetes cluster中应用的几种实现方式。
+Kubernetes의 클러스터 네트워크는 사설 네트워크에 속하며, 배포된 애플리케이션은 클러스터 네트워크 내부에서만 접근할 수 있다는 것을 알고 있습니다. 그렇다면 Kubernetes 클러스터의 애플리케이션을 외부 네트워크에 노출하여 외부 사용자에게 서비스를 제공하는 방법은 무엇일까요? 이 글에서는 외부 네트워크에서 Kubernetes 클러스터의 애플리케이션에 접근하는 몇 가지 구현 방식을 탐구합니다.
 <!--more-->
->本文尽量试着写得比较容易理解，但要做到“深入浅出”，把复杂的事情用通俗易懂的语言描述出来是非常需要功力的，个人自认尚未达到此境界，唯有不断努力。此外，kubernetes本身是一个比较复杂的系统，无法在本文中详细解释涉及的所有相关概念，否则就可能脱离了文章的主题，因此假设阅读此文之前读者对kubernetes的基本概念如docker，container，pod已有所了解。
+> 이 글은 최대한 이해하기 쉽게 쓰려고 노력했지만, 복잡한 내용을 쉽고 명확하게 설명하는 것은 매우 어려운 일이며, 개인적으로 아직 그 경지에 도달하지 못했음을 인정합니다. 끊임없이 노력할 뿐입니다. 또한, Kubernetes 자체는 비교적 복잡한 시스템이므로, 이 글에서 관련된 모든 개념을 자세히 설명할 수는 없습니다. 그렇게 하면 글의 주제에서 벗어날 수 있으므로, 독자들이 이 글을 읽기 전에 Docker, Container, Pod와 같은 Kubernetes의 기본 개념을 이미 이해하고 있다고 가정합니다.
 
-另外此文中的一些内容是自己的理解，由于个人的知识范围有限，可能有误，如果读者对文章中的内容有疑问或者勘误，欢迎大家指证。
+또한, 이 글의 일부 내용은 개인적인 이해를 바탕으로 작성되었으며, 지식의 한계로 인해 오류가 있을 수 있습니다. 독자 여러분께서 글의 내용에 의문이 있거나 수정할 부분이 있다면 언제든지 지적해 주시면 감사하겠습니다.
 
-## Pod和Service
+## Pod와 Service
 
-我们首先来了解一下Kubernetes中的Pod和Service的概念。
+먼저 Kubernetes의 Pod와 Service 개념에 대해 알아보겠습니다.
 
-Pod(容器组),英文中Pod是豆荚的意思，从名字的含义可以看出，Pod是一组有依赖关系的容器，Pod包含的容器都会运行在同一个host节点上，共享相同的volumes和network namespace空间。Kubernetes以Pod为基本操作单元，可以同时启动多个相同的pod用于failover或者load balance。
+Pod(컨테이너 그룹)는 영어로 '콩깍지'를 의미하며, 이름의 의미에서 알 수 있듯이 Pod는 의존 관계가 있는 컨테이너 그룹입니다. Pod에 포함된 컨테이너는 모두 동일한 호스트 노드에서 실행되며, 동일한 볼륨과 네트워크 네임스페이스 공간을 공유합니다. Kubernetes는 Pod를 기본 운영 단위로 사용하며, 장애 조치 또는 로드 밸런싱을 위해 여러 개의 동일한 Pod를 동시에 시작할 수 있습니다.
 
 ![Pod](/img/access-application-from-outside/pod.PNG)
 
-Pod的生命周期是短暂的，Kubernetes根据应用的配置，会对Pod进行创建，销毁，根据监控指标进行缩扩容。kubernetes在创建Pod时可以选择集群中的任何一台空闲的Host，因此其网络地址是不固定的。由于Pod的这一特点，一般不建议直接通过Pod的地址去访问应用。
+Pod의 수명 주기는 짧습니다. Kubernetes는 애플리케이션 구성에 따라 Pod를 생성, 파괴하고, 모니터링 지표에 따라 스케일 인/아웃을 수행합니다. Kubernetes는 Pod를 생성할 때 클러스터 내의 어떤 유휴 호스트든 선택할 수 있으므로, 네트워크 주소가 고정되어 있지 않습니다. 이러한 Pod의 특성 때문에 일반적으로 Pod의 주소를 직접 사용하여 애플리케이션에 접근하는 것은 권장되지 않습니다.
 
+Pod에 직접 접근하기 어려운 문제를 해결하기 위해 Kubernetes는 Service 개념을 채택했습니다. Service는 백엔드에 서비스를 제공하는 Pod 그룹의 추상화입니다. Service는 고정된 가상 IP에 바인딩되며, 이 가상 IP는 Kubernetes 클러스터 내에서만 볼 수 있습니다. 그러나 이 IP는 실제 가상 또는 물리적 장치에 해당하지 않고, 단지 IPtable의 규칙일 뿐이며, 이 IPtable을 통해 서비스 요청이 백엔드 Pod로 라우팅됩니다. 이러한 방식을 통해 서비스 소비자는 Pod가 제공하는 서비스에 안정적으로 접근할 수 있으며, Pod의 생성, 삭제, 마이그레이션과 같은 변화나 Pod 그룹을 사용하여 로드 밸런싱하는 방법에 대해 걱정할 필요가 없습니다.
 
-为了解决访问Pod不方便直接访问的问题，Kubernetes采用了Service的概念，Service是对后端提供服务的一组Pod的抽象，Service会绑定到一个固定的虚拟IP上，该虚拟IP只在Kubernetes Cluster中可见，但其实该IP并不对应一个虚拟或者物理设备，而只是IPtable中的规则，然后再通过IPtable将服务请求路由到后端的Pod中。通过这种方式，可以确保服务消费者可以稳定地访问Pod提供的服务，而不用关心Pod的创建、删除、迁移等变化以及如何用一组Pod来进行负载均衡。
+Service의 메커니즘은 아래 그림과 같습니다. Kube-proxy는 Kubernetes 마스터의 Service 및 Endpoint 추가/삭제 메시지를 수신하며, 각 Service에 대해 kube-proxy는 해당 iptables 규칙을 생성하여 Service Cluster IP로 전송되는 트래픽을 Service 백엔드 Pod의 해당 포트로 전달합니다.
+![Pod와 Service의 관계](/img/access-application-from-outside/services-iptables-overview.png)
 
-Service的机制如下图所示，Kube-proxy监听kubernetes master增加和删除Service以及Endpoint的消息，对于每一个Service，kube proxy创建相应的iptables规则，将发送到Service Cluster IP的流量转发到Service后端提供服务的Pod的相应端口上。
-![Pod和Service的关系](/img/access-application-from-outside/services-iptables-overview.png)
+> 참고: Service의 Cluster IP와 서비스 포트를 통해 백엔드 Pod가 제공하는 서비스에 접근할 수 있지만, 해당 Cluster IP는 Ping할 수 없습니다. 그 이유는 Cluster IP가 iptable의 규칙일 뿐 네트워크 장치에 해당하지 않기 때문입니다.
 
->备注：虽然可以通过Service的Cluster IP和服务端口访问到后端Pod提供的服务，但该Cluster IP是Ping不通的，原因是Cluster IP只是iptable中的规则，并不对应到一个网络设备。
+## Service의 유형
+Service의 유형(ServiceType)은 Service가 외부로 서비스를 제공하는 방식을 결정합니다. 유형에 따라 서비스는 Kubernetes 클러스터 내에서만 보이거나 클러스터 외부로 노출될 수 있습니다. Service에는 ClusterIP, NodePort, LoadBalancer의 세 가지 유형이 있습니다. 이 중 ClusterIP는 Service의 기본 유형이며, 이 유형의 서비스는 클러스터 내에서만 접근할 수 있는 가상 IP를 제공하며, 그 구현 메커니즘은 이전 섹션에서 설명했습니다.
 
-## Service的类型
-Service的类型(ServiceType)决定了Service如何对外提供服务，根据类型不同，服务可以只在Kubernetes cluster中可见，也可以暴露到Cluster外部。Service有三种类型，ClusterIP，NodePort和LoadBalancer。其中ClusterIP是Service的缺省类型，这种类型的服务会提供一个只能在Cluster内才能访问的虚拟IP，其实现机制如上面一节所述。
+## NodePort를 통한 외부 접근 지점 제공
 
-## 通过NodePort提供外部访问入口
+Service의 유형을 NodePort로 설정하면 클러스터 내의 호스트에서 지정된 포트를 통해 서비스를 노출할 수 있습니다. 클러스터 내의 각 호스트에 있는 해당 지정된 포트를 통해 서비스에 접근할 수 있으며, 해당 호스트 포트로 전송된 요청은 Kubernetes에 의해 서비스를 제공하는 Pod로 라우팅됩니다. 이 서비스 유형을 사용하면 Kubernetes 클러스터 네트워크 외부에서 호스트 IP:포트 방식으로 서비스에 접근할 수 있습니다.
 
-通过将Service的类型设置为NodePort，可以在Cluster中的主机上通过一个指定端口暴露服务。注意通过Cluster中每台主机上的该指定端口都可以访问到该服务，发送到该主机端口的请求会被kubernetes路由到提供服务的Pod上。采用这种服务类型，可以在kubernetes cluster网络外通过主机IP：端口的方式访问到服务。
+> 참고: 공식 문서에서는 Kubernetes ClusterIP 트래픽이 백엔드 Pod로 전달되는 방식에 Iptable과 kube-proxy 두 가지 방식이 있다고 설명하지만, NodePort가 트래픽을 어떻게 전달하는지에 대해서는 명확하지 않습니다. 이 그림은 네트워크에서 가져온 것으로, 그림상으로는 kube-proxy를 통해 전달되는 것으로 보입니다. 저는 소스 코드를 연구해 본 적이 없습니다. 아시는 분은 댓글로 설명해 주시면 감사하겠습니다.
 
-> 注意：官方文档中说明了Kubernetes clusterIp的流量转发到后端Pod有Iptable和kube proxy两种方式。但对Nodeport如何转发流量却语焉不详。该图来自网络，从图来看是通过kube proxy转发的，我没有去研究过源码。欢迎了解的同学跟帖说明。
+![Pod와 Service의 관계](/img/access-application-from-outside/nodeport.PNG)
 
-![Pod和Service的关系](/img/access-application-from-outside/nodeport.PNG)
-
-下面是通过NodePort向外暴露服务的一个例子，注意可以指定一个nodePort，也可以不指定。在不指定的情况下，kubernetes会从可用的端口范围内自动分配一个随机端口。
+다음은 NodePort를 통해 서비스를 외부로 노출하는 예시입니다. nodePort를 지정할 수도 있고 지정하지 않을 수도 있습니다. 지정하지 않으면 Kubernetes가 사용 가능한 포트 범위에서 무작위 포트를 자동으로 할당합니다.
 
 ```
 kind: Service
@@ -66,19 +65,19 @@ spec:
     name: influxdb
 ```
 
-通过NodePort从外部访问有下面的一些问题，自己玩玩或者进行测试时可以使用该方案，但不适宜用于生产环境。
+NodePort를 통한 외부 접근에는 다음과 같은 몇 가지 문제가 있습니다. 개인적인 용도나 테스트 시에는 이 방식을 사용할 수 있지만, 프로덕션 환경에는 적합하지 않습니다.
 
-* Kubernetes cluster host的IP必须是一个well-known IP，即客户端必须知道该IP。但Cluster中的host是被作为资源池看待的，可以增加删除，每个host的IP一般也是动态分配的，因此并不能认为host IP对客户端而言是well-known IP。
+* Kubernetes 클러스터 호스트의 IP는 잘 알려진 IP여야 합니다. 즉, 클라이언트가 해당 IP를 알아야 합니다. 그러나 클러스터의 호스트는 리소스 풀로 간주되며, 추가 및 삭제가 가능하고, 각 호스트의 IP는 일반적으로 동적으로 할당되므로, 호스트 IP가 클라이언트에게 잘 알려진 IP라고 볼 수 없습니다.
 
-* 客户端访问某一个固定的host IP存在单点故障。假如一台host宕机了，kubernetes cluster会把应用 reload到另一节点上，但客户端就无法通过该host的nodeport访问应用了。
+* 클라이언트가 특정 고정 호스트 IP에 접근하는 경우 단일 장애 지점이 발생합니다. 만약 호스트 한 대가 다운되면 Kubernetes 클러스터는 애플리케이션을 다른 노드로 다시 로드하지만, 클라이언트는 해당 호스트의 NodePort를 통해 애플리케이션에 접근할 수 없게 됩니다.
 
-* 该方案假设客户端可以访问Kubernetes host所在网络。在生产环境中，客户端和Kubernetes host网络可能是隔离的。例如客户端可能是公网中的一个手机APP，是无法直接访问host所在的私有网络的。
+* 이 방식은 클라이언트가 Kubernetes 호스트가 위치한 네트워크에 접근할 수 있다고 가정합니다. 프로덕션 환경에서는 클라이언트와 Kubernetes 호스트 네트워크가 격리될 수 있습니다. 예를 들어, 클라이언트가 공용 네트워크의 모바일 앱일 경우, 호스트가 위치한 사설 네트워크에 직접 접근할 수 없습니다.
 
-因此，需要通过一个网关来将外部客户端的请求导入到Cluster中的应用中，在kubernetes中，这个网关是一个4层的load balancer。
+따라서 외부 클라이언트의 요청을 클러스터 내의 애플리케이션으로 가져오기 위해 게이트웨이가 필요하며, Kubernetes에서는 이 게이트웨이가 4계층 로드 밸런서입니다.
 
-## 通过Load Balancer提供外部访问入口
+## Load Balancer를 통한 외부 접근 지점 제공
 
-通过将Service的类型设置为LoadBalancer，可以为Service创建一个外部Load Balancer。Kubernetes的文档中声明该Service类型需要云服务提供商的支持，其实这里只是在Kubernetes配置文件中提出了一个要求，即为该Service创建Load Balancer，至于如何创建则是由Google Cloud或Amazon Cloud等云服务商提供的，创建的Load Balancer不在Kubernetes Cluster的管理范围中。kubernetes 1.6版本中，WS, Azure, CloudStack, GCE and OpenStack等云提供商已经可以为Kubernetes提供Load Balancer.下面是一个Load balancer类型的Service例子：
+Service의 유형을 LoadBalancer로 설정하면 Service에 외부 Load Balancer를 생성할 수 있습니다. Kubernetes 문서에서는 이 Service 유형이 클라우드 서비스 제공업체의 지원을 필요로 한다고 명시하고 있습니다. 사실 여기서는 Kubernetes 구성 파일에서 해당 Service에 Load Balancer를 생성하라는 요구 사항을 제시할 뿐이며, 생성 방법은 Google Cloud 또는 Amazon Cloud와 같은 클라우드 서비스 제공업체에서 제공하며, 생성된 Load Balancer는 Kubernetes 클러스터의 관리 범위에 속하지 않습니다. Kubernetes 1.6 버전에서는 AWS, Azure, CloudStack, GCE 및 OpenStack과 같은 클라우드 제공업체가 Kubernetes에 Load Balancer를 제공할 수 있습니다. 다음은 Load Balancer 유형 Service의 예시입니다.
 
 ```
 kind: Service
@@ -92,15 +91,15 @@ spec:
   selector:
     name: influxdb
 ```
-部署该Service后，我们来看一下Kubernetes创建的内容
+이 Service를 배포한 후 Kubernetes가 생성한 내용을 살펴보겠습니다.
 ```
 $ kubectl get svc influxdb
 NAME       CLUSTER-IP     EXTERNAL-IP     PORT(S)          AGE
 influxdb   10.97.121.42   10.13.242.236   8086:30051/TCP   39s
 ```
-Kubernetes首先为influxdb创建了一个集群内部可以访问的ClusterIP 10.97.121.42。由于没有指定nodeport端口，kubernetes选择了一个空闲的30051主机端口将service暴露在主机的网络上，然后通知cloud provider创建了一个load balancer，上面输出中的EEXTERNAL-IP就是load balancer的IP。
+Kubernetes는 먼저 influxdb에 클러스터 내부에서 접근할 수 있는 ClusterIP 10.97.121.42를 생성했습니다. nodeport 포트를 지정하지 않았기 때문에 Kubernetes는 사용 가능한 30051 호스트 포트를 선택하여 서비스를 호스트 네트워크에 노출한 다음, 클라우드 제공업체에 로드 밸런서를 생성하도록 알렸습니다. 위 출력의 EXTERNAL-IP가 로드 밸런서의 IP입니다.
 
-测试使用的Cloud Provider是OpenStack，我们通过neutron lb-vip-show可以查看创建的Load Balancer详细信息。
+테스트에 사용된 클라우드 제공업체는 OpenStack입니다. `neutron lb-vip-show` 명령을 통해 생성된 Load Balancer의 상세 정보를 확인할 수 있습니다.
 
 ```
 $ neutron lb-vip-show 9bf2a580-2ba4-4494-93fd-9b6969c55ac3
@@ -154,28 +153,28 @@ $ neutron lb-member-list
 | d0825cc2-46a3-43bd-af82-e9d8f1f85299 | 10.13.241.10 |         30051 |      1 | True           | ACTIVE |
 +--------------------------------------+--------------+---------------+--------+----------------+--------
 ```
-可以看到OpenStack使用VIP 10.13.242.236在端口8086创建了一个Load Balancer，Load Balancer对应的Lb pool里面有两个成员10.13.241.89 和 10.13.241.10，正是Kubernetes的host节点，进入Load balancer流量被分发到这两个节点对应的Service Nodeport 30051上。
+OpenStack이 VIP 10.13.242.236을 사용하여 포트 8086에 로드 밸런서를 생성했으며, 로드 밸런서에 해당하는 Lb 풀에는 두 개의 멤버 10.13.241.89와 10.13.241.10이 있음을 확인할 수 있습니다. 이들은 정확히 Kubernetes 호스트 노드이며, 로드 밸런서 트래픽은 이 두 노드의 해당 서비스 Nodeport 30051로 분산됩니다.
 
-但是如果客户端不在Openstack Neutron的私有子网上，则还需要在load balancer的VIP上关联一个floating IP，以使外部客户端可以连接到load balancer。
+그러나 클라이언트가 Openstack Neutron의 사설 서브넷에 있지 않은 경우, 외부 클라이언트가 로드 밸런서에 연결할 수 있도록 로드 밸런서의 VIP에 플로팅 IP를 연결해야 합니다.
 
-部署Load balancer后，应用的拓扑结构如下图所示（注：本图假设Kubernetes Cluster部署在Openstack私有云上）。
-![外部Load balancer](/img/access-application-from-outside/load-balancer.PNG)
+로드 밸런서 배포 후 애플리케이션의 토폴로지 구조는 아래 그림과 같습니다 (참고: 이 그림은 Kubernetes 클러스터가 Openstack 사설 클라우드에 배포되었다고 가정합니다).
+![외부 Load balancer](/img/access-application-from-outside/load-balancer.PNG)
 
->备注：如果kubernetes环境在Public Cloud上，Loadbalancer类型的Service创建出的外部Load Balancer已经带有公网IP地址，是可以直接从外部网络进行访问的，不需要绑定floating IP这个步骤。例如在AWS上创建的Elastic Load Balancing (ELB)，有兴趣可以看一下这篇文章：[Expose Services on your AWS Quick Start Kubernetes cluster]( http://docs.heptio.com/content/tutorials/aws-qs-services-elb.html)。
+> 참고: Kubernetes 환경이 Public Cloud에 있다면, Loadbalancer 유형의 Service가 생성하는 외부 Load Balancer는 이미 공용 IP 주소를 가지고 있어 외부 네트워크에서 직접 접근할 수 있으며, floating IP를 바인딩할 필요가 없습니다. 예를 들어 AWS에서 생성된 Elastic Load Balancing (ELB)에 대한 자세한 내용은 다음 글을 참조하십시오: [Expose Services on your AWS Quick Start Kubernetes cluster]( http://docs.heptio.com/content/tutorials/aws-qs-services-elb.html).
 
-如果Kubernetes Cluster是在不支持LoadBalancer特性的cloud provider或者裸机上创建的，可以实现LoadBalancer类型的Service吗？应该也是可以的。Kubernetes本身并不直接支持Loadbalancer，但我们可以通过对Kubernetes进行扩展来实现，可以监听kubernetes Master的service创建消息，并根据消息部署相应的Load Balancer（如Nginx或者HAProxy），来实现Load balancer类型的Service。
+Kubernetes 클러스터가 LoadBalancer 기능을 지원하지 않는 클라우드 제공업체 또는 베어 메탈에 생성된 경우에도 LoadBalancer 유형의 Service를 구현할 수 있을까요? 가능합니다. Kubernetes 자체는 LoadBalancer를 직접 지원하지 않지만, Kubernetes를 확장하여 구현할 수 있습니다. Kubernetes Master의 서비스 생성 메시지를 수신하고, 메시지에 따라 해당 Load Balancer(예: Nginx 또는 HAProxy)를 배포하여 Load Balancer 유형의 Service를 구현할 수 있습니다.
 
+Service 유형을 설정하여 제공되는 것은 4계층 로드 밸런서입니다. 하나의 서비스만 외부로 노출해야 할 때는 이 방식을 직접 사용할 수 있습니다. 그러나 하나의 애플리케이션이 여러 서비스를 외부로 제공해야 할 때는 이 방식을 사용하면 각 서비스(IP+Port)마다 외부 로드 밸런서가 생성됩니다. 아래 그림과 같습니다.
+![여러 Load balancer를 생성하여 애플리케이션의 여러 서비스를 노출](/img/access-application-from-outside/multiple-load-balancer.PNG)
+일반적으로 동일한 애플리케이션의 여러 서비스/리소스는 동일한 도메인 아래에 배치됩니다. 이 경우 여러 로드 밸런서를 생성하는 것은 전혀 불필요하며, 오히려 추가적인 오버헤드와 관리 비용을 초래합니다. 서비스를 외부 사용자에게 직접 노출하는 것은 프론트엔드와 백엔드의 결합을 초래하여 백엔드 아키텍처의 유연성에 영향을 미치며, 향후 비즈니스 요구 사항에 따라 서비스를 조정할 경우 클라이언트에 직접적인 영향을 미칠 수 있습니다. 이 문제는 Kubernetes Ingress를 사용하여 L7 로드 밸런싱을 통해 해결할 수 있습니다.
 
-通过设置Service类型提供的是四层Load Balancer，当只需要向外暴露一个服务的时候，可以直接采用这种方式。但在一个应用需要对外提供多个服务时，采用该方式会为每一个服务（IP+Port）都创建一个外部load balancer。如下图所示
-![创建多个Load balancer暴露应用的多个服务](/img/access-application-from-outside/multiple-load-balancer.PNG)
-一般来说，同一个应用的多个服务/资源会放在同一个域名下，在这种情况下，创建多个Load balancer是完全没有必要的，反而带来了额外的开销和管理成本。直接将服务暴露给外部用户也会导致了前端和后端的耦合，影响了后端架构的灵活性，如果以后由于业务需求对服务进行调整会直接影响到客户端。可以通过使用Kubernetes Ingress进行L7 load balancing来解决该问题。
+## Ingress를 7계층 로드 밸런서로 사용
 
-## 采用Ingress作为七层load balancer
-首先看一下引入Ingress后的应用拓扑示意图（注：本图假设Kubernetes Cluster部署在Openstack私有云上）。
-![采用Ingress暴露应用的多个服务](/img/access-application-from-outside/ingress.PNG)
-这里Ingress起到了七层负载均衡器和Http方向代理的作用，可以根据不同的url把入口流量分发到不同的后端Service。外部客户端只看到foo.bar.com这个服务器，屏蔽了内部多个Service的实现方式。采用这种方式，简化了客户端的访问，并增加了后端实现和部署的灵活性，可以在不影响客户端的情况下对后端的服务部署进行调整。
+먼저 Ingress를 도입한 후의 애플리케이션 토폴로지 다이어그램을 살펴보겠습니다 (참고: 이 그림은 Kubernetes 클러스터가 Openstack 사설 클라우드에 배포되었다고 가정합니다).
+![Ingress를 사용하여 애플리케이션의 여러 서비스를 노출](/img/access-application-from-outside/ingress.PNG)
+여기서 Ingress는 7계층 로드 밸런서 및 HTTP 역방향 프록시 역할을 하며, 다양한 URL에 따라 들어오는 트래픽을 다양한 백엔드 서비스로 분산할 수 있습니다. 외부 클라이언트는 foo.bar.com 서버만 보게 되며, 내부의 여러 서비스 구현 방식은 숨겨집니다. 이 방식을 사용하면 클라이언트 접근이 단순화되고 백엔드 구현 및 배포의 유연성이 향상되어 클라이언트에 영향을 주지 않고 백엔드 서비스 배포를 조정할 수 있습니다.
 
-下面是Kubernetes Ingress配置文件的示例，在虚拟主机foot.bar.com下面定义了两个Path，其中/foo被分发到后端服务s1，/bar被分发到后端服务s2。
+다음은 Kubernetes Ingress 구성 파일의 예시입니다. 가상 호스트 foot.bar.com 아래에 두 개의 Path가 정의되어 있으며, /foo는 백엔드 서비스 s1으로, /bar는 백엔드 서비스 s2로 분산됩니다.
 
 ```
 apiVersion: extensions/v1beta1
@@ -199,9 +198,9 @@ spec:
           servicePort: 80
 ```
 
-注意这里Ingress只描述了一个虚拟主机路径分发的要求，可以定义多个Ingress，描述不同的7层分发要求，而这些要求需要由一个Ingress Controller来实现。Ingress Contorller会监听Kubernetes Master得到Ingress的定义，并根据Ingress的定义对一个7层代理进行相应的配置，以实现Ingress定义中要求的虚拟主机和路径分发规则。Ingress Controller有多种实现，Kubernetes提供了一个[基于Nginx的Ingress Controller](https://github.com/kubernetes/ingress-nginx)。需要注意的是，在部署Kubernetes集群时并不会缺省部署Ingress Controller，需要我们自行部署。
+여기서 Ingress는 가상 호스트 경로 분배 요구 사항만 설명하며, 여러 Ingress를 정의하여 다른 7계층 분배 요구 사항을 설명할 수 있습니다. 이러한 요구 사항은 Ingress Controller에 의해 구현되어야 합니다. Ingress Controller는 Kubernetes Master에서 Ingress 정의를 수신하고, Ingress 정의에 따라 7계층 프록시를 구성하여 Ingress 정의에서 요구하는 가상 호스트 및 경로 분배 규칙을 구현합니다. Ingress Controller에는 여러 구현체가 있으며, Kubernetes는 [Nginx 기반 Ingress Controller](https://github.com/kubernetes/ingress-nginx)를 제공합니다. Kubernetes 클러스터를 배포할 때 Ingress Controller가 기본적으로 배포되지 않으므로 직접 배포해야 한다는 점에 유의해야 합니다.
 
-下面是部署Nginx Ingress Controller的配置文件示例，注意这里为Nginx Ingress Controller定义了一个LoadBalancer类型的Service，以为Ingress Controller提供一个外部可以访问的公网IP。
+다음은 Nginx Ingress Controller 배포 구성 파일의 예시입니다. 여기서 Nginx Ingress Controller에 LoadBalancer 유형의 Service를 정의하여 Ingress Controller에 외부에서 접근 가능한 공용 IP를 제공합니다.
 
 ```
 apiVersion: v1
@@ -238,12 +237,12 @@ spec:
     //----omitted for brevity----
 ```
 
->备注：Google Cloud直接支持Ingress资源，如果应用部署在Google Cloud中，Google Cloud会自动为Ingress资源创建一个7层load balancer，并为之分配一个外部IP，不需要自行部署Ingress Controller。
+> 참고: Google Cloud는 Ingress 리소스를 직접 지원합니다. 애플리케이션이 Google Cloud에 배포된 경우, Google Cloud는 Ingress 리소스에 대해 7계층 로드 밸런서를 자동으로 생성하고 외부 IP를 할당하므로 Ingress Controller를 직접 배포할 필요가 없습니다.
 
-## 结论
-采用Ingress加上Load balancer的方式可以将Kubernetes Cluster中的应用服务暴露给外部客户端。这种方式比较灵活，基本可以满足大部分应用的需要。但如果需要在入口处提供更强大的功能，如有更高的效率要求，需求进行安全认证，日志记录，或者需要一些应用的定制逻辑，则需要考虑采用微服务架构中的API Gateway模式，采用一个更强大的API Gateway来作为应用的流量入口。
+## 결론
+Ingress와 Load balancer를 함께 사용하는 방식은 Kubernetes 클러스터의 애플리케이션 서비스를 외부 클라이언트에 노출하는 데 유연하며, 대부분의 애플리케이션 요구 사항을 충족할 수 있습니다. 그러나 진입점에서 더 강력한 기능(예: 더 높은 효율성 요구 사항, 보안 인증, 로깅 또는 특정 애플리케이션 맞춤형 로직)이 필요한 경우, 마이크로서비스 아키텍처의 API Gateway 패턴을 고려하여 더 강력한 API Gateway를 애플리케이션의 트래픽 진입점으로 사용해야 합니다.
 
-## 参考
+## 참고
 
 * [Accessing Kubernetes Pods from Outside of the Cluster](http://alesnosek.com/blog/2017/02/14/accessing-kubernetes-pods-from-outside-of-the-cluster/)
 
@@ -252,5 +251,3 @@ spec:
 * [Using Kubernetes external load balancer feature](https://docs.openstack.org/magnum/ocata/dev/kubernetes-load-balancer.html)
 
 * [Expose Services on your AWS Quick Start Kubernetes cluster]( http://docs.heptio.com/content/tutorials/aws-qs-services-elb.html)
-
-
