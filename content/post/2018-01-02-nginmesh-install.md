@@ -1,10 +1,10 @@
 ---
 layout:     post 
-title:      "Nginx开源Service Mesh组件Nginmesh安装指南"
+title:      "Nginx 오픈소스 서비스 메시 컴포넌트 Nginmesh 설치 가이드"
 subtitle:   ""
-description: "Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。本文介绍如何采用kubeadmin安装kubernetes集群并部署Nginmesh sidecar。"
+description: "Nginmesh는 Istio 서비스 메시 플랫폼의 데이터 플레인 프록시로 사용되는 NGINX의 오픈소스 서비스 메시 프로젝트입니다. 이는 7계층 로드 밸런싱 및 서비스 라우팅 기능을 제공하며, Istio와 사이드카로 통합되어 '표준적이고 안정적이며 안전한 방식'으로 서비스 간 통신을 용이하게 하는 것을 목표로 합니다. Nginmesh는 연말에 0.2 및 0.3 버전을 연속으로 출시하여 서비스 디스커버리, 요청 전달, 라우팅 규칙, 성능 지표 수집 등의 기능을 제공합니다. 이 문서에서는 kubeadm을 사용하여 Kubernetes 클러스터를 설치하고 Nginmesh 사이드카를 배포하는 방법을 설명합니다."
 date:       2018-01-02 12:00:00
-author:     "赵化冰"
+author:     "Lionel.J"
 image: "img/post-bg-2015.jpg"
 publishDate: 2018-01-02 12:00:00
 tags:
@@ -15,27 +15,27 @@ URL: "/2018/01/02/nginmesh-install/"
 categories: [ Tech ]
 ---
 
-## 前言
+## 서문
 
-Nginmesh是NGINX的Service Mesh开源项目，用于Istio服务网格平台中的数据面代理。它旨在提供七层负载均衡和服务路由功能，与Istio集成作为sidecar部署，并将以“标准，可靠和安全的方式”使得服务间通信更容易。Nginmesh在今年底已经连续发布了0.2和0.3版本，提供了服务发现，请求转发，路由规则，性能指标收集等功能。
+Nginmesh는 Istio 서비스 메시 플랫폼의 데이터 플레인 프록시로 사용되는 NGINX의 오픈소스 서비스 메시 프로젝트입니다. 이는 7계층 로드 밸런싱 및 서비스 라우팅 기능을 제공하며, Istio와 사이드카로 통합되어 '표준적이고 안정적이며 안전한 방식'으로 서비스 간 통신을 용이하게 하는 것을 목표로 합니다. Nginmesh는 연말에 0.2 및 0.3 버전을 연속으로 출시하여 서비스 디스커버리, 요청 전달, 라우팅 규칙, 성능 지표 수집 등의 기능을 제공합니다.
 <!--more-->
 ![Nginmesh sidecar proxy](https://raw.githubusercontent.com/nginmesh/nginmesh/master/images/nginx_sidecar.png)
 
-> 备注：本文安装指南基于Ubuntu 16.04，在Centos上某些安装步骤的命令可能需要稍作改动。
+> 참고: 이 설치 가이드는 Ubuntu 16.04를 기반으로 하며, Centos에서는 일부 설치 단계 명령을 약간 수정해야 할 수 있습니다.
 
-## 安装Kubernetes Cluster
+## Kubernetes 클러스터 설치
 
-Kubernetes Cluster包含etcd, api server, scheduler，controller manager等多个组件，组件之间的配置较为复杂，如果要手动去逐个安装及配置各个组件，需要了解kubernetes，操作系统及网络等多方面的知识，对安装人员的能力要求较高。kubeadm提供了一个简便，快速安装Kubernetes Cluster的方式，并且可以通过安装配置文件提供较高的灵活性，因此我们采用kubeadm安装kubernetes cluster。
+Kubernetes 클러스터는 etcd, API 서버, 스케줄러, 컨트롤러 관리자 등 여러 컴포넌트를 포함하며, 컴포넌트 간의 구성이 비교적 복잡합니다. 각 컴포넌트를 수동으로 하나씩 설치하고 구성하려면 Kubernetes, 운영 체제 및 네트워크에 대한 광범위한 지식이 필요하며, 설치자의 역량이 높아야 합니다. kubeadm은 Kubernetes 클러스터를 쉽고 빠르게 설치할 수 있는 방법을 제공하며, 구성 파일을 통해 높은 유연성을 제공하므로 kubeadm을 사용하여 Kubernetes 클러스터를 설치합니다.
 
-首先参照[kubeadm的说明文档](https://kubernetes.io/docs/setup/independent/install-kubeadm)在计划部署kubernetes cluster的每个节点上安装docker，kubeadm, kubelet 和 kubectl。
+먼저 [kubeadm 설명서](https://kubernetes.io/docs/setup/independent/install-kubeadm)를 참조하여 Kubernetes 클러스터를 배포할 각 노드에 docker, kubeadm, kubelet 및 kubectl을 설치합니다.
 
-安装docker
+docker 설치
 ```
 apt-get update
 apt-get install -y docker.io
 ```
 
-使用google的源安装kubelet kubeadm和kubectl
+Google 소스를 사용하여 kubelet, kubeadm 및 kubectl 설치
 ```
 apt-get update && apt-get install -y apt-transport-https
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -45,9 +45,9 @@ EOF
 apt-get update
 apt-get install -y kubelet kubeadm kubectl
 ```
-使用kubeadmin安装kubernetes cluster
+kubeadm을 사용하여 Kubernetes 클러스터 설치
 
-Nginmesh使用Kubernetes的[Initializer机制](https://kubernetes.io/docs/admin/extensible-admission-controllers/#initializers)来实现sidecar的自动注入。Initializer目前是kubernetes的一个Alpha feature，缺省是未启用的，需要[通过api server的参数](https://kubernetes.io/docs/admin/extensible-admission-controllers/#enable-initializers-alpha-feature)打开。因此我们先创建一个kubeadm-conf配置文件，用于配置api server的启动参数
+Nginmesh는 Kubernetes의 [Initializer 메커니즘](https://kubernetes.io/docs/admin/extensible-admission-controllers/#initializers)을 사용하여 사이드카 자동 주입을 구현합니다. Initializer는 현재 Kubernetes의 알파 기능이며 기본적으로 비활성화되어 있습니다. [API 서버 매개변수](https://kubernetes.io/docs/admin/extensible-admission-controllers/#enable-initializers-alpha-feature)를 통해 활성화해야 합니다. 따라서 먼저 API 서버 시작 매개변수를 구성하는 데 사용되는 kubeadm-conf 구성 파일을 만듭니다.
 
 ```
 apiVersion: kubeadm.k8s.io/v1alpha1
@@ -56,30 +56,30 @@ apiServerExtraArgs:
   admission-control: Initializers,NamespaceLifecycle,LimitRanger,ServiceAccount,PersistentVolumeLabel,DefaultStorageClass,ValidatingAdmissionWebhook,ResourceQuota,DefaultTolerationSeconds,MutatingAdmissionWebhook
   runtime-config: admissionregistration.k8s.io/v1alpha1
 ```
-使用kubeadmin init命令创建kubernetes master节点。
-可以先试用--dry-run参数验证一下配置文件。
+kubeadm init 명령을 사용하여 Kubernetes 마스터 노드를 생성합니다.
+먼저 --dry-run 매개변수를 사용하여 구성 파일을 확인해 볼 수 있습니다.
 ```
 kubeadm init --config kubeadm-conf --dry-run
 ```
-如果一切正常，kubeadm将提示：Finished dry-running successfully. Above are the resources that would be created.
+모든 것이 정상이면 kubeadm은 "Finished dry-running successfully. Above are the resources that would be created."라고 표시합니다.
 
-下面再实际执行创建命令
+이제 실제 생성 명령을 실행합니다.
 ```
 kubeadm init --config kubeadm-conf
 ```
-kubeadm会花一点时间拉取docker image，命令完成后，会提示如何将一个work node加入cluster。如下所示：
+kubeadm은 docker 이미지를 가져오는 데 시간이 좀 걸리며, 명령이 완료되면 작업 노드를 클러스터에 조인하는 방법이 표시됩니다. 다음과 같습니다.
 
 ```
  kubeadm join --token fffbf6.13bcb3563428cf23 10.12.5.15:6443 --discovery-token-ca-cert-hash sha256:27ad08b4cd9f02e522334979deaf09e3fae80507afde63acf88892c8b72f143f
  ```
-> 备注：目前kubeadm只能支持在一个节点上安装master，支持高可用的安装将在后续版本实现。kubernetes官方给出的workaround建议是定期备份 etcd 数据[kubeadm limitations](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#limitations)。
+> 참고: 현재 kubeadm은 단일 노드에 마스터 설치만 지원하며, 고가용성 설치는 향후 버전에서 구현될 예정입니다. Kubernetes 공식 문서에서는 etcd 데이터를 주기적으로 백업하는 것을 권장합니다 [kubeadm limitations](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#limitations).
 
-Kubeadm并不会安装Pod需要的网络，因此需要手动安装一个Pod网络，这里采用的是Calico
+Kubeadm은 Pod에 필요한 네트워크를 설치하지 않으므로 Pod 네트워크를 수동으로 설치해야 합니다. 여기서는 Calico를 사용합니다.
 ```
 kubectl apply -f https://docs.projectcalico.org/v2.6/getting-started/kubernetes/installation/hosted/kubeadm/1.6/calico.yaml
 ```
 
-使用kubectl 命令检查master节点安装结果
+kubectl 명령을 사용하여 마스터 노드 설치 결과 확인
 
 ```
 ubuntu@kube-1:~$ kubectl get all
@@ -87,7 +87,7 @@ NAME             TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
 svc/kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   12m
 ```
 
- 在每台工作节点上执行上述kubeadm join命令，即可把工作节点加入集群中。使用kubectl 命令检查cluster中的节点情况。
+각 작업 노드에서 위 kubeadm join 명령을 실행하여 작업 노드를 클러스터에 조인할 수 있습니다. kubectl 명령을 사용하여 클러스터의 노드 상태를 확인합니다.
 
 ```
  ubuntu@kube-1:~$ kubectl get nodes
@@ -96,12 +96,12 @@ kube-1    Ready     master    21m       v1.9.0
 kube-2    Ready     <none>    47s       v1.9.0
 ```
 
-## 安装Istio控制面和Bookinfo
+## Istio 컨트롤 플레인 및 Bookinfo 설치
 
-参考[Nginmesh文档](https://github.com/nginmesh/nginmesh)安装Istio控制面和Bookinfo
-该文档的步骤清晰明确，这里不再赘述。
+[Nginmesh 문서](https://github.com/nginmesh/nginmesh)를 참조하여 Istio 컨트롤 플레인 및 Bookinfo를 설치합니다.
+이 문서의 단계는 명확하므로 여기서는 자세히 설명하지 않습니다.
 
-需要注意的是，在Niginmesh文档中，建议通过Ingress的External IP访问bookinfo应用程序。但[Loadbalancer只在支持的云环境中才会生效](https://kubernetes.io/docs/concepts/services-networking/service/#type-loadbalancer)，并且还需要进行一定的配置。如我在Openstack环境中创建的cluster，则需要参照[该文档](https://docs.openstack.org/magnum/ocata/dev/kubernetes-load-balancer.html)对Openstack进行配置后，Openstack才能够支持kubernetes的Loadbalancer service。如未进行配置，通过命令查看Ingress External IP一直显示为pending状态。
+Nginmesh 문서에서는 Ingress의 External IP를 통해 bookinfo 애플리케이션에 액세스하는 것을 권장하지만, [Loadbalancer는 지원되는 클라우드 환경에서만 작동](https://kubernetes.io/docs/concepts/services-networking/service/#type-loadbalancer)하며 특정 구성이 필요하다는 점에 유의해야 합니다. 예를 들어, Openstack 환경에서 클러스터를 생성한 경우, [이 문서](https://docs.openstack.org/magnum/ocata/dev/kubernetes-load-balancer.html)를 참조하여 Openstack을 구성해야 Kubernetes의 Loadbalancer 서비스를 지원할 수 있습니다. 구성하지 않으면 Ingress External IP가 계속 보류 상태로 표시됩니다.
 
 ```
 NAME            TYPE           CLUSTER-IP      EXTERNAL-IP   PORT(S)                                                            AGE
@@ -110,15 +110,15 @@ istio-mixer     ClusterIP      10.107.135.31   <none>        9091/TCP,15004/TCP,
 istio-pilot     ClusterIP      10.111.110.65   <none>        15003/TCP,443/TCP                                                  11m
 ```
 
-如不能配置云环境提供Loadbalancer特性, 我们可以直接使用集群中的一个节点IP:Nodeport访问Bookinfo应用程序。
+클라우드 환경에서 Loadbalancer 기능을 구성할 수 없는 경우, 클러스터의 노드 IP:Nodeport를 사용하여 Bookinfo 애플리케이션에 직접 액세스할 수 있습니다.
 
 ```
 http://10.12.5.31:32765/productpage
 ```
-想要了解更多关于如何从集群外部进行访问的内容，可以参考[如何从外部访问Kubernetes集群中的应用？](http://zhaohuabing.com/2017/11/28/access-application-from-outside/)
+클러스터 외부에서 액세스하는 방법에 대한 자세한 내용은 [Kubernetes 클러스터 외부에서 애플리케이션에 액세스하는 방법?](http://zhaohuabing.com/2017/11/28/access-application-from-outside/)을 참조하십시오.
 
-## 查看自动注入的sidecar
-使用 kubectl get pod reviews-v3-5fff595d9b-zsb2q -o yaml 命令查看Bookinfo应用的reviews服务的Pod。
+## 자동 주입된 사이드카 확인
+kubectl get pod reviews-v3-5fff595d9b-zsb2q -o yaml 명령을 사용하여 Bookinfo 애플리케이션의 reviews 서비스 Pod를 확인합니다.
 
 ```
 apiVersion: v1
@@ -332,15 +332,15 @@ status:
 
 ```
 
-该命令行输出的内容相当长，我们可以看到Pod中注入了一个 nginmesh/proxy_debug container,还增加了一个initContainer nginmesh/proxy_init。这两个容器是通过kubernetes initializer自动注入到pod中的。这两个container分别有什么作用呢？让我们看一下[Nginmesh源代码中的说明](https://github.com/nginmesh/nginmesh/tree/49cd69a61d7d330685ef39ccd63fac06421c3da2/istio/agent)：
+이 명령줄 출력은 상당히 길지만, Pod에 nginmesh/proxy_debug 컨테이너가 주입되었고 initContainer nginmesh/proxy_init가 추가된 것을 볼 수 있습니다. 이 두 컨테이너는 Kubernetes 이니셜라이저를 통해 Pod에 자동으로 주입됩니다. 이 두 컨테이너는 각각 어떤 역할을 할까요? [Nginmesh 소스 코드의 설명](https://github.com/nginmesh/nginmesh/tree/49cd69a61d7d330685ef39ccd63fac06421c3da2/istio/agent)을 살펴보겠습니다.
 
-* proxy_debug, which comes with the agent and NGINX.
+* proxy_debug: 에이전트 및 NGINX와 함께 제공됩니다.
 
-* proxy_init, which is used for configuring iptables rules for transparently injecting an NGINX proxy from the proxy_debug image into an application pod.
+* proxy_init: proxy_debug 이미지에서 NGINX 프록시를 애플리케이션 Pod에 투명하게 주입하기 위한 iptables 규칙을 구성하는 데 사용됩니다.
 
-proxy_debug就是sidecar代理，proxy_init则用于配置iptable 规则，以将应用的流量导入到sidecar代理中。
+proxy_debug는 사이드카 프록시이고, proxy_init는 iptable 규칙을 구성하여 애플리케이션 트래픽을 사이드카 프록시로 라우팅하는 데 사용됩니다.
 
-查看proxy_init的Dockerfile文件，可以看到proxy_init其实是调用了[prepare_proxy.sh](https://github.com/nginmesh/nginmesh/blob/49cd69a61d7d330685ef39ccd63fac06421c3da2/istio/agent/docker-init/prepare_proxy.sh)这个脚本来创建iptable规则。
+proxy_init의 Dockerfile을 보면 proxy_init가 실제로 [prepare_proxy.sh](https://github.com/nginmesh/nginmesh/blob/49cd69a61d7d330685ef39ccd63fac06421c3da2/istio/agent/docker-init/prepare_proxy.sh) 스크립트를 호출하여 iptable 규칙을 생성하는 것을 알 수 있습니다.
 
 proxy_debug Dockerfile
 
@@ -351,36 +351,32 @@ ADD prepare_proxy.sh /
 ENTRYPOINT ["/prepare_proxy.sh"]
 ```
 
-prepare_proxy.sh节选
+prepare_proxy.sh 발췌
 
 ```
-...omitted for brevity 
+...생략
 
-# Create a new chain for redirecting inbound and outbound traffic to
-# the common Envoy port.
+# 인바운드 및 아웃바운드 트래픽을 공통 Envoy 포트로 리디렉션하기 위한 새 체인 생성.
 iptables -t nat -N ISTIO_REDIRECT                                             -m comment --comment "istio/redirect-common-chain"
 iptables -t nat -A ISTIO_REDIRECT -p tcp -j REDIRECT --to-port ${ENVOY_PORT}  -m comment --comment "istio/redirect-to-envoy-port"
 
-# Redirect all inbound traffic to Envoy.
+# 모든 인바운드 트래픽을 Envoy로 리디렉션.
 iptables -t nat -A PREROUTING -j ISTIO_REDIRECT                               -m comment --comment "istio/install-istio-prerouting"
 
-# Create a new chain for selectively redirecting outbound packets to
-# Envoy.
+# 아웃바운드 패킷을 Envoy로 선택적으로 리디렉션하기 위한 새 체인 생성.
 iptables -t nat -N ISTIO_OUTPUT                                               -m comment --comment "istio/common-output-chain"
 
-...omitted for brevity
+...생략
 ```
 
-## 关联阅读
+## 관련 자료
 
-[Istio及Bookinfo示例程序安装试用笔记](http://zhaohuabing.com/2017/11/04/istio-install_and_example/)
+[Istio 및 Bookinfo 예제 프로그램 설치 및 사용 노트](http://zhaohuabing.com/2017/11/04/istio-install_and_example/)
 
-## 参考
+## 참고 자료
 
-* [Service Mesh with Istio and NGINX](https://github.com/nginmesh/nginmesh/)
+* [Istio 및 NGINX를 사용한 서비스 메시](https://github.com/nginmesh/nginmesh/)
 
-* [Using kubeadm to Create a Cluster](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#14-installing-kubeadm-on-your-hosts)
+* [kubeadm을 사용하여 클러스터 생성](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/#14-installing-kubeadm-on-your-hosts)
 
-* [Kubernetes Reference Documentation-Dynamic Admission Control](https://kubernetes.io/docs/admin/extensible-admission-controllers/#enable-initializers-alpha-feature)
-
-
+* [Kubernetes 참조 문서 - 동적 어드미션 컨트롤](https://kubernetes.io/docs/admin/extensible-admission-controllers/#enable-initializers-alpha-feature)
