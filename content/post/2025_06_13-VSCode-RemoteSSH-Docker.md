@@ -21,7 +21,7 @@ draft: false
 2. Dockerfile 작성
 	```
 	FROM ubuntu:24.04
-	
+
 	# Install required packages for minimal build environment and requested tools
 	RUN apt-get update && \
 	    apt-get install -y \
@@ -49,16 +49,25 @@ draft: false
 	    usermod -aG sudo lionelj
 	
 	# Configure SSH
-	RUN mkdir /var/run/sshd && \
+	RUN ssh-keygen -A && \
+	    mkdir -p /var/run/sshd && \
+	    chmod 0755 /var/run/sshd && \
 	    echo "lionelj ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/lionelj && \
 	    chmod 0440 /etc/sudoers.d/lionelj && \
-	    sed -i 's/#Port 22/Port 2222/' /etc/ssh/sshd_config
+	    sed -i 's/#Port 22/Port 2222/' /etc/ssh/sshd_config && \
+	    echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config && \
+	    echo 'lionelj:your_password' | chpasswd
 	
 	# Expose SSH port
 	EXPOSE 2222
 	
-	# Start SSH server
-	CMD ["/usr/sbin/sshd", "-D"]
+	# Start SSH server in background and keep container running
+	RUN echo '#!/bin/bash\n\
+	    /usr/sbin/sshd\n\
+	    tail -f /dev/null' > /start.sh && \
+	    chmod +x /start.sh
+	
+	CMD ["/start.sh"]
 	```
 
 3. build
