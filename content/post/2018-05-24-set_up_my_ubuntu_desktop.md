@@ -1,19 +1,19 @@
 ---
 layout:     post
-title:      "Everything about Setting Up My Ubuntu Desktop"
-description: "Everything about setting up my own ubuntu desktop, it's just a Note in case I need it later"
-excerpt: "Everything about setting up my own ubuntu desktop, it's just a Note in case I need it later"
+title:      "내 Ubuntu 데스크톱 설정에 대한 모든 것"
+description: "내 Ubuntu 데스크톱 설정에 대한 모든 것, 나중에 필요할 경우를 대비한 메모입니다."
+excerpt: "내 Ubuntu 데스크톱 설정에 대한 모든 것, 나중에 필요할 경우를 대비한 메모입니다."
 date:    2018-05-24
-author:     "赵化冰"
+author:     "Lionel.J"
 image: "/img/2018-05-23-service_2_service_auth/background.jpg"
 publishDate: 2018-05-24
 tags:
-    - ubuntu 
+    - ubuntu
 URL: "/2018/05/24/set_up_my_ubuntu_desktop/"
-categories: [ "Tips" ]    
+categories: [ "Tips" ]
 ---
 
-## Generate SSH Key Pair
+## SSH 키 쌍 생성
 
 ```
 ssh-keygen -C "zhaohuabing@gmail.com"
@@ -21,7 +21,7 @@ ssh-keygen -C "zhaohuabing@gmail.com"
 
 ## Shadowsocks
 
-Install shadowsokcs    
+Shadowsocks 설치
 
 ```
 sudo apt-get install python3-pip
@@ -29,7 +29,7 @@ sudo apt-get install python3-pip
 sudo pip3 install shadowsocks
 ```
 
-Create config at ```config/shadowsocks.json```, with the following content:    
+다음 내용을 포함하는 `config/shadowsocks.json`에 구성 파일 생성:
 
 ```
 {
@@ -45,32 +45,32 @@ Create config at ```config/shadowsocks.json```, with the following content:
 }
 ```
 
-Start a local socks proxy 
+로컬 socks 프록시 시작
 
 ```
 sudo sslocal -c config/shadowsocks.json -d start
 ```
 
-In case there is an openssl error, modify shadowsocks source file.
+openssl 오류가 발생하면 shadowsocks 소스 파일 수정.
 
 ```
-sudo vi /usr/local/lib/python3.6/dist-packages/shadowsocks/crypto/openssl.py 
+sudo vi /usr/local/lib/python3.6/dist-packages/shadowsocks/crypto/openssl.py
 
 :%s/cleanup/reset/gc
 ```
 
-Convert shadowsocks socks proxy to http proxy
+shadowsocks socks 프록시를 http 프록시로 변환
 
 ```
 sudo apt-get install polipo
 
-echo "socksParentProxy = localhost:1080" | sudo tee -a /etc/polipo/config 
+echo "socksParentProxy = localhost:1080" | sudo tee -a /etc/polipo/config
 sudo service polipo restart
 ```
 
-Http proxy now is available at port 8123
+이제 Http 프록시는 포트 8123에서 사용 가능합니다.
 
-# Set bing wallpaper as desktop background
+# Bing 배경화면을 데스크톱 배경으로 설정
 
 ```
 sudo add-apt-repository ppa:whizzzkid/bingwallpaper
@@ -78,8 +78,7 @@ sudo apt-get update
 sudo apt-get install bingwallpaper
 ```
 
-# Use vim mode in bash
+# bash에서 vim 모드 사용
 
 ```
 echo 'set -o vi'>> ~/.bashrc
-```
