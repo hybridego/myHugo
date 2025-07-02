@@ -2,7 +2,12 @@
 layout: page
 ---
 
-## [Go 语言学习笔记](https://zhaohuabing.com/learning-golang)
+## [Rust Embedded devices](https://www.rust-lang.org/what/embedded)
 
-## [Envoy 学习笔记](https://zhaohuabing.com/learning-envoy) 
+## [The Rust Programming Language](https://doc.rust-kr.org/)
 
+## [Golang Korea](https://github.com/golangkorea)
+
+## [Effective-go](https://github.com/golangkorea/effective-go)
+
+## [gophercon-talks](https://github.com/golangkorea/gophercon-talks)
