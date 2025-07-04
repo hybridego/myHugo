@@ -8,7 +8,7 @@ publishDate: 2025-07-02
 image: ""
 tags: [linux, drop_caches, stress]
 categories: Tech
-URL: "/2025/07/02/Empty-Buff-Cache"
+URL: "/2025/07/02/Empty-Buff-Cache/"
 draft: false
 ---
 
