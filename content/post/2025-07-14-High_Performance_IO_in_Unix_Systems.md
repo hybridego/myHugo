@@ -8,7 +8,7 @@ publishDate: 2025-07-14
 image: ""
 tags: [linux, bsd, io, system-calls, performance]
 categories: Tech
-URL: "/2025/07/14/High-Performance-IO-Unix-Systems"
+URL: "/2025/07/14/High-Performance-IO-Unix-Systems/"
 draft: false
 ---
 
