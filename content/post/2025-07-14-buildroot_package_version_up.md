@@ -8,7 +8,7 @@ publishDate: 2025-07-14
 image: ""
 tags: [linux, buildroot]
 categories: Tech
-URL: "/2025/07/14/Buildroot-package-version-up"
+URL: "/2025/07/14/Buildroot-package-version-up/"
 draft: false
 ---
 
