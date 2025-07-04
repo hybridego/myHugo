@@ -11,6 +11,7 @@ categories: Tech
 URL: "/2025/07/02/Empty-Buff-Cache/"
 draft: false
 ---
+# linux 에서 시스템 Buff and Cache 비우기
 
 - /proc/sys/vm/drop_caches 사용
 리눅스 커널은 /proc/sys/vm/drop_caches 파일을 통해 캐시를 강제로 비울 수 있는 인터페이스를 제공합니다. 이 방법을 사용하려면 **루트 권한**이 필요합니다.

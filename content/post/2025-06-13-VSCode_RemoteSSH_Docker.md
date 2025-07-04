@@ -12,6 +12,8 @@ URL: "/2025/06/18/VSCode-RemoteSSH-Docker/"
 draft: false
 ---
 
+# vscode remoteSSH용 docker 생성
+
 1. 사용자에게 docker 권한 부여하기
 	```shell
 	sudo usermod -aG docker $USER
