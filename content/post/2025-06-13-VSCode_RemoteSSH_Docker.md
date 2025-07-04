@@ -8,7 +8,7 @@ publishDate: 2025-06-18
 image: ""
 tags: [docker, ssh, ternneling, remoteSSH, vscode]
 categories: Tech
-URL: "/2025/06/18/VSCode-RemoteSSH-Docker"
+URL: "/2025/06/18/VSCode-RemoteSSH-Docker/"
 draft: false
 ---
 
