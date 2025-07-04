@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Lionel.J
 title: Buildroot Package version up
 subtitle: buildroot 에서 특정 패키지 version을 변경
