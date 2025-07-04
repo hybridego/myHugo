@@ -1,5 +1,4 @@
 ---
-layout: post
 author: Lionel.J
 title: High-Performance I/O in Unix Systems
 subtitle: Exploring Efficient Data Transfer with System Calls
