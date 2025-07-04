@@ -3,7 +3,7 @@ layout: post
 author: Lionel.J
 title: High-Performance I/O in Unix Systems
 subtitle: Exploring Efficient Data Transfer with System Calls
-description: Understanding high-performance I/O functions like readv(), writev(), splice(), sendfile(), and more in Linux and BSD
+description: "Understanding high-performance I/O functions like readv(), writev(), splice(), sendfile(), and more in Linux and BSD"
 date: 2025-07-14T12:49:23+09:00
 publishDate: 2025-07-14
 image: ""
