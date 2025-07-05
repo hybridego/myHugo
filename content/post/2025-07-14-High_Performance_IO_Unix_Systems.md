@@ -8,9 +8,9 @@ publishDate: 2025-07-14
 image: ""
 tags: [linux, bsd, io, system-calls, performance]
 categories: Tech
-URL: "/2025/07/14/High-Performance-IO-Unix-Systems/"
 draft: false
 ---
+
 
 # 고성능 I/O를 위한 유닉스 시스템 호출 가이드
 
