@@ -12,6 +12,7 @@ URL: "/2025/07/14/Buildroot-package-version-up/"
 draft: false
 ---
 
+
 # buildroot version 변경하는 방법
 
 ```
