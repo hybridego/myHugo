@@ -3,15 +3,14 @@ author: Lionel.J
 title: High-Performance I/O in Unix Systems
 subtitle: Exploring Efficient Data Transfer with System Calls
 description: "Understanding high-performance I/O functions like readv(), writev(), splice(), sendfile(), and more in Linux and BSD"
-date: 2025-07-14T12:49:23+09:00
-publishDate: 2025-07-14
+date: 2025-07-04T12:49:23+09:00
+publishDate: 2025-07-04
 image: ""
 tags: [linux, bsd, io, system-calls, performance]
 categories: Tech
 draft: false
+URL: "/2025/07/04/High-Performance-IO-in-Unix-Systems/"
 ---
-
-
 # 고성능 I/O를 위한 유닉스 시스템 호출 가이드
 
 유닉스 계열 운영 체제(리눅스, BSD 등)에서 고성능 I/O 작업은 대용량 데이터 전송, 네트워크 서버, 데이터 스트리밍 등에서 필수적입니다. 이번 포스팅에서는 `readv()`, `writev()`, `splice()`, `sendfile()`, `funopen()`, `sendmsg()`, `io_uring`, 그리고 `shm_open` 같은 함수들의 기능과 사용 예시를 정리하며, 리눅스와 BSD에서의 차이점을 살펴봅니다.

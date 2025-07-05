@@ -3,15 +3,14 @@ author: Lionel.J
 title: Buildroot Package version up
 subtitle: buildroot 에서 특정 패키지 version을 변경
 description: 최신 버전으로 packager 버전을 올리는 방법
-date: 2025-07-14T10:03:23+09:00
-publishDate: 2025-07-14
+date: 2025-07-04T10:03:23+09:00
+publishDate: 2025-07-04
 image: ""
 tags: [linux, buildroot]
 categories: Tech
 draft: false
+URL: "/2025/07/04/Buildroot-package-version-up/"
 ---
-
-
 # buildroot version 변경하는 방법
 
 ```
