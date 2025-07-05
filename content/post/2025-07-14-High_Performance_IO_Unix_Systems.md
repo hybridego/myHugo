@@ -5,11 +5,12 @@ subtitle: Exploring Efficient Data Transfer with System Calls
 description: "Understanding high-performance I/O functions like readv(), writev(), splice(), sendfile(), and more in Linux and BSD"
 date: 2025-07-14T12:49:23+09:00
 publishDate: 2025-07-14
+image: ""
 tags: [linux, bsd, io, system-calls, performance]
 categories: Tech
-URL: "/2025/07/14/High_Performance_IO_in_Unix_Systems/"
 draft: false
 ---
+
 
 # 고성능 I/O를 위한 유닉스 시스템 호출 가이드
 
