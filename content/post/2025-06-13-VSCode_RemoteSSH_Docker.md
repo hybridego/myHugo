@@ -92,19 +92,30 @@ draft: false
 
 4. docker-compose.yml 파일 작성
    ```yml
-   version: '3.3'
-	
+	version: '3.3'
+
 	services:
-	  lio-container:
-	    image: lionel-build-env:v1
-	    container_name: lio-container
-	    user: 1016:1016
-	    ports:
-	      - "2222:2222"
-	    volumes:
-	      - /home/lionelj:/home/lionelj
-	      - /opt:/opt
-	    command: /start.sh
+	lio-container:
+		image: lionel-build-env:v5
+		container_name: lio-container
+		user: 1016:1016
+		networks:
+		my_network:
+			ipv4_address: 172.24.0.2
+		ports:
+		- "2222:2222"
+		volumes:
+		- /home/lionelj:/home/lionelj
+		- /opt:/opt
+		command: /start.sh
+
+	networks:
+	my_network:
+		driver: bridge
+		ipam:
+		driver: default
+		config:
+			- subnet: 172.24.0.0/24
 	```
 
 5. 컨테이너 실행
@@ -194,3 +205,7 @@ draft: false
 
 	  docker run -d -p 2222:22 --name lio-container lionel-build-env:v1
 	  ```
+
+	  - docker-composer.yml 이 있는 디렉토리에서
+	  - `docker-compose ps` : 컨테이너 상태 보기
+	  - `docker-compose top` : 컨테이너의 top
