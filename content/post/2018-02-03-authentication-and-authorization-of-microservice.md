@@ -133,7 +133,7 @@ Authorization: Bearer mF_9.B5f-4.1JqM
 
 API 토큰을 사용하여 Github API에 접근하기
 ```
-curl -u zhaohuabing:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
+curl -u hybridego:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
 
 ```
 API 토큰을 사용하는 것이 사용자 이름/비밀번호를 직접 사용하여 API에 접근하는 것보다 좋은 점은 사용자 비밀번호 노출 위험을 줄이고, 비밀번호를 변경할 필요 없이 언제든지 토큰의 권한을 회수할 수 있다는 것입니다.

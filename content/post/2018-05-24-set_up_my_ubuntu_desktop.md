@@ -16,7 +16,7 @@ categories: [ "Tips" ]
 ## SSH 키 쌍 생성
 
 ```
-ssh-keygen -C "zhaohuabing@gmail.com"
+ssh-keygen -C "hybridego@gmail.com"
 ```
 
 ## Shadowsocks

@@ -5,7 +5,6 @@ subtitle:   ""
 description: "Kubernetes의 클러스터 네트워크는 사설 네트워크에 속하며, 배포된 애플리케이션은 클러스터 네트워크 내부에서만 접근할 수 있다는 것을 알고 있습니다. 그렇다면 Kubernetes 클러스터의 애플리케이션을 외부 네트워크에 노출하여 외부 사용자에게 서비스를 제공하는 방법은 무엇일까요? 이 글에서는 외부 네트워크에서 Kubernetes 클러스터의 애플리케이션에 접근하는 몇 가지 구현 방식을 탐구합니다."
 date:       2017-11-28 12:00:00
 author:     "Lionel.J"
-image: "https://img.zhaohuabing.com/post-bg-2015.jpg"
 publishDate: 2017-11-28 12:00:00
 tags:
     - Kubernetes

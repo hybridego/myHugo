@@ -43,7 +43,6 @@ home = ["HTML", "RSS", "Algolia"]
 
   # Sidebar settings
   sidebar_about_description = "Software Developer, Embedded Systems Engineer, Linux Application Developer, Open Source Enthusiast and Life Adventurer"
-  #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
   sidebar_avatar = "img/lionelj.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
@@ -53,7 +52,6 @@ home = ["HTML", "RSS", "Algolia"]
   ba_track_id = ""
   
   # We need a proxy to access Disqus api in China
-  # Follow https://github.com/zhaohuabing/disqus-php-api to set up your own disqus proxy
   disqus_proxy = ""
   disqus_site = ""
 

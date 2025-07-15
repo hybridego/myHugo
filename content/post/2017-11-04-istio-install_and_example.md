@@ -69,8 +69,6 @@ k8s는 최신 버전의 Docker를 지원하지 않으므로, 다음 페이지에
 curl https://releases.rancher.com/install-docker/1.12.sh | sh
 ```
 
-비루트 사용자로 Docker 명령을 실행해야 하는 경우, [비루트 사용자로 Docker 명령을 실행하는 방법](http://zhaohuabing.com/2018/02/09/docker-without-sudo/)을 참조하십시오.
-
 ### Rancher 서버 시작
 
 ```

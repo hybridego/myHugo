@@ -30,7 +30,7 @@ API 토큰(API Key라고도 함)은 사용자 민감 데이터에 대한 접근�
 
 API 토큰을 사용하여 Github API에 접근하는 예시
 ```
-curl -u zhaohuabing:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
+curl -u hybridego:fbdf8e8862252ed0f3ba9dba4e328c01ac93aeec https://api.github.com/user
 
 ```
 > 시도하지 마세요. 이것은 제 실제 API 토큰이 아닙니다. 단지 시연용입니다 :-)
