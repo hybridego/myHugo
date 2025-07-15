@@ -371,7 +371,7 @@
 {{ if eq (.Param "multilingual") true }}
 <script type="text/javascript">
     // get nodes
-    var $zh = document.querySelector(".zh");
+    var $ko = document.querySelector(".ko");
     var $en = document.querySelector(".en");
     var $select = document.querySelector("select");
 
@@ -387,11 +387,11 @@
     // handle render
     function _render() {
         var lang = getLang()
-        // zh
-        if (lang == "zh") {
+        // ko
+        if (lang == "ko") {
             $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $zh.classList.add("active");
+            $ko.style.display = "block";
+            $ko.classList.add("active");
             $en.style.display = "none";
             $en.classList.remove("active");
             // default to en
@@ -399,8 +399,8 @@
             $select.selectedIndex = 1;
             $en.style.display = "block";
             $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
+            $ko.style.display = "none";
+            $ko.classList.remove("active");
         }
         // interop with catalog
         generateCatalog(".catalog-body");
@@ -409,7 +409,7 @@
     // handle select change
     function onLanChange(index) {
         if (index == 0) {
-            lang = "zh"
+            lang = "ko"
         } else {
             lang = "en"
         }
