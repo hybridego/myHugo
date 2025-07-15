@@ -100,7 +100,7 @@ home = ["HTML", "RSS", "Algolia"]
   #git           = "full profile url for git user"
   
   [[params.friend_link]]
-  title = "Lionel's Blog"
+  title = "Lionel's Tistory Blog"
   href =  "https://hybridego.net/"
 
   [[params.bookmark_link]]
