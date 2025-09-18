@@ -8,7 +8,7 @@ publishDate: 2025-08-10
 image: ""
 tags: [linux, pipeWire, ALSA, pulseAudio, JACK]
 categories: Tech
-draft: true
+draft: false
 URL: "/2025/08/10/pulseAudio/"
 ---
 
