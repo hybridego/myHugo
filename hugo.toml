@@ -10,7 +10,7 @@ hasCJKLanguage = true
   [services.disqus]
     shortname = ""
   [services.googleAnalytics]
-    id = ""
+    id = "G-Z1HB7P6C51"
 
 [pagination]
   pagerSize = 10 # frontpage pagination
