@@ -4,6 +4,7 @@ theme = "hugo-theme-cleanwhite"
 languageCode = "ko-kr"
 preserveTaxonomyNames = true
 hasCJKLanguage = true
+enableRobotsTXT = true
 
 [services]
   # Enable comments by entering your Disqus shortname
