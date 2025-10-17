@@ -4,7 +4,7 @@ title: Time 해상도 체크
 subtitle: usleep, sleep으로 time 해상도를 체크 해봅니다
 description: usleep, sleep으로 time 해상도를 체크 해봅니다. 시스템에서 최대 시간 해상도를 확인해봅니다.
 date: 2025-10-17T09:55:15+09:00
-publishDate: 2025-10-17T15:10:05+09:00
+publishDate: 2025-10-17T10:10:05+09:00
 image: ""
 tags: [usleep, sleep, chrono, nanoseconds, microseconds, milliseconds]
 categories:  [ Tech ]
