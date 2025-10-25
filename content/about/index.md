@@ -36,7 +36,7 @@ Embedded systems expert with extensive Linux and Android-based Firmware, Platfor
 
 ## Education
 - **Korea University of Technology and Education**  
-  B.S., Internet Software Engineering (Multimedia), 2002.03–2009.02 (GPA 3.11/4.50)
+  B.S., Internet Software Engineering (Multimedia)
 
 ## Experience
 ### Hanwha Vision (May 2024 – Present)
