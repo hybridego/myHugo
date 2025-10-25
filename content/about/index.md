@@ -2,54 +2,99 @@
 layout: page
 multilingual: true
 ---
+## Profile
+HoChul Jeon   
+hybridego@gmail.com
 
-## About Me
-**_Lionel Jeon_** is a software architect, an Istio Member and an ONAP PTL. He has a solid experience in the information and telecommunication technology industry for more than 17 years. 
+## Summary
+Embedded systems expert with extensive Linux and Android-based Firmware, Platform, and Server development. Participated in Android porting and platform work from early versions (Cupcake). Deep analysis of Camera, Audio, SurfaceFlinger, Multimedia HAL/Framework, with hands-on projects. Experience in Device Driver porting, Customized Native Services, System mods, NDK apps. Proficient in C/C++, Python, Go, Kotlin for full-stack from embedded to server. Multiple smart speaker, robot, IoT projects.
 
-Throughout his career, he has built a number of large-scale, cross-country software systems, most of them are still running in production. 
+## Technical Stack
+### Languages
+- C/C++, Python, Go, Java, Kotlin
 
-He loves open source and has been contributing to various open source projects, he is a member of Istio,  previous PTL of ONAP, the author of the Hugo clean-white theme and the open source project Aeraki Mesh.  
+### Development
+- Buildroot, Yocto, Linux Device Driver, Android HAL/NDK/SDK
+- ROS/ROS2, IAR, QT, SDL, Vue3, ESP32 Firmware, Electron (Node.js)
 
-He also has strong interests in various technical topics such as Cloud Native, Artificial Intelligence, Cryptocurrencies, Smart Home, etc. He love sharing his ideas about these things in his blog.
+### Multimedia
+- FFmpeg, GStreamer, ALSA/TinyALSA, DMB, PulseAudio, Pipewire
 
-Huabing holds a BSc in Computer Science and Technology from Chongqing University in China. 
+### DB
+- SQLite, MariaDB (MySQL), Neo4j
 
-Currently, Huabing works as a senior engineer at [Tencent Cloud](https://cloud.tencent.com/) and also wears the hat of PTL in ONAP open source project. For now, his main focus is to build a managed service mesh solution on cloud.
+### Tools
+- Vim, Android Studio, IntelliJ, VS Code
+- JIRA (Project Mgmt), Git (Version Control)
 
-While he is free, he likes writing technical blog posts, watching movies, swimming, hiking, travelling and learning languages.
+### Certifications
+- Vocational Training Instructor Level 3 (Sep 2009)
+- Information Processing Technician (Oct 2007)
 
-Feel free to connect Huabing at Github and Linkedin, leave your thoughts in his blog or share your ideas by [writing him an email](mailto:hybridego@gmail.com). 
+### Publications
+- *All About Android NDK* (2012, Hanbit Media)
 
-## Publications
-| Title       |Type        |Publisher   |Link        |
-| ----------- |----------- |----------- |----------- |
-|[Istio Service Mesh Advanced Practical](https://www.zhaohuabing.com/post/2021-08-26-istio-handbook/)|Book|电子工业出版社|[Buy now](https://item.jd.com/13200745.html)|
-|[Distributed Tracing with Jaeger, Kubernetes, and Istio](https://www.zhaohuabing.com/post/2021-09-08-distributed-tracing-with-jaeger-kubernetes-and-istio/)|Live Project|Manning|[30% off](https://www.manning.com/liveprojectseries/distributed-tracing-ser)|
-|[Cloud Native Data Center Networking](https://zhaohuabing.com/post/2021-08-27-cloud-native-data-center)|Translation|中国电力出版社|[Buy now](https://item.jd.com/12929975.html)|
-|[Istio Operation Bible](http://localhost:1313/post/2021-10-08-istio-operation-bible/)|ebook||[Read online](https://istio-operation-bible.aeraki.net/)|
+## Education
+- **Korea University of Technology and Education**  
+  B.S., Internet Software Engineering (Multimedia), 2002.03–2009.02 (GPA 3.11/4.50)
 
+## Experience
+### Hanwha Vision (May 2024 – Present)
+- **Body Worn Camera**: Field surveillance camera video control (HW Codec).  
+  *Tech*: C++, Buildroot, CMake, Python, HW Codec.
+- **Public Audio System**: Building broadcast system.  
+  *Tech*: C++, PulseAudio, ALSA, Go, Vue, RTP, Multicast, SQLite3.
 
-## Presentations (Selected)
-|Year         |City        |Conference  | Title      |Slides      |Video       |
-| ----------- |----------- |----------- |----------- |----------- |----------- |
-|2022|Virtual|[IstioCon](https://events.istio.io/istiocon-2022)|[Tencent Music’s service mesh practice with Istio and Aeraki](https://events.istio.io/istiocon-2022/sessions/tencent-music-aeraki/)|[slides](/slides/tencent-music-service-mesh-practice-with-istio-and-aeraki.pdf)|[Video](https://www.youtube.com/watch?v=6t_yPsq4Pi4)|
-|2022|Virtual|[A2M](https://a2m.msup.com.cn/course?aid=2699&cid=15382)|[全栈服务网格 - Aeraki Mesh 助你在 Istio 服务网格中管理任何七层流量](https://a2m.msup.com.cn/course?aid=2699&cid=15382)|[slides](/slides/full-stack-service-mesh-a2m-20220422.pdf)||
-|2022|Virtual|[云原生正发声](https://cloud.tencent.com/developer/salon/live-1403)| [Areaki Mesh 在 2022 冬奥会视频直播应用中的服务网格实践](https://mp.weixin.qq.com/s/zp9q99mGyH2VD9Dij2owWg) | [Slides](http://localhost:1313/img/2022-03-30-aeraki-mesh-winter-olympics-practice/slides.pdf)|[Video](https://youtu.be/uXxatQTKzW8)|
-|2021|Virtual|[IstioCon](https://events.istio.io/istiocon-2021/)| [How to manage any layer-7 traffic in an Istio service mesh?](https://events.istio.io/istiocon-2021/sessions/how-to-manage-any-layer-7-traffic-in-an-istio-service-mesh/) | [Slides](/slides/how-to-manage-any-layer-7-traffic-in-istio.pdf)|[Video](https://www.youtube.com/watch?v=sBS4utF68d8)|
-|2020|Virtual|[CNBPS](https://www.cnbpa.org/)|[Istio 流量管理原理与协议扩展](https://cloud.tencent.com/developer/article/1723804)|[Slides](/slides/cnbps2020-istio-aeraki.pdf)|[Video](https://www.youtube.com/watch?v=lB5d4qbZqzU)|
-|2019|Chengdu|[Service Mesher Meetup](https://cloudnative.to/blog/service-mesh-meetup-chengdu-20191028/)|[What Can Service Mesh Learn From SDN?](https://cloudnative.to/blog/service-mesh-meetup-chengdu-20191028/)|[Slides](/slides/what-can-service-mesh-learn-from-sdn-servicemesher-meetup-20191026.pdf)|[Video](https://youtu.be/nGkxp-2OsKg)|
-|2019|Xi'an|ONAP Workshop|Service Mesh Practice with 5G Management System|[Slides](/slides/service-mesh-practice-with-5g-management-system-lfn.pdf)|
-|2018|Nanjing|[GNTC](https://www.bagevent.com/event/1624048?aId=)|[Service Mesh in Action with ONAP](https://www.sdnlab.com/22596.html)|
-|2017|Santa Clara|[NAP Developer Forum](https://wiki.onap.org/display/DW/ONAP+Beijing+Release+Developer+Forum%2C+Dec.+11-13%2C+2017%2C+Santa+Clara%2C+CA+US)|[MSB to Support Carrier Grade ONAP Microservice Architecture with Service Mesh](https://onapbeijing2017.sched.com/event/D5q2)|[Slides](https://wiki.onap.org/display/DW/MSB+Service+Mesh+Planning?preview=%2F20873876%2F20873874%2FMSB+to+Support+Carrier+Grade+ONAP+Microservice+Architecture+with+Service+Mesh.pdf)|
-|2017|Santa Clara|[ONS](https://wiki.onap.org/display/DW/ONAP@ONS2017)|Microservice Powered Orchestration|[Slides](https://wiki.onap.org/display/DW/ONAP@ONS2017?preview=%2F3245268%2F3245309%2FMicroservice+Powered+Orchestration+Architecture.pdf)|
-|2017|New Jersey|[ONAP Developer Event](https://wiki.onap.org/display/DW/ONAP+Project+Developer+Event%3A+May+2+-+5%2C+2017%2C+Middletown%2C+NJ%2C+USA)|MSB Technical Deep Dive and ONAP Use Cases|[Slides](https://www.slideshare.net/HuabingZhao/msb-depp-dive/)|
-|2017|Paris|[ONAP Developer Event](https://wiki.onap.org/display/DW/ONAP+Developer+Event+September+25-28%2C+2017%2C+Paris-Saclay%2C+France)|[Microservice Bus Tutorial](https://wiki.onap.org/display/DW/September+26-28+Topics#September2628Topics-M2)|[Slides](https://www.slideshare.net/HuabingZhao/microservice-bus-tutorial)|
+### Hyundai Autoever (Sep 2023 – May 2024)
+- **CCIC / P-OIP (Android Automotive)**: OS-Navigation interface (ccIC27, P-OIP).  
+  *Tech*: Volley, Android Compose, Kotlin, AIDL, C++, D-Bus, Go, JNI, Android Automotive.
 
-## Open Source Projects
-|Project      |Role        |  Website   | GitHub     |
-| ----------- |----------- |----------- |----------- |
-| Aeraki Mesh | Creator    | https://aeraki.net  | http://github.com/aeraki-mesh |
-| Istio       | Contributor| https://istio.io    | https://github.com/istio/istio|
-| Envoy       | Contributor| https://www.envoyproxy.io |https://github.com/envoyproxy/envoy|
-| ONAP        | PTL        | https://www.onap.org||
-| hugo-theme-cleanwhite | Creator    | https://themes.gohugo.io/themes/hugo-theme-cleanwhite  | https://github.com/zhaohuabing/hugo-theme-cleanwhite |
+### Kakao Enterprise (Dec 2019 – Aug 2023)
+- **Kakao Home**: IoT platform server modernization and third-party integration maintenance.  
+  *Tech*: Spring Boot, Kotlin, K8s, Vault, OAuth2, Logstash, Elasticsearch, Kibana, GitHub, MySQL, Redis.
+- **Robot Tech Testing**: Indoor serving robot device/server dev.  
+  *Tech*: ROS/ROS2, SLAM, Cartographer, Navigation2, Go, MQTT, MySQL, KakaoTalk Chatbot.
+- **Smart Office Setup**: Sensor/dashboard devices, servers, apps.  
+  *Tech*: Nordic nRF52840, Matter OpenThread, MQTT-SN, Python (BeautifulSoup, Selenium), Django, Electron, Node.js, Vue3.
+- **Kakao Mini Hexa**: Linux smart speaker porting, Mic Tuning/BMT.  
+  *Tech*: Qualcomm QCS404, Yocto Linux, OTA, DSPC solution, Python automation.
+- **Kakao Mini C Audio Enhancement**: Audio tuning, 32bit→64bit migration.  
+  *Tech*: GoodHz EQ solution, Android Audio HAL.
+
+### Kakao (Oct 2014 – Nov 2019)
+- **Kakao Mini Link**: IoT device Bluetooth stack mods (BLE, A2DP, HFP).
+- **Kakao Mini C**: Android smart speaker (MT8167, RK3326) dev.
+- **Kakao Mini 1st Gen**: Full Android BSP (NXP4330, porting, HAL, OTA, Aging Test, BT/WiFi, Audio Precision automation).  
+  *Tech*: Linux Device Driver, Android Porting, HAL, Native Daemon, SELinux, Android App, BT/WiFi, Audio Precision, Ellisys Bluetooth Vanguard.
+- **IDC Efficiency**: ESP32 sensor device (power/temp/humidity/airflow collection).  
+  *Tech*: ESP32 esp-idf, MQTT, WiFi, Ethernet.
+- **TV Closed Caption Extractor**: TV TS decoding, caption/audio extraction & streaming.  
+  *Tech*: FFmpeg, libiconv, TCP server.
+- **Video Encoder Accel Server**: HW encoder testing (Nexel 4330, Nvidia Jetson, FPGA).  
+  *Tech*: FFmpeg, GStreamer, NVENC.
+- **Song Recognition Broadcast Receiver Upgrade**: Linux-based receiver (Android → Linux).  
+  *Tech*: Buildroot, TV/Radio Driver, FFmpeg, RTSP, Syslog, MPEG-TS, Audio Resampling, Valgrind.
+
+### Daum Communications (Jan 2013 – Sep 2014)
+- **Bluetooth Beacon R&D**: Event app (treasure hunt).  
+  *Tech*: Android SDK, Bluetooth LE.
+- **Indoor Air Quality Collector**: Node/master firmware, Android app.  
+  *Tech*: BLE, Bluetooth Classic, WiFi, IAR, Android SDK.
+- **Song Recognition Broadcast Receiver - Phase 1**: Android porting (Telechips TCC89xx).  
+  *Tech*: TV/Radio Driver, FFmpeg, DMB RTSP, Resampling.
+- **Daum TV**: Set-top box tech internalization.  
+  *Tech*: Telechips Android BSP, TV/Radio Driver.
+
+### Insignal (Sep 2010 – Dec 2012; Jan–Aug 2010)
+- **TJ Media Japan Android Karaoke Remote**: Debugging & perf testing.
+- **Android Native Framework Training**: NDK materials (MDS, Samsung, LG, etc.).
+- **Android Navigation App**: DMB driver porting, video player app.  
+  *Tech*: Linux Device Driver, Android NDK, FFmpeg.
+- **Android Multimedia Engine**: Early Android video engine (multi-format support).
+
+## Other Projects
+- **Home Appliance Control Test**: SSDP/UPnP via smart speaker (DDNS, Avahi).
+- **Unmanned Store**: Camera placement, weight sensing devices.
+- **KT Children's Monkey Robot (Mon-e)**: Embedded Linux robot control.  
+  *Tech*: SDL, Serial comm, NFC.
+- **Video Call Porting**.
