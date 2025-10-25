@@ -23,7 +23,14 @@ const hitTemplate = function(hit) {
   if (hit.date) {
     date = moment.unix(hit.date).format('MMM D, YYYY');
   }
-  let url = `${hit.url}#${hit.anchor}`;
+  // Build a safe URL for the hit. The Algolia index contains fields like
+  // `permalink`, `relpermalink` or `url` depending on how the index was created.
+  // Use the first available and only append an anchor when it exists to
+  // avoid creating links like "undefined#undefined".
+  let url = hit.permalink || hit.url || hit.relpermalink || '';
+  if (hit.anchor) {
+    url = `${url}#${hit.anchor}`;
+  }
   const title = hit._highlightResult.title.value;
 
   let breadcrumbs = '';
