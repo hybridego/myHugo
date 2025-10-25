@@ -11,7 +11,7 @@ Embedded systems expert with extensive Linux and Android-based Firmware, Platfor
 
 ## Technical Stack
 ### Languages
-- C/C++, Python, Go, Java, Kotlin
+- C/C++, Python, Go, Java, Kotlin, Rust
 
 ### Development
 - Buildroot, Yocto, Linux Device Driver, Android HAL/NDK/SDK
