@@ -38,9 +38,9 @@ home = ["HTML", "RSS", "Algolia"]
 
   # algolia site search
   algolia_search = true
-  algolia_appId = ""
-  algolia_indexName = ""
-  algolia_apiKey = ""
+  algolia_appId = "5DIK4IBSC3"
+  algolia_indexName = "hybridego_github_io_5dik4ibsc3_articles"
+  algolia_apiKey = "7b6487420de6dc2e89750b13ef67d18f"
 
   # Sidebar settings
   sidebar_about_description = "Software Developer, Embedded Systems Engineer, Linux Application Developer, Open Source Enthusiast and Life Adventurer"
@@ -135,8 +135,22 @@ mediaType = "application/json"
 notAlternative = true
 
 [params.algolia]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["categories", "tags"] 
+vars = ["title", "summary", "date", "publishdate", "permalink"]
+params = ["categories", "tags"]
+
+[outputs.Algolia]
+vars = [
+  "title",
+  "summary",
+  "date",
+  "publishdate",
+  "permalink",
+  "description"
+]
+params = ["categories", "tags"]
+# 전체 콘텐츠 대신 요약만 포함
+includeContent = false
+# 검색에 필요한 주요 필드만 인덱싱
 
 [markup]
   [markup.tableOfContents]

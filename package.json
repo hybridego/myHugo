@@ -1,0 +1,11 @@
+{
+    "name": "lionelblog-cleanwhite",
+    "version": "1.0.0",
+    "description": "Hugo blog with Algolia search",
+    "scripts": {
+        "algolia": "atomic-algolia"
+    },
+    "dependencies": {
+        "atomic-algolia": "^0.3.19"
+    }
+}

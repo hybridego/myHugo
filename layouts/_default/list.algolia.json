@@ -1,0 +1,20 @@
+{{/* Algolia index: output a compact JSON array of pages. Keep fields short to avoid Algolia record size limits. */}}
+[
+{{- $pages := where .Site.RegularPages "Type" "post" -}}
+{{- range $i, $p := $pages -}}
+{{- if gt $i 0 }},{{ end -}}
+{
+  "objectID": {{ $p.File.UniqueID | jsonify }},
+  "title": {{ $p.Title | jsonify }},
+  "tags": {{ $p.Params.tags | default (slice) | jsonify }},
+  "categories": {{ $p.Params.categories | default (slice) | jsonify }},
+  "description": {{ with $p.Params.description }}{{ . | truncate 160 | jsonify }}{{ else }}{{ $p.Summary | truncate 160 | jsonify }}{{ end }},
+  "summary": {{ $p.Summary | truncate 160 | jsonify }},
+  "date": {{ if $p.Date }}{{ $p.Date.Unix }}{{ else }}null{{ end }},
+  "publishdate": {{ if $p.PublishDate }}{{ $p.PublishDate.Unix }}{{ else }}null{{ end }},
+  "permalink": {{ $p.Permalink | jsonify }},
+  "relpermalink": {{ $p.RelPermalink | jsonify }},
+  "section": {{ $p.Section | jsonify }}
+}
+{{- end -}}
+]

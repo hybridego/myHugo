@@ -1,12 +1,12 @@
 ---
 author: Lionel.J
 title: The Bitter Lesson
-subtitle: "컴퓨팅 우위가 주는 쓴 교훈"
-description: "Rich Sutton의 'The Bitter Lesson'을 한국어로 요약합니다. 인간 지식 주입의 한계와 컴퓨팅·학습 중심 접근의 우월성을 정리합니다."
+subtitle: 컴퓨팅 우위가 주는 쓴 교훈
+description: Rich Sutton의 'The Bitter Lesson'을 한국어로 요약해 보았습니다.
 date: 2025-10-26T00:11:01+09:00
 publishDate: 2025-10-26T00:11:01+09:00
 image: ""
-tags: ["AI", "Machine Learning", "Rich Sutton", "Bitter Lesson", "Research"]
+tags: [AI, Machine Learning, Rich Sutton, Bitter Lesson, Research]
 categories:  [ Tech ]
 URL: "/2025/10/26/The-Bitter-Lesson/"
 draft: false

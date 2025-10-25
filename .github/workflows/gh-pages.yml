@@ -30,13 +30,29 @@ jobs:
 
       - uses: actions/cache@v4
         with:
-          path: ${{ env.HUGO_CACHEDIR }} # <- Use the same env variable just right here
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          path: ${{ env.HUGO_CACHEDIR }}
+          key: ${{ runner.os }}-hugomod-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm install atomic-algolia
+
       - name: Build
         run: hugo --minify
+
+      - name: Update Algolia Index
+        env:
+          ALGOLIA_APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME }}
+          ALGOLIA_INDEX_FILE: public/algolia.json
+        run: npm run algolia
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

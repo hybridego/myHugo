@@ -2,7 +2,7 @@
 author: Lionel.J
 title: GitHub 프로젝트 분석 툴 소개
 subtitle: GitIngest, DeepWiki, GitDiagram으로 GitHub 리포지토리를 더 효과적으로 분석하세요!
-description: GitHub 리포지토리 분석을 위한 세 가지 강력한 툴, GitIngest, DeepWiki, GitDiagram을 소개합니다. AI 기반 요약부터 시각화까지, 프로젝트 이해도를 높이는 방법을 알아보세요.
+description: GitHub 리포지토리 분석을 위한 세 가지 강력한 툴, GitIngest, DeepWiki, GitDiagram을 소개합니다.
 date: 2025-09-18T15:15:15+09:00
 publishDate: 2025-09-18T15:15:15+09:00
 image: ""
@@ -12,9 +12,7 @@ URL: "/2025/09/18/github-project-analyzer/"
 draft: false
 ---
 
-GitHub 리포지토리를 더욱 효과적으로 분석하고 이해하는 데 도움을 줄 수 있는 세 가지 흥미로운 툴을 소개합니다. 이 툴들은 각각 다른 방식으로 리포지토리의 정보를 추출하고 시각화하여 개발자들의 생산성을 높여줄 수 있습니다.
-
----
+`GitHub 리포지토리를 더욱 효과적으로 분석하고 이해하는 데 도움을 줄 수 있는 세 가지 흥미로운 툴을 소개합니다. 이 툴들은 각각 다른 방식으로 리포지토리의 정보를 추출하고 시각화하여 개발자들의 생산성을 높여줄 수 있습니다.`
 
 ### 1. GitIngest: AI 프롬프트 최적화 요약/추출
 
