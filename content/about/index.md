@@ -11,20 +11,21 @@ Embedded systems expert with extensive Linux and Android-based Firmware, Platfor
 
 ## Technical Stack
 ### Languages
-- C/C++, Python, Go, Java, Kotlin, Rust
+- Proficient: C/C++, Python, Go, Java, Kotlin 
+- Learning: Rust (currently building projects)
 
 ### Development
-- Buildroot, Yocto, Linux Device Driver, Android HAL/NDK/SDK
+- Buildroot, Yocto, Linux Device Driver(Modification Level), Android HAL/NDK/SDK
 - ROS/ROS2, IAR, QT, SDL, Vue3, ESP32 Firmware, Electron (Node.js)
 
 ### Multimedia
-- FFmpeg, GStreamer, ALSA/TinyALSA, DMB, PulseAudio, Pipewire
+- FFmpeg, GStreamer, ALSA/TinyALSA, DMB, PulseAudio, Pipewire, pulseaudio
 
 ### DB
-- SQLite, MariaDB (MySQL), Neo4j
+- SQLite, PostgreSQL, MariaDB (MySQL), Neo4j,
 
 ### Tools
-- Vim, Android Studio, IntelliJ, VS Code
+- Vim, Android Studio, IntelliJ, VS Code, Cursor
 - JIRA (Project Mgmt), Git (Version Control)
 
 ### Certifications
