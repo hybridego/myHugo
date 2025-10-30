@@ -24,6 +24,9 @@ Embedded systems expert with extensive Linux and Android-based Firmware, Platfor
 ### DB
 - SQLite, PostgreSQL, MariaDB (MySQL), Neo4j,
 
+### DevOps / Containerization
+- Docker, Docker Compose, Kubernetes (K8s)
+
 ### Tools
 - Vim, Android Studio, IntelliJ, VS Code, Cursor
 - JIRA (Project Mgmt), Git (Version Control)
@@ -42,9 +45,9 @@ Embedded systems expert with extensive Linux and Android-based Firmware, Platfor
 ## Experience
 ### Hanwha Vision (May 2024 – Present)
 - **Body Worn Camera**: Field surveillance camera video control (HW Codec).  
-  *Tech*: C++, Buildroot, CMake, Python, HW Codec.
+  *Tech*: C++, Buildroot, CMake, Python, HW Codec, Docker(containerized development environment).
 - **Public Audio System**: Building broadcast system.  
-  *Tech*: C++, PulseAudio, ALSA, Go, Vue, RTP, Multicast, SQLite3.
+  *Tech*: C++, PulseAudio, ALSA, Go, Vue, RTP, Multicast, SQLite3, Docker(containerized development environment).
 
 ### Hyundai Autoever (Sep 2023 – May 2024)
 - **CCIC / P-OIP (Android Automotive)**: OS-Navigation interface (ccIC27, P-OIP).  
@@ -52,7 +55,8 @@ Embedded systems expert with extensive Linux and Android-based Firmware, Platfor
 
 ### Kakao Enterprise (Dec 2019 – Aug 2023)
 - **Kakao Home**: IoT platform server modernization and third-party integration maintenance.  
-  *Tech*: Spring Boot, Kotlin, K8s, Vault, OAuth2, Logstash, Elasticsearch, Kibana, GitHub, MySQL, Redis.
+  *Tech*: Spring Boot, Kotlin, Docker, Kubernetes (K8s), Vault, OAuth2, Logstash, Elasticsearch, Kibana, GitHub, MySQL, Redis.
+  *Deployment*: Deployed with Docker images on Kubernetes — implemented rolling updates, Horizontal Pod Autoscaling (HPA) for server scaling, and Ingress-based redundancy/load‑balancing (NGINX Ingress).
 - **Robot Tech Testing**: Indoor serving robot device/server dev.  
   *Tech*: ROS/ROS2, SLAM, Cartographer, Navigation2, Go, MQTT, MySQL, KakaoTalk Chatbot.
 - **Smart Office Setup**: Sensor/dashboard devices, servers, apps.  
@@ -66,7 +70,7 @@ Embedded systems expert with extensive Linux and Android-based Firmware, Platfor
 - **Kakao Mini Link**: IoT device Bluetooth stack mods (BLE, A2DP, HFP).
 - **Kakao Mini C**: Android smart speaker (MT8167, RK3326) dev.
 - **Kakao Mini 1st Gen**: Full Android BSP (NXP4330, porting, HAL, OTA, Aging Test, BT/WiFi, Audio Precision automation).  
-  *Tech*: Linux Device Driver, Android Porting, HAL, Native Daemon, SELinux, Android App, BT/WiFi, Audio Precision, Ellisys Bluetooth Vanguard.
+  *Tech*: Linux Device Driver, Android Porting, HAL, Native Daemon, SELinux, Android App, BT/WiFi, Audio Precision, Ellisys Bluetooth Vanguard, Docker(Development environments and toolchain were containerized as Docker images for reproducible local builds and CI pipelines.)
 - **IDC Efficiency**: ESP32 sensor device (power/temp/humidity/airflow collection).  
   *Tech*: ESP32 esp-idf, MQTT, WiFi, Ethernet.
 - **TV Closed Caption Extractor**: TV TS decoding, caption/audio extraction & streaming.  
