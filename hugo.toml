@@ -32,7 +32,8 @@ home = ["HTML", "RSS", "Algolia"]
   omit_categories = false
 
   # leancloud storage for page view counter
-  page_view_counter = true
+  # Disabled - no LeanCloud credentials configured
+  page_view_counter = false
   leancloud_app_id = ""
   leancloud_app_key = ""
 
@@ -62,8 +63,9 @@ home = ["HTML", "RSS", "Algolia"]
 
   # Artalk comments
   # Follow https://artalk.js.org/ to set up your own server
-  artalk_enable = true
-  artalk_server = "https://hybridego.github.io"
+  # Disabled - requires a separate Artalk server (not the blog URL)
+  artalk_enable = false
+  artalk_server = ""
   artalk_site = "lionel blog"
 
   #Enable wechat pay & alipay to allow readers send reward money if they like the articles 
@@ -104,7 +106,7 @@ home = ["HTML", "RSS", "Algolia"]
 
   [[params.bookmark_link]]
   title =  "NotebookLM"
-  href =  "hhttps://notebooklm.google/"
+  href =  "https://notebooklm.google/"
   [[params.bookmark_link]]
   title = "Perplexity"
   href =  "https://www.perplexity.ai/"
@@ -138,19 +140,8 @@ notAlternative = true
 vars = ["title", "summary", "date", "publishdate", "permalink"]
 params = ["categories", "tags"]
 
-[outputs.Algolia]
-vars = [
-  "title",
-  "summary",
-  "date",
-  "publishdate",
-  "permalink",
-  "description"
-]
-params = ["categories", "tags"]
-# 전체 콘텐츠 대신 요약만 포함
-includeContent = false
-# 검색에 필요한 주요 필드만 인덱싱
+# Note: [outputs.Algolia] section removed - it was causing "Unknown kind" warnings
+# The Algolia output format is already defined in [outputFormats.Algolia] above
 
 [markup]
   [markup.tableOfContents]
