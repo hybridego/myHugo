@@ -12,7 +12,8 @@ URL: "/2026/02/09/leetcode-roman-to-integer/"
 draft: false
 ---
 
-LeetCode의 Roman to Integer 문제를 Rust로 풀어봤습니다.
+LeetCode의 Roman to Integer 문제를 Rust로 풀어봤습니다.  
+[문제 링크](https://leetcode.com/problems/roman-to-integer/description/)
 
 ---
 
