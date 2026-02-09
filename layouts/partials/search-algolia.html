@@ -2,116 +2,349 @@
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css">
 
-<div id="search-searchbar"></div>
- <div class="post-list" id="search-hits">
- </div>
+<!-- Custom Search Styles -->
+<style>
+  /* Modern Flat Search Box Design */
+  .search-container {
+    margin-bottom: 40px;
+    padding-top: 20px;
+  }
+
+  /* Mobile responsive spacing */
+  @media (max-width: 768px) {
+    .search-container {
+      padding-top: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+  #search-searchbar .ais-SearchBox {
+    width: 100%;
+  }
+
+  #search-searchbar .ais-SearchBox-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+  }
+
+  #search-searchbar .ais-SearchBox-form:focus-within {
+    border-color: #4a90d9;
+    box-shadow: 0 4px 16px rgba(74, 144, 217, 0.15);
+  }
+
+  #search-searchbar .ais-SearchBox-input {
+    width: 100%;
+    padding: 16px 20px;
+    padding-left: 52px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  #search-searchbar .ais-SearchBox-input::placeholder {
+    color: #999;
+    font-weight: 300;
+  }
+
+  #search-searchbar .ais-SearchBox-submit {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  #search-searchbar .ais-SearchBox-submit svg {
+    width: 22px;
+    height: 22px;
+    fill: #666;
+    transition: fill 0.2s ease;
+  }
+
+  #search-searchbar .ais-SearchBox-form:focus-within .ais-SearchBox-submit svg {
+    fill: #4a90d9;
+  }
+
+  #search-searchbar .ais-SearchBox-reset {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f0f0f0;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  #search-searchbar .ais-SearchBox-reset:hover {
+    background: #e0e0e0;
+  }
+
+  #search-searchbar .ais-SearchBox-reset svg {
+    width: 14px;
+    height: 14px;
+    fill: #666;
+  }
+
+  #search-searchbar .ais-SearchBox-loadingIndicator {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Search Results Styling */
+  .post-item {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .post-item:last-child {
+    border-bottom: none;
+  }
+
+  .post-meta {
+    color: #888;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .post-item h2 {
+    margin: 8px 0 12px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .post-item h2 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .post-item h2 a:hover {
+    color: #4a90d9;
+  }
+
+  .post-link .ais-Highlight {
+    color: #111;
+    font-style: normal;
+    text-decoration: underline;
+    text-decoration-color: #4a90d9;
+  }
+
+  .post-breadcrumbs {
+    color: #666;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .post-breadcrumb {
+    font-size: 15px;
+    color: #666;
+  }
+
+  .post-breadcrumb .ais-Highlight {
+    font-weight: bold;
+    font-style: normal;
+    color: #4a90d9;
+  }
+
+  .post-snippet {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .post-snippet .ais-Highlight {
+    color: #4a90d9;
+    font-style: normal;
+    font-weight: 600;
+    background: rgba(74, 144, 217, 0.1);
+    padding: 1px 3px;
+    border-radius: 3px;
+  }
+
+  .post-snippet img {
+    display: none;
+  }
+
+  /* Empty state */
+  .ais-Hits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ais-Hits--empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+    font-size: 16px;
+  }
+
+  /* Search hint */
+  .search-hint {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 40px 20px;
+  }
+
+  .search-hint i {
+    font-size: 48px;
+    margin-bottom: 16px;
+    display: block;
+    color: #ddd;
+  }
+</style>
+
+<div class="search-container">
+  <div id="search-searchbar"></div>
+</div>
+
+<div class="post-list" id="search-hits">
+</div>
+
+<div id="search-hint" class="search-hint">
+  <i class="fas fa-search"></i>
+  <p>검색어를 입력하면 결과가 표시됩니다.</p>
+</div>
 
 <script>
-const searchClient = algoliasearch('{{ .Site.Params.algolia_appId }}', '{{ .Site.Params.algolia_apiKey }}');
+  const searchClient = algoliasearch('{{ .Site.Params.algolia_appId }}', '{{ .Site.Params.algolia_apiKey }}');
 
-const search = instantsearch({
-  indexName: '{{ .Site.Params.algolia_indexName }}',
-  searchClient,
-});
+  const search = instantsearch({
+    indexName: '{{ .Site.Params.algolia_indexName }}',
+    searchClient,
+  });
 
-const hitTemplate = function(hit) {
-  let date = '';
-  if (hit.date) {
-    date = moment.unix(hit.date).format('MMM D, YYYY');
-  }
-  // Build a safe URL for the hit. The Algolia index contains fields like
-  // `permalink`, `relpermalink` or `url` depending on how the index was created.
-  // Use the first available and only append an anchor when it exists to
-  // avoid creating links like "undefined#undefined".
-  let url = hit.permalink || hit.url || hit.relpermalink || '';
-  if (hit.anchor) {
-    url = `${url}#${hit.anchor}`;
-  }
-  const title = hit._highlightResult.title.value;
+  const hitTemplate = function (hit) {
+    let date = '';
+    if (hit.date) {
+      date = moment.unix(hit.date).format('YYYY. MM. DD');
+    }
 
-  let breadcrumbs = '';
-  if (hit._highlightResult.headings) {
-    breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
-    }).join(' > ')
-  }
+    // Build a safe URL for the hit
+    let url = hit.permalink || hit.url || hit.relpermalink || '';
+    if (hit.anchor) {
+      url = `${url}#${hit.anchor}`;
+    }
 
-  let content = "" ; 
-  if (hit._highlightResult.content){
+    // Safely get title - handle both highlighted and non-highlighted versions
+    let title = '';
+    if (hit._highlightResult && hit._highlightResult.title && hit._highlightResult.title.value) {
+      title = hit._highlightResult.title.value;
+    } else if (hit.title) {
+      title = hit.title;
+    } else if (hit._highlightResult && hit._highlightResult.headline && hit._highlightResult.headline.value) {
+      title = hit._highlightResult.headline.value;
+    } else if (hit.headline) {
+      title = hit.headline;
+    } else {
+      title = '(제목 없음)';
+    }
+
+    let breadcrumbs = '';
+    if (hit._highlightResult && hit._highlightResult.headings) {
+      breadcrumbs = hit._highlightResult.headings.map(match => {
+        return `<span class="post-breadcrumb">${match.value}</span>`
+      }).join(' > ')
+    }
+
+    // Safely get content/summary
+    let content = '';
+    if (hit._highlightResult && hit._highlightResult.content && hit._highlightResult.content.value) {
       content = hit._highlightResult.content.value;
-  }
-  else{
-      content = hit.summary;
-  }
+    } else if (hit._highlightResult && hit._highlightResult.description && hit._highlightResult.description.value) {
+      content = hit._highlightResult.description.value;
+    } else if (hit.summary) {
+      // Strip HTML tags for cleaner display
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = hit.summary;
+      content = tempDiv.textContent || tempDiv.innerText || '';
+      content = content.substring(0, 300) + (content.length > 300 ? '...' : '');
+    } else if (hit.description) {
+      content = hit.description;
+    }
 
-
-  return `
+    return `
     <div class="post-item">
       <span class="post-meta">${date}</span>
       <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
+      ${breadcrumbs ? `<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>` : ''}
       <div class="post-snippet">${content}</div>
     </div>
   `;
-}
+  }
 
+  search.addWidgets([
+    instantsearch.widgets.searchBox({
+      container: '#search-searchbar',
+      placeholder: '블로그 게시물 검색...',
+      showSubmit: true,
+      showReset: true,
+      cssClasses: {
+        input: 'search-input',
+      }
+    }),
 
-search.addWidgets([
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    showSubmit: false,
-    showReset: false,
-  }),
-  
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate
+    instantsearch.widgets.hits({
+      container: '#search-hits',
+      templates: {
+        item: hitTemplate,
+        empty: '<div class="ais-Hits--empty">검색 결과가 없습니다.</div>'
+      }
+    }),
+
+    instantsearch.widgets.configure({
+      hitsPerPage: 15,
+      attributesToHighlight: ['title', 'content', 'description', 'headline'],
+    })
+  ]);
+
+  // Hide the search hint when there's a query
+  search.on('render', () => {
+    const state = search.helper.state;
+    const hintEl = document.getElementById('search-hint');
+    const hitsEl = document.getElementById('search-hits');
+
+    if (state.query && state.query.length > 0) {
+      hintEl.style.display = 'none';
+      hitsEl.style.display = 'block';
+    } else {
+      hintEl.style.display = 'block';
+      hitsEl.style.display = 'none';
     }
-  }),
-  
-  instantsearch.widgets.configure({
-    hitsPerPage: 10,
-  })
-]);
+  });
 
-search.start();
+  search.start();
 </script>
-
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
-}
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-breadcrumbs {
-  color: #424242;
-  display: block;
-}
-.post-breadcrumb {
-  font-size: 18px;
-  color: #424242;
-}
-.post-breadcrumb .ais-Highlight {
-  font-weight: bold;
-  font-style: normal;
-}
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-.post-snippet img {
-  display: none;
-}
-</style>
