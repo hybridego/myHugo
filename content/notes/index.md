@@ -10,6 +10,9 @@ layout: page
 
 - <a href="https://hybridego.github.io/lionel_pinball/" target="_blank">Lionel Pinball</a>
 
+- <a href="https://hybridego.net/" target="_blank">Hybridego blog.</a>
+
+
 ---
 
 # My interests
