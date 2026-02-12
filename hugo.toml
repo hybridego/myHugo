@@ -121,9 +121,6 @@ home = ["HTML", "RSS", "Algolia"]
   href = "https://grok.com/"
 
   [[params.additional_menus]]
-  title =  "LEETCODE"
-  href =  "/categories/leetcode/"
-  [[params.additional_menus]]
   title =  "ARCHIVE"
   href =  "/archive/"
   [[params.additional_menus]]
