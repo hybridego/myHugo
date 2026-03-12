@@ -1,10 +1,10 @@
 ---
 author: Lionel.J
-title: RFHIC 최신 주가 기준 정량 분석
-subtitle: 방산 GaN과 통신 회복 기대를 반영한 2026년 3월 기준 업데이트 리포트
-description: RFHIC(218410)를 stock-analysis 방식으로 다시 점검한 리포트입니다. 최신 주가와 최근 공개 정보를 반영해 매크로, 산업, 펀더멘털, 밸류에이션, 실행 계획을 정리했습니다.
+title: "RFHIC 최신 주가 기준 정량 분석"
+subtitle: "방산 GaN과 통신 회복 기대를 반영한 2026년 3월 기준 업데이트 리포트"
+description: "RFHIC(218410)를 stock-analysis 방식으로 다시 점검한 리포트입니다. 최신 주가와 최근 공개 정보를 반영해 매크로, 산업, 펀더멘털, 밸류에이션, 실행 계획을 정리했습니다."
 date: 2026-03-13T00:47:00+09:00
-publishDate: 2026-03-13
+publishDate: 2026-03-13T00:47:00+09:00
 image: ""
 tags: [RFHIC, Stock, GaN, Defense, Investment]
 categories: [ Stock ]
