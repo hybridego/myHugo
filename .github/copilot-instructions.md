@@ -11,14 +11,14 @@
 ```yaml
 ---
 author: Lionel.J
-title: linux 에서 시스템 Buff and Cache 비우기
-subtitle: linux 시스템의 버퍼와 캐시를 비우는 방법
-description: 강제로 캐시를 비우게 한다.
+title: "적절한 제목"
+subtitle: "적절한 subtitle"
+description: "간단한 요약"
 date: 2025-07-02T15:35:23+09:00
-publishDate: 2025-07-02
+publishDate: 2025-07-02T15:35:23+09:00
 image: ""
-tags: [linux, drop_caches, stress]
-categories: Tech
+tags: [ 적절한 태그들 콤마로 구분 ]
+categories: [ Tech ]
 URL: "/2025/07/02/Empty-Buff-Cache/"
 draft: false
 ---
@@ -28,6 +28,9 @@ draft: false
 
 - 작성 언어: 포스트 본문은 한국어 또는 영어로 작성할 수 있습니다. 메타데이터(`title`, `description`, `subtitle`)는 글 언어에 맞춰 작성해주세요.
 - author 필드는 항상 `Lionel.J`로 둡니다.
+- tags 에는 적절한 태그를 콤마로 구분하여 입력
+- categories 는 적절한 카테고리 1개 입력
+- URL 은 기존 형식 "/YYYY/MM/DD/적절한-슬러그/" 형태로 고정. 슬러그는 작성한 포스트의 제목과 동일한 영어를 사용하고 공백은 하이픈(-)으로 대체.
 - 파일 경로: `content/post/` 아래에 `YYYY-MM-DD-슬러그.md` 형태로 저장합니다. (날짜와 파일명은 URL 규칙과 일치시키면 좋습니다.)
 - 이미지: 이미지 필드는 `image`에 상대 경로(예: `/img/2025/07/02/my-image.png`)나 빈 문자열을 넣을 수 있습니다. `static/` 아래에 이미지를 넣으면 빌드 시 `/img/...`로 접근 가능합니다.
 - draft: 임시 글은 `draft: true`로 설정하세요. 로컬 미리보기 시 `hugo server -D`로 draft를 포함해 확인할 수 있습니다.
@@ -35,14 +38,14 @@ draft: false
 ## frontmatter 필드 설명
 
 - author: 작성자(고정: `Lionel.J`).
-- title: 포스트 제목.
-- subtitle: (선택) 제목 아래 보여줄 보조 문구.
-- description: SEO/요약용 한 줄 설명.
+- title: "포스트 제목."
+- subtitle: "제목 아래 보여줄 보조 문구."
+- description: "SEO/요약용 한 줄 설명."
 - date: 작성/발행 일시. 형식: `YYYY-MM-DDTHH:MM:SS+09:00` (예: `2025-07-02T15:35:23+09:00`).
-- publishDate: (선택) 공개할 날짜만 필요하면 사용.
+- publishDate: `YYYY-MM-DDTHH:MM:SS+09:00` (예: `2025-07-02T15:35:23+09:00`).
 - image: 대표 이미지 경로 또는 빈 문자열.
-- tags: 태그 목록(작게, 핵심 단어 위주로). 예: `[linux, performance]`.
-- categories: 주 카테고리(예: `Tech`, `Notes`).
+- tags: 태그 목록(작게, 핵심 단어 위주로). 예: `[ linux, performance ]`.
+- categories: 주 카테고리(예: [ Tech ], [ Stocks ]).
 - URL: 포스트의 퍼머링크(필요 시 수동 지정).
 - draft: true/false (초기 draft 작성 시 true).
 
