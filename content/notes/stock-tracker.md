@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-14 | 효성중공업 | KOSPI | [분석 글](/2026/05/14/hyosung-heavy-industries-298040-analysis/) | 4,398,000원 | - | - | - | 관찰 시작 | 2Q 이연 물량 반영, 북미 수주, 중공업 마진 |
+| 2026-05-14 | Sterling Infrastructure | NASDAQ | [분석 글](/2026/05/14/sterling-infrastructure-strl-analysis/) | $854.28 | - | - | - | 관찰 시작 | E-Infrastructure 마진, backlog 전환, CEC 통합 |
 | 2026-05-12 | 제룡전기 | KOSDAQ | [분석 글](/2026/05/12/cheryong-electric-033100-analysis/) | 확인 필요 | - | - | - | 관찰 시작 | 2026년 매출 회복, 미국 신규 수주, 영업이익률 |
 | 2026-05-12 | nVent Electric | NYSE | [분석 글](/2026/05/12/nvent-electric-nvt-analysis/) | 확인 필요 | - | - | - | 관찰 시작 | 백로그 매출 전환, 조정 영업마진, FCF |
 
