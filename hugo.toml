@@ -127,6 +127,9 @@ home = ["HTML", "RSS", "Algolia"]
   title =  "NOTES"
   href =  "/notes/"
   [[params.additional_menus]]
+  title =  "STOCK TRACKER"
+  href =  "/notes/stock-tracker/"
+  [[params.additional_menus]]
   title =  "ABOUT"
   href =  "/about/"
 
