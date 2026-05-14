@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-15 | 산일전기 | KOSPI | [후보 노트](/2026/05/15/stock-candidate-note-ai-power-infrastructure/) | 확인 필요 | - | - | - | 후속 분석 후보 | 데이터센터 수주 공시, 1Q26 실적 원문, 고객 집중도 |
+| 2026-05-15 | Fabrinet | NYSE | [후보 노트](/2026/05/15/stock-candidate-note-ai-power-infrastructure/) | 확인 필요 | - | - | - | 후속 분석 후보 | DCI 매출 지속성, 고객 집중도, 설비투자 |
 | 2026-05-14 | 효성중공업 | KOSPI | [분석 글](/2026/05/14/hyosung-heavy-industries-298040-analysis/) | 4,398,000원 | - | - | - | 관찰 시작 | 2Q 이연 물량 반영, 북미 수주, 중공업 마진 |
 | 2026-05-14 | Sterling Infrastructure | NASDAQ | [분석 글](/2026/05/14/sterling-infrastructure-strl-analysis/) | $854.28 | - | - | - | 관찰 시작 | E-Infrastructure 마진, backlog 전환, CEC 통합 |
 | 2026-05-12 | 제룡전기 | KOSDAQ | [분석 글](/2026/05/12/cheryong-electric-033100-analysis/) | 확인 필요 | - | - | - | 관찰 시작 | 2026년 매출 회복, 미국 신규 수주, 영업이익률 |
