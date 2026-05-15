@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-16 | STX엔진 | KOSPI | [후보 노트](/2026/05/16/stock-candidate-note-defense-engines-electronics/) | 45,850원 | - | - | - | 후속 분석 후보 | 방산 수출엔진 계약, 희석 여부, 현금흐름 |
+| 2026-05-16 | Leonardo DRS | NASDAQ | [후보 노트](/2026/05/16/stock-candidate-note-defense-engines-electronics/) | $41.50 | - | - | - | 후속 분석 후보 | funded backlog, segment 마진, FY26 가이던스 |
 | 2026-05-15 | 산일전기 | KOSPI | [후보 노트](/2026/05/15/stock-candidate-note-ai-power-infrastructure/) | 확인 필요 | - | - | - | 후속 분석 후보 | 데이터센터 수주 공시, 1Q26 실적 원문, 고객 집중도 |
 | 2026-05-15 | Fabrinet | NYSE | [후보 노트](/2026/05/15/stock-candidate-note-ai-power-infrastructure/) | 확인 필요 | - | - | - | 후속 분석 후보 | DCI 매출 지속성, 고객 집중도, 설비투자 |
 | 2026-05-14 | 효성중공업 | KOSPI | [분석 글](/2026/05/14/hyosung-heavy-industries-298040-analysis/) | 4,398,000원 | - | - | - | 관찰 시작 | 2Q 이연 물량 반영, 북미 수주, 중공업 마진 |
