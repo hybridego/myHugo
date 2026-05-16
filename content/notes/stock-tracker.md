@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-17 | 우진 | KOSPI | [후보 노트](/2026/05/17/stock-candidate-note-nuclear-smr-supply-chain/) | 21,000원 | - | - | - | 후속 분석 후보 | 원전 계측기 매출비중, DART 희석 여부, 현금흐름 |
+| 2026-05-17 | BWX Technologies | NYSE | [후보 노트](/2026/05/17/stock-candidate-note-nuclear-smr-supply-chain/) | $204.72 | - | - | - | 후속 분석 후보 | backlog 전환, Commercial Operations 마진, PCG 인수 효과 |
 | 2026-05-16 | STX엔진 | KOSPI | [후보 노트](/2026/05/16/stock-candidate-note-defense-engines-electronics/) | 45,850원 | - | - | - | 후속 분석 후보 | 방산 수출엔진 계약, 희석 여부, 현금흐름 |
 | 2026-05-16 | Leonardo DRS | NASDAQ | [후보 노트](/2026/05/16/stock-candidate-note-defense-engines-electronics/) | $41.50 | - | - | - | 후속 분석 후보 | funded backlog, segment 마진, FY26 가이던스 |
 | 2026-05-15 | 산일전기 | KOSPI | [후보 노트](/2026/05/15/stock-candidate-note-ai-power-infrastructure/) | 확인 필요 | - | - | - | 후속 분석 후보 | 데이터센터 수주 공시, 1Q26 실적 원문, 고객 집중도 |
