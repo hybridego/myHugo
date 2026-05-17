@@ -35,17 +35,30 @@ URL: "/notes/stock-tracker/"
 | 2026-05-14 | Sterling Infrastructure | NASDAQ | [분석 글](/2026/05/14/sterling-infrastructure-strl-analysis/) | $854.28 | - | - | - | 관찰 시작 | E-Infrastructure 마진, backlog 전환, CEC 통합 |
 | 2026-05-12 | 제룡전기 | KOSDAQ | [분석 글](/2026/05/12/cheryong-electric-033100-analysis/) | 확인 필요 | - | - | - | 관찰 시작 | 2026년 매출 회복, 미국 신규 수주, 영업이익률 |
 | 2026-05-12 | nVent Electric | NYSE | [분석 글](/2026/05/12/nvent-electric-nvt-analysis/) | 확인 필요 | - | - | - | 관찰 시작 | 백로그 매출 전환, 조정 영업마진, FCF |
+| 2026-05-11 | LS ELECTRIC | KOSPI | [분석 글](/2026/05/11/ls-electric-010120-analysis/) | 304,000원 | - | - | - | 관찰 시작 / 가격 부담 | 신규수주 지속, 매출 인식 속도, 영업이익률 |
+| 2026-05-11 | Modine Manufacturing | NYSE | [분석 글](/2026/05/11/modine-manufacturing-mod-analysis/) | $273.00 | - | - | - | 관찰 시작 / 가격 부담 | FY2026 실적, 데이터센터 매출, 마진 정상화 |
+| 2026-05-08 | 세아베스틸지주 | KOSPI | [분석 글](/2026/05/08/seah-besteel-holdings-001430-analysis/) | 69,700원 | 70,100원 (+0.6%) | - | - | 1주 보합 / 가격 부담 유지 | 철강 업황 회복, 희석·우발채무 원문, 특수강 마진 |
+| 2026-05-08 | Powell Industries | NASDAQ | [분석 글](/2026/05/08/powell-industries-powl-analysis/) | $305.93 | $292.65 (-4.3%) | - | - | 1주 하락 / 과열 경고 유효 | backlog 질, 마진 지속성, 멀티플 정상화 |
+| 2026-05-07 | 에스티아이 | KOSDAQ | [분석 글](/2026/05/07/sti-039440-analysis/) | 39,950원 | 34,050원 (-14.8%) | - | - | 1주 약세 / 추격 리스크 확인 | Nova Tech 계약 매출화, HBM 장비 수주, 2026년 이익 |
+| 2026-05-07 | Onto Innovation | NYSE | [분석 글](/2026/05/07/onto-innovation-onto-analysis/) | $294.05 | $277.28 (-5.7%) | - | - | 1주 약세 / 프리미엄 부담 | 첨단 패키징 수요, EPS 성장, 신규 수주 |
+| 2026-05-06 | HK이노엔 | KOSDAQ | [분석 글](/2026/05/06/hk-innon-195940-analysis/) | 52,000원 | 50,300원 (-3.3%) | - | - | 1주 약세 / 실적 확인 필요 | 케이캡 성장, ETC 마진, R&D 비용 |
+| 2026-05-06 | Argan | NYSE | [분석 글](/2026/05/06/argan-agx-analysis/) | $720.00 | $719.92 (-0.0%) | - | - | 1주 보합 / 고평가 경고 유지 | 수주잔고 전환, 프로젝트 마진, 목표가 괴리 |
+| 2026-05-06 | Broadcom | NASDAQ | [분석 글](/2026/05/06/broadcom-avgo-analysis/) | $427.36 | $416.79 (-2.5%) | - | - | 1주 약세 / 분할 접근 유지 | AI 매출, VMware 통합, FCF |
+| 2026-05-02 | 티앤엘 | KOSDAQ | [분석 글](/2026/05/02/tnl-340570-analysis/) | 61,200원 | 58,400원 (-4.6%) | - | - | 1주 약세 / 고객 집중도 확인 | ODM 물량, 미국 고객 재주문, 마진 |
+| 2026-05-02 | Itron | NASDAQ | [분석 글](/2026/05/02/itron-itri-analysis/) | $85.40 | $81.87 (-4.1%) | - | - | 1주 약세 / 저평가 논리 재점검 | 부채비율, 인수 통합, FCF |
+| 2026-05-01 | SNT에너지 | KOSPI | [분석 글](/2026/05/01/snt-energy-100840-analysis/) | 56,200원 | 56,800원 (+1.1%) | - | - | 1주 보합 / 추격보다 확인 | Air Cooler·HRSG 수주, 1Q 이후 이익률, 프로젝트 원가 |
+| 2026-05-01 | Axcelis Technologies | NASDAQ | [분석 글](/2026/05/01/axcelis-technologies-acls-analysis/) | $139.11 | $163.03 (+17.2%) | - | - | 1주 강세 / 회복 기대는 맞았지만 과열 경계 | SiC 투자 회복, 중국 규제, 주문 회복 |
 
 ## 확인 필요
 
 아래 항목은 과거 글에서 아이디어로 남겼지만, 기준가와 추적 기준을 다시 맞춘 뒤 표에 올릴 예정이다.
 
-- 2026-05-11: LS ELECTRIC, Modine Manufacturing
-- 2026-05-08: 세아베스틸지주, Powell Industries
-- 2026-05-07: 에스티아이, Onto Innovation
-- 2026-05-06: HK이노엔, Argan, Broadcom
-- 2026-05-02: 티앤엘, Itron
-- 2026-05-01: SNT에너지, Axcelis Technologies
+- 2026-04-30: Amkor Technology, 원익QnC, 태광
+- 2026-04-29: AECOM, 고영
+- 2026-04-27: 제이에스코퍼레이션
+- 2026-04-24: Centrus Energy
+- 2026-04-23: Astera Labs, Navitas Semiconductor, 네패스
+- 2026-04-22: Intuitive Surgical, WillScot, 동화기업, 솔브레인홀딩스
 
 ## 복기 메모
 
