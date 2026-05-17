@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-18 | 리노공업 | KOSDAQ | [분석 글](/2026/05/18/leeno-industrial-058470-analysis/) | 101,000원 | - | - | - | 관찰 시작 / 가격 부담 | DART 원문, 2026년 EPS 상향, 소켓 매출 성장 |
+| 2026-05-18 | Kulicke & Soffa | NASDAQ | [분석 글](/2026/05/18/kulicke-soffa-klic-analysis/) | $102.04 | - | - | - | 관찰 시작 / 회복 확인 | Q3 가이던스 달성, TCB 매출 전환, FCF |
 | 2026-05-17 | 우진 | KOSPI | [후보 노트](/2026/05/17/stock-candidate-note-nuclear-smr-supply-chain/) | 21,000원 | - | - | - | 후속 분석 후보 | 원전 계측기 매출비중, DART 희석 여부, 현금흐름 |
 | 2026-05-17 | BWX Technologies | NYSE | [후보 노트](/2026/05/17/stock-candidate-note-nuclear-smr-supply-chain/) | $204.72 | - | - | - | 후속 분석 후보 | backlog 전환, Commercial Operations 마진, PCG 인수 효과 |
 | 2026-05-16 | STX엔진 | KOSPI | [후보 노트](/2026/05/16/stock-candidate-note-defense-engines-electronics/) | 45,850원 | - | - | - | 후속 분석 후보 | 방산 수출엔진 계약, 희석 여부, 현금흐름 |
