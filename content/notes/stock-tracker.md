@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-20 | GST | KOSDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | 확인 필요 | - | - | - | 후속 분석 후보 | DART 열관리 매출, 액침냉각 수주, 고객 집중도 |
+| 2026-05-20 | AAON | NASDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | $130.27 | - | - | - | 후속 분석 후보 | BASX backlog, 데이터센터 냉각 매출, FCF |
 | 2026-05-19 | 동성화인텍 | KOSDAQ | [후보 노트](/2026/05/19/stock-candidate-note-shipbuilding-lng-naval-defense/) | 확인 필요 | - | - | - | 후속 분석 후보 | DART 수주잔고, 보냉재 마진, 원재료 가격 |
 | 2026-05-19 | Huntington Ingalls | NYSE | [후보 노트](/2026/05/19/stock-candidate-note-shipbuilding-lng-naval-defense/) | $329.35 | - | - | - | 후속 분석 후보 | 부문별 마진, backlog 전환, 미 해군 예산 |
 | 2026-05-18 | 리노공업 | KOSDAQ | [분석 글](/2026/05/18/leeno-industrial-058470-analysis/) | 101,000원 | - | - | - | 관찰 시작 / 가격 부담 | DART 원문, 2026년 EPS 상향, 소켓 매출 성장 |
