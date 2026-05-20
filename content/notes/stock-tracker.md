@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-21 | 일진전기 | KOSPI | [분석 글](/2026/05/21/iljin-electric-103590-analysis/) | 100,100원 | - | - | - | 관찰 시작 / 변동성 확인 | 중전기 수주잔고, 홍성 공장 가동률, DART 희석 여부 |
+| 2026-05-21 | Hubbell | NYSE | [분석 글](/2026/05/21/hubbell-hubb-analysis/) | $461.79 | - | - | - | 관찰 시작 / 인수 리스크 확인 | Grid Infrastructure 성장, NSI 인수 부채, 관세·원재료 비용 |
 | 2026-05-20 | GST | KOSDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | 확인 필요 | - | - | - | 후속 분석 후보 | DART 열관리 매출, 액침냉각 수주, 고객 집중도 |
 | 2026-05-20 | AAON | NASDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | $130.27 | - | - | - | 후속 분석 후보 | BASX backlog, 데이터센터 냉각 매출, FCF |
 | 2026-05-19 | 동성화인텍 | KOSDAQ | [후보 노트](/2026/05/19/stock-candidate-note-shipbuilding-lng-naval-defense/) | 확인 필요 | - | - | - | 후속 분석 후보 | DART 수주잔고, 보냉재 마진, 원재료 가격 |
