@@ -77,7 +77,7 @@ home = ["HTML", "RSS", "Algolia"]
   about_me = true
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
-  custom_css = ["css/copy-code.css"]
+  custom_css = ["css/copy-code.css", "css/datatype.css"]
   custom_js = ["js/copy-code.js"]
   [params.social]
   rss            = true 

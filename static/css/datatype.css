@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Datatype";
+  src: url("/fonts/datatype.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 50% 150%;
+  font-display: swap;
+}
+
+.datatype-chart {
+  display: inline-block;
+  font-family: "Datatype", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  font-stretch: 100%;
+  font-variant-ligatures: common-ligatures contextual;
+  font-weight: 450;
+  line-height: 1;
+  vertical-align: -0.08em;
+  white-space: nowrap;
+}
+
+.datatype-chart--compact {
+  font-stretch: 75%;
+}
+
+.datatype-chart--wide {
+  font-stretch: 125%;
+}
+
+.datatype-chart--heavy {
+  font-weight: 650;
+}
