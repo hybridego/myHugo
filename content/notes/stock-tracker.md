@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-23 | 코스메카코리아 | KOSDAQ | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | 75,300원 | - | - | - | 후속 분석 후보 | 미국 자회사 손익, 인디 브랜드 주문, 재고·매출채권 |
+| 2026-05-23 | e.l.f. Beauty | NYSE | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | $52.90 | - | - | - | 후속 분석 후보 | FY2027 가이던스, rhode 인수 비용, 관세·마케팅비 |
 | 2026-05-22 | ISC | KOSDAQ | [후보 노트](/2026/05/22/stock-candidate-note-ai-semiconductor-packaging-test/) | 219,500원 | - | - | - | 후속 분석 후보 | AI·HBM 소켓 매출, 고객 집중도, DART 희석 여부 |
 | 2026-05-22 | FormFactor | NASDAQ | [후보 노트](/2026/05/22/stock-candidate-note-ai-semiconductor-packaging-test/) | $127.93 | - | - | - | 후속 분석 후보 | HBM 프로브카드 매출, gross margin, 고객 집중도 |
 | 2026-05-21 | 일진전기 | KOSPI | [분석 글](/2026/05/21/iljin-electric-103590-analysis/) | 100,100원 | - | - | - | 관찰 시작 / 변동성 확인 | 중전기 수주잔고, 홍성 공장 가동률, DART 희석 여부 |
