@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-25 | 비츠로셀 | KOSDAQ | [분석 글](/2026/05/25/vitzrocell-082920-analysis/) | 60,300원 | - | - | - | 관찰 시작 / 가격 부담 | 2Q 영업이익률, Innova 매출, CB/BW·희석 공시 |
+| 2026-05-25 | EnerSys | NYSE | [분석 글](/2026/05/25/enersys-ens-analysis/) | $232.24 | - | - | - | 관찰 시작 / 조정 대기 | Investor Day, 데이터센터 리튬 솔루션, 45X 제외 마진 |
 | 2026-05-24 | 지니언스 | KOSDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | 16,290원 | - | - | - | 후속 분석 후보 | NAC·EDR 매출, 공공 조달 의존도, 현금흐름·희석 여부 |
 | 2026-05-24 | AvePoint | NASDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | $10.29 | - | - | - | 후속 분석 후보 | ARR, SaaS gross margin, 영업현금흐름 |
 | 2026-05-23 | 코스메카코리아 | KOSDAQ | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | 75,300원 | - | - | - | 후속 분석 후보 | 미국 자회사 손익, 인디 브랜드 주문, 재고·매출채권 |
