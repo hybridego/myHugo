@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-28 | LS마린솔루션 | KOSDAQ | [분석 글](/2026/05/28/ls-marine-solution-060370-analysis/) | 34,250원 | - | - | - | 관찰 시작 / 가격 부담 | 해저케이블 매출 인식, 선박 가동률, 영업이익률, 매출채권 |
+| 2026-05-28 | AZZ Inc. | NYSE | [분석 글](/2026/05/28/azz-inc-azz-analysis/) | $141.36 | - | - | - | 관찰 시작 / 조정 대기 | FY2027 가이던스, Metal Coatings margin, 반복 FCF, 부채 감소 |
 | 2026-05-27 | 에스피지 | KOSDAQ | [후보 노트](/2026/05/27/stock-candidate-note-physical-ai-robotics-automation/) | 127,700원 | - | - | - | 후속 분석 후보 / 가격 부담 | 로봇 감속기 매출비중, DART 희석 여부, 재고·매출채권, 고객군 |
 | 2026-05-27 | Zebra Technologies | NASDAQ | [후보 노트](/2026/05/27/stock-candidate-note-physical-ai-robotics-automation/) | $252.44 | - | - | - | 후속 분석 후보 / 현장 자동화 확인 | AVA 성장률, 제조·물류 주문, FCF, 부채·인수 통합 |
 | 2026-05-26 | 이수페타시스 | KOSPI | [후보 노트](/2026/05/26/stock-candidate-note-ai-optical-networking-datacenter/) | 126,100원 | - | - | - | 후속 분석 후보 | 다중적층 CAPA, 고객 집중도, 수율·판가, DART 현금흐름 |
