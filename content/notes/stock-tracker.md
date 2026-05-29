@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-05-30 | 피에스케이홀딩스 | KOSDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | 106,600원 | - | - | - | 후속 분석 후보 / 발주 지속성 확인 | 리플로우·디스컴 장비 매출, 수주잔고, 재고·매출채권, DART 희석 여부 |
+| 2026-05-30 | Ultra Clean Holdings | NASDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | $85.56 | - | - | - | 후속 분석 후보 / 장비 사이클 확인 | 서비스 매출, 고객 집중도, gross margin, 운전자본 |
 | 2026-05-29 | 인텔리안테크 | KOSDAQ | [후보 노트](/2026/05/29/stock-candidate-note-space-satellite-communications/) | 150,000원 | - | - | - | 후속 분석 후보 / 가격 부담 | OneWeb·항공·해상 단말 매출, R&D 부담, 재고·매출채권, 희석 여부 |
 | 2026-05-29 | Iridium Communications | NASDAQ | [후보 노트](/2026/05/29/stock-candidate-note-space-satellite-communications/) | $51.27 | - | - | - | 후속 분석 후보 / 반복 매출 확인 | IoT 가입자, PNT 매출, FCF, 순부채 감소 |
 | 2026-05-28 | LS마린솔루션 | KOSDAQ | [분석 글](/2026/05/28/ls-marine-solution-060370-analysis/) | 34,250원 | - | - | - | 관찰 시작 / 가격 부담 | 해저케이블 매출 인식, 선박 가동률, 영업이익률, 매출채권 |
