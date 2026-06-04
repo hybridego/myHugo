@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-05 | 케이아이엔엑스 | KOSDAQ | [후보 노트](/2026/06/05/stock-candidate-note-ai-datacenter-power-connectivity/) | 112,400원 | - | - | - | 후속 분석 후보 / 안정형 AI 인프라 | IX·IDC 매출, 신규 CAPA, 전력비, DART 희석 여부 |
+| 2026-06-05 | Bel Fuse | NASDAQ | [후보 노트](/2026/06/05/stock-candidate-note-ai-datacenter-power-connectivity/) | $276.39 | - | - | - | 후속 분석 후보 / 전력·연결 부품 확인 | Q2 가이던스, gross margin, segment 매출, backlog·운전자본 |
 | 2026-05-30 | 피에스케이홀딩스 | KOSDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | 106,600원 | - | - | - | 후속 분석 후보 / 발주 지속성 확인 | 리플로우·디스컴 장비 매출, 수주잔고, 재고·매출채권, DART 희석 여부 |
 | 2026-05-30 | Ultra Clean Holdings | NASDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | $85.56 | - | - | - | 후속 분석 후보 / 장비 사이클 확인 | 서비스 매출, 고객 집중도, gross margin, 운전자본 |
 | 2026-05-29 | 인텔리안테크 | KOSDAQ | [후보 노트](/2026/05/29/stock-candidate-note-space-satellite-communications/) | 150,000원 | - | - | - | 후속 분석 후보 / 가격 부담 | OneWeb·항공·해상 단말 매출, R&D 부담, 재고·매출채권, 희석 여부 |
