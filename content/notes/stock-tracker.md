@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-05-13T23:08:00+09:00
-publishDate: 2026-05-13T23:08:00+09:00
+date: 2026-06-06T08:31:00+09:00
+publishDate: 2026-06-06T08:31:00+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-06 | 피에스텍 | KOSDAQ | [후보 노트](/2026/06/06/stock-candidate-note-grid-digital-metering-infrastructure/) | 5,720원 | - | - | - | 후속 분석 후보 / 전력망 계량 확인 | 보안미터기 납품, 태양광 매출 인식, 당기순이익 반복성, DART 희석 여부 |
+| 2026-06-06 | Itron | NASDAQ | [후보 노트](/2026/06/06/stock-candidate-note-grid-digital-metering-infrastructure/) | $80.07 | - | - | - | 후속 분석 후보 / 유틸리티 데이터 확인 | backlog 전환, Outcomes·Resiliency 비중, Q2 가이던스, FCF |
 | 2026-06-05 | 케이아이엔엑스 | KOSDAQ | [후보 노트](/2026/06/05/stock-candidate-note-ai-datacenter-power-connectivity/) | 112,400원 | - | - | - | 후속 분석 후보 / 안정형 AI 인프라 | IX·IDC 매출, 신규 CAPA, 전력비, DART 희석 여부 |
 | 2026-06-05 | Bel Fuse | NASDAQ | [후보 노트](/2026/06/05/stock-candidate-note-ai-datacenter-power-connectivity/) | $276.39 | - | - | - | 후속 분석 후보 / 전력·연결 부품 확인 | Q2 가이던스, gross margin, segment 매출, backlog·운전자본 |
 | 2026-05-30 | 피에스케이홀딩스 | KOSDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | 106,600원 | - | - | - | 후속 분석 후보 / 발주 지속성 확인 | 리플로우·디스컴 장비 매출, 수주잔고, 재고·매출채권, DART 희석 여부 |
@@ -39,20 +41,20 @@ URL: "/notes/stock-tracker/"
 | 2026-05-26 | Ciena | NYSE | [후보 노트](/2026/05/26/stock-candidate-note-ai-optical-networking-datacenter/) | $583.74 | - | - | - | 후속 분석 후보 | FY2026 2Q 실적, 클라우드 매출, backlog, 고객 집중도 |
 | 2026-05-25 | 비츠로셀 | KOSDAQ | [분석 글](/2026/05/25/vitzrocell-082920-analysis/) | 60,300원 | - | - | - | 관찰 시작 / 가격 부담 | 2Q 영업이익률, Innova 매출, CB/BW·희석 공시 |
 | 2026-05-25 | EnerSys | NYSE | [분석 글](/2026/05/25/enersys-ens-analysis/) | $232.24 | - | - | - | 관찰 시작 / 조정 대기 | Investor Day, 데이터센터 리튬 솔루션, 45X 제외 마진 |
-| 2026-05-24 | 지니언스 | KOSDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | 16,290원 | - | - | - | 후속 분석 후보 | NAC·EDR 매출, 공공 조달 의존도, 현금흐름·희석 여부 |
-| 2026-05-24 | AvePoint | NASDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | $10.29 | - | - | - | 후속 분석 후보 | ARR, SaaS gross margin, 영업현금흐름 |
-| 2026-05-23 | 코스메카코리아 | KOSDAQ | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | 75,300원 | - | - | - | 후속 분석 후보 | 미국 자회사 손익, 인디 브랜드 주문, 재고·매출채권 |
-| 2026-05-23 | e.l.f. Beauty | NYSE | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | $52.90 | - | - | - | 후속 분석 후보 | FY2027 가이던스, rhode 인수 비용, 관세·마케팅비 |
-| 2026-05-22 | ISC | KOSDAQ | [후보 노트](/2026/05/22/stock-candidate-note-ai-semiconductor-packaging-test/) | 219,500원 | - | - | - | 후속 분석 후보 | AI·HBM 소켓 매출, 고객 집중도, DART 희석 여부 |
-| 2026-05-22 | FormFactor | NASDAQ | [후보 노트](/2026/05/22/stock-candidate-note-ai-semiconductor-packaging-test/) | $127.93 | - | - | - | 후속 분석 후보 | HBM 프로브카드 매출, gross margin, 고객 집중도 |
-| 2026-05-21 | 일진전기 | KOSPI | [분석 글](/2026/05/21/iljin-electric-103590-analysis/) | 100,100원 | - | - | - | 관찰 시작 / 변동성 확인 | 중전기 수주잔고, 홍성 공장 가동률, DART 희석 여부 |
-| 2026-05-21 | Hubbell | NYSE | [분석 글](/2026/05/21/hubbell-hubb-analysis/) | $461.79 | - | - | - | 관찰 시작 / 인수 리스크 확인 | Grid Infrastructure 성장, NSI 인수 부채, 관세·원재료 비용 |
-| 2026-05-20 | GST | KOSDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | 확인 필요 | - | - | - | 후속 분석 후보 | DART 열관리 매출, 액침냉각 수주, 고객 집중도 |
-| 2026-05-20 | AAON | NASDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | $130.27 | - | - | - | 후속 분석 후보 | BASX backlog, 데이터센터 냉각 매출, FCF |
-| 2026-05-19 | 동성화인텍 | KOSDAQ | [후보 노트](/2026/05/19/stock-candidate-note-shipbuilding-lng-naval-defense/) | 확인 필요 | - | - | - | 후속 분석 후보 | DART 수주잔고, 보냉재 마진, 원재료 가격 |
-| 2026-05-19 | Huntington Ingalls | NYSE | [후보 노트](/2026/05/19/stock-candidate-note-shipbuilding-lng-naval-defense/) | $329.35 | - | - | - | 후속 분석 후보 | 부문별 마진, backlog 전환, 미 해군 예산 |
-| 2026-05-18 | 리노공업 | KOSDAQ | [분석 글](/2026/05/18/leeno-industrial-058470-analysis/) | 101,000원 | - | - | - | 관찰 시작 / 가격 부담 | DART 원문, 2026년 EPS 상향, 소켓 매출 성장 |
-| 2026-05-18 | Kulicke & Soffa | NASDAQ | [분석 글](/2026/05/18/kulicke-soffa-klic-analysis/) | $102.04 | - | - | - | 관찰 시작 / 회복 확인 | Q3 가이던스 달성, TCB 매출 전환, FCF |
+| 2026-05-24 | 지니언스 | KOSDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | 16,290원 | 15,940원 (-2.1%) | - | - | 1주 약세 / 보안 테마 선별 보류 | NAC·EDR 매출, 공공 조달 의존도, 현금흐름·희석 여부 |
+| 2026-05-24 | AvePoint | NASDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | $10.29 | $10.91 (+6.0%) | - | - | 1주 강세 / SaaS 성장 확인 필요 | ARR, SaaS gross margin, 영업현금흐름 |
+| 2026-05-23 | 코스메카코리아 | KOSDAQ | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | 75,300원 | 71,400원 (-5.2%) | - | - | 1주 약세 / ODM 가격 부담 확인 | 미국 자회사 손익, 인디 브랜드 주문, 재고·매출채권 |
+| 2026-05-23 | e.l.f. Beauty | NYSE | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | $52.90 | $56.00 (+5.9%) | - | - | 1주 강세 / 관세·인수 비용 확인 | FY2027 가이던스, rhode 인수 비용, 관세·마케팅비 |
+| 2026-05-22 | ISC | KOSDAQ | [후보 노트](/2026/05/22/stock-candidate-note-ai-semiconductor-packaging-test/) | 219,500원 | 202,500원 (-7.7%) | - | - | 1주 약세 / HBM 기대 과열 경계 | AI·HBM 소켓 매출, 고객 집중도, DART 희석 여부 |
+| 2026-05-22 | FormFactor | NASDAQ | [후보 노트](/2026/05/22/stock-candidate-note-ai-semiconductor-packaging-test/) | $127.93 | $124.59 (-2.6%) | - | - | 1주 약세 / 프로브카드 수요 확인 | HBM 프로브카드 매출, gross margin, 고객 집중도 |
+| 2026-05-21 | 일진전기 | KOSPI | [분석 글](/2026/05/21/iljin-electric-103590-analysis/) | 100,100원 | 92,900원 (-7.2%) | - | - | 1주 약세 / 변동성 경고 유효 | 중전기 수주잔고, 홍성 공장 가동률, DART 희석 여부 |
+| 2026-05-21 | Hubbell | NYSE | [분석 글](/2026/05/21/hubbell-hubb-analysis/) | $461.79 | $473.61 (+2.6%) | - | - | 1주 강세 / 인수 리스크 확인 | Grid Infrastructure 성장, NSI 인수 부채, 관세·원재료 비용 |
+| 2026-05-20 | GST | KOSDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | 확인 필요 | 확인 필요 | - | - | 기준가 보강 전 / 후보 유지 보류 | DART 열관리 매출, 액침냉각 수주, 고객 집중도 |
+| 2026-05-20 | AAON | NASDAQ | [후보 노트](/2026/05/20/stock-candidate-note-ai-datacenter-cooling/) | $130.27 | $140.20 (+7.6%) | - | - | 1주 강세 / backlog 원문 확인 | BASX backlog, 데이터센터 냉각 매출, FCF |
+| 2026-05-19 | 동성화인텍 | KOSDAQ | [후보 노트](/2026/05/19/stock-candidate-note-shipbuilding-lng-naval-defense/) | 확인 필요 | 확인 필요 | - | - | 기준가 보강 전 / 후보 유지 보류 | DART 수주잔고, 보냉재 마진, 원재료 가격 |
+| 2026-05-19 | Huntington Ingalls | NYSE | [후보 노트](/2026/05/19/stock-candidate-note-shipbuilding-lng-naval-defense/) | $329.35 | $308.17 (-6.4%) | - | - | 1주 약세 / 방산 조선 마진 확인 | 부문별 마진, backlog 전환, 미 해군 예산 |
+| 2026-05-18 | 리노공업 | KOSDAQ | [분석 글](/2026/05/18/leeno-industrial-058470-analysis/) | 101,000원 | 97,400원 (-3.6%) | - | - | 1주 약세 / 가격 부담 유지 | DART 원문, 2026년 EPS 상향, 소켓 매출 성장 |
+| 2026-05-18 | Kulicke & Soffa | NASDAQ | [분석 글](/2026/05/18/kulicke-soffa-klic-analysis/) | $102.04 | $101.89 (-0.1%) | - | - | 1주 보합 / 회복 확인 필요 | Q3 가이던스 달성, TCB 매출 전환, FCF |
 | 2026-05-17 | 우진 | KOSPI | [후보 노트](/2026/05/17/stock-candidate-note-nuclear-smr-supply-chain/) | 21,000원 | 22,100원 (+5.2%) | - | - | 1주 강세 / 원전 테마 수급 확인 | 원전 계측기 매출비중, DART 희석 여부, 현금흐름 |
 | 2026-05-17 | BWX Technologies | NYSE | [후보 노트](/2026/05/17/stock-candidate-note-nuclear-smr-supply-chain/) | $204.72 | $202.91 (-0.9%) | - | - | 1주 보합 / 정책 모멘텀 대비 차분 | backlog 전환, Commercial Operations 마진, PCG 인수 효과 |
 | 2026-05-16 | STX엔진 | KOSPI | [후보 노트](/2026/05/16/stock-candidate-note-defense-engines-electronics/) | 45,850원 | 49,850원 (+8.7%) | - | - | 1주 강세 / 방산 공급망 선택 유효 | 방산 수출엔진 계약, 희석 여부, 현금흐름 |
