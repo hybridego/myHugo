@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-07 | 테크윙 | KOSDAQ | [후보 노트](/2026/06/07/stock-candidate-note-ai-memory-storage-bottleneck/) | 54,700원 | - | - | - | 후속 분석 후보 / HBM 검사장비 확인 | HBM 검사장비 매출, 수주잔고, 순손실 원인, DART 희석 여부 |
+| 2026-06-07 | Western Digital | NASDAQ | [후보 노트](/2026/06/07/stock-candidate-note-ai-memory-storage-bottleneck/) | $511.72 | - | - | - | 후속 분석 후보 / AI 스토리지 병목 확인 | HDD 공급 부족, 장기계약, 가격 결정력, FCF·밸류에이션 |
 | 2026-06-06 | 피에스텍 | KOSDAQ | [후보 노트](/2026/06/06/stock-candidate-note-grid-digital-metering-infrastructure/) | 5,720원 | - | - | - | 후속 분석 후보 / 전력망 계량 확인 | 보안미터기 납품, 태양광 매출 인식, 당기순이익 반복성, DART 희석 여부 |
 | 2026-06-06 | Itron | NASDAQ | [후보 노트](/2026/06/06/stock-candidate-note-grid-digital-metering-infrastructure/) | $80.07 | - | - | - | 후속 분석 후보 / 유틸리티 데이터 확인 | backlog 전환, Outcomes·Resiliency 비중, Q2 가이던스, FCF |
 | 2026-06-05 | 케이아이엔엑스 | KOSDAQ | [후보 노트](/2026/06/05/stock-candidate-note-ai-datacenter-power-connectivity/) | 112,400원 | - | - | - | 후속 분석 후보 / 안정형 AI 인프라 | IX·IDC 매출, 신규 CAPA, 전력비, DART 희석 여부 |
