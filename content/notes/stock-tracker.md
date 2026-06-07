@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-06-06T08:31:00+09:00
-publishDate: 2026-06-06T08:31:00+09:00
+date: 2026-06-07T09:14:00+09:00
+publishDate: 2026-06-07T09:14:00+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -31,18 +31,18 @@ URL: "/notes/stock-tracker/"
 | 2026-06-06 | Itron | NASDAQ | [후보 노트](/2026/06/06/stock-candidate-note-grid-digital-metering-infrastructure/) | $80.07 | - | - | - | 후속 분석 후보 / 유틸리티 데이터 확인 | backlog 전환, Outcomes·Resiliency 비중, Q2 가이던스, FCF |
 | 2026-06-05 | 케이아이엔엑스 | KOSDAQ | [후보 노트](/2026/06/05/stock-candidate-note-ai-datacenter-power-connectivity/) | 112,400원 | - | - | - | 후속 분석 후보 / 안정형 AI 인프라 | IX·IDC 매출, 신규 CAPA, 전력비, DART 희석 여부 |
 | 2026-06-05 | Bel Fuse | NASDAQ | [후보 노트](/2026/06/05/stock-candidate-note-ai-datacenter-power-connectivity/) | $276.39 | - | - | - | 후속 분석 후보 / 전력·연결 부품 확인 | Q2 가이던스, gross margin, segment 매출, backlog·운전자본 |
-| 2026-05-30 | 피에스케이홀딩스 | KOSDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | 106,600원 | - | - | - | 후속 분석 후보 / 발주 지속성 확인 | 리플로우·디스컴 장비 매출, 수주잔고, 재고·매출채권, DART 희석 여부 |
-| 2026-05-30 | Ultra Clean Holdings | NASDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | $85.56 | - | - | - | 후속 분석 후보 / 장비 사이클 확인 | 서비스 매출, 고객 집중도, gross margin, 운전자본 |
-| 2026-05-29 | 인텔리안테크 | KOSDAQ | [후보 노트](/2026/05/29/stock-candidate-note-space-satellite-communications/) | 150,000원 | - | - | - | 후속 분석 후보 / 가격 부담 | OneWeb·항공·해상 단말 매출, R&D 부담, 재고·매출채권, 희석 여부 |
-| 2026-05-29 | Iridium Communications | NASDAQ | [후보 노트](/2026/05/29/stock-candidate-note-space-satellite-communications/) | $51.27 | - | - | - | 후속 분석 후보 / 반복 매출 확인 | IoT 가입자, PNT 매출, FCF, 순부채 감소 |
-| 2026-05-28 | LS마린솔루션 | KOSDAQ | [분석 글](/2026/05/28/ls-marine-solution-060370-analysis/) | 34,250원 | - | - | - | 관찰 시작 / 가격 부담 | 해저케이블 매출 인식, 선박 가동률, 영업이익률, 매출채권 |
-| 2026-05-28 | AZZ Inc. | NYSE | [분석 글](/2026/05/28/azz-inc-azz-analysis/) | $141.36 | - | - | - | 관찰 시작 / 조정 대기 | FY2027 가이던스, Metal Coatings margin, 반복 FCF, 부채 감소 |
-| 2026-05-27 | 에스피지 | KOSDAQ | [후보 노트](/2026/05/27/stock-candidate-note-physical-ai-robotics-automation/) | 127,700원 | - | - | - | 후속 분석 후보 / 가격 부담 | 로봇 감속기 매출비중, DART 희석 여부, 재고·매출채권, 고객군 |
-| 2026-05-27 | Zebra Technologies | NASDAQ | [후보 노트](/2026/05/27/stock-candidate-note-physical-ai-robotics-automation/) | $252.44 | - | - | - | 후속 분석 후보 / 현장 자동화 확인 | AVA 성장률, 제조·물류 주문, FCF, 부채·인수 통합 |
-| 2026-05-26 | 이수페타시스 | KOSPI | [후보 노트](/2026/05/26/stock-candidate-note-ai-optical-networking-datacenter/) | 126,100원 | - | - | - | 후속 분석 후보 | 다중적층 CAPA, 고객 집중도, 수율·판가, DART 현금흐름 |
-| 2026-05-26 | Ciena | NYSE | [후보 노트](/2026/05/26/stock-candidate-note-ai-optical-networking-datacenter/) | $583.74 | - | - | - | 후속 분석 후보 | FY2026 2Q 실적, 클라우드 매출, backlog, 고객 집중도 |
-| 2026-05-25 | 비츠로셀 | KOSDAQ | [분석 글](/2026/05/25/vitzrocell-082920-analysis/) | 60,300원 | - | - | - | 관찰 시작 / 가격 부담 | 2Q 영업이익률, Innova 매출, CB/BW·희석 공시 |
-| 2026-05-25 | EnerSys | NYSE | [분석 글](/2026/05/25/enersys-ens-analysis/) | $232.24 | - | - | - | 관찰 시작 / 조정 대기 | Investor Day, 데이터센터 리튬 솔루션, 45X 제외 마진 |
+| 2026-05-30 | 피에스케이홀딩스 | KOSDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | 106,600원 | 126,400원 (+18.6%) | - | - | 1주 강세 / 후공정 장비 모멘텀 확인 | 리플로우·디스컴 장비 매출, 수주잔고, 재고·매출채권, DART 희석 여부 |
+| 2026-05-30 | Ultra Clean Holdings | NASDAQ | [후보 노트](/2026/05/30/stock-candidate-note-ai-memory-advanced-packaging-equipment/) | $85.56 | $82.07 (-4.1%) | - | - | 1주 약세 / 장비 사이클 확인 필요 | 서비스 매출, 고객 집중도, gross margin, 운전자본 |
+| 2026-05-29 | 인텔리안테크 | KOSDAQ | [후보 노트](/2026/05/29/stock-candidate-note-space-satellite-communications/) | 150,000원 | 111,700원 (-25.5%) | - | - | 1주 급락 / 가격 부담과 수주 검증 우선 | OneWeb·항공·해상 단말 매출, R&D 부담, 재고·매출채권, 희석 여부 |
+| 2026-05-29 | Iridium Communications | NASDAQ | [후보 노트](/2026/05/29/stock-candidate-note-space-satellite-communications/) | $51.27 | $47.36 (-7.6%) | - | - | 1주 약세 / 반복 매출 방어력 재확인 | IoT 가입자, PNT 매출, FCF, 순부채 감소 |
+| 2026-05-28 | LS마린솔루션 | KOSDAQ | [분석 글](/2026/05/28/ls-marine-solution-060370-analysis/) | 34,250원 | 31,800원 (-7.2%) | - | - | 1주 약세 / 가격 부담 확인 | 해저케이블 매출 인식, 선박 가동률, 영업이익률, 매출채권 |
+| 2026-05-28 | AZZ Inc. | NYSE | [분석 글](/2026/05/28/azz-inc-azz-analysis/) | $141.36 | $138.48 (-2.0%) | - | - | 1주 약세 / 조정 대기 유지 | FY2027 가이던스, Metal Coatings margin, 반복 FCF, 부채 감소 |
+| 2026-05-27 | 에스피지 | KOSDAQ | [후보 노트](/2026/05/27/stock-candidate-note-physical-ai-robotics-automation/) | 127,700원 | 123,700원 (-3.1%) | - | - | 1주 약세 / 가격 부담 유지 | 로봇 감속기 매출비중, DART 희석 여부, 재고·매출채권, 고객군 |
+| 2026-05-27 | Zebra Technologies | NASDAQ | [후보 노트](/2026/05/27/stock-candidate-note-physical-ai-robotics-automation/) | $252.44 | $249.30 (-1.2%) | - | - | 1주 보합권 / 현장 자동화 확인 | AVA 성장률, 제조·물류 주문, FCF, 부채·인수 통합 |
+| 2026-05-26 | 이수페타시스 | KOSPI | [후보 노트](/2026/05/26/stock-candidate-note-ai-optical-networking-datacenter/) | 126,100원 | 136,300원 (+8.1%) | - | - | 1주 강세 / 네트워크 기판 모멘텀 확인 | 다중적층 CAPA, 고객 집중도, 수율·판가, DART 현금흐름 |
+| 2026-05-26 | Ciena | NYSE | [후보 노트](/2026/05/26/stock-candidate-note-ai-optical-networking-datacenter/) | $583.74 | $627.00 (+7.4%) | - | - | 1주 강세 / 실적 변동성도 확인 | FY2026 2Q 실적, 클라우드 매출, backlog, 고객 집중도 |
+| 2026-05-25 | 비츠로셀 | KOSDAQ | [분석 글](/2026/05/25/vitzrocell-082920-analysis/) | 60,300원 | 52,000원 (-13.8%) | - | - | 1주 약세 / 가격 부담 확인 | 2Q 영업이익률, Innova 매출, CB/BW·희석 공시 |
+| 2026-05-25 | EnerSys | NYSE | [분석 글](/2026/05/25/enersys-ens-analysis/) | $232.24 | $227.89 (-1.9%) | - | - | 1주 약세 / 조정 대기 유지 | Investor Day, 데이터센터 리튬 솔루션, 45X 제외 마진 |
 | 2026-05-24 | 지니언스 | KOSDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | 16,290원 | 15,940원 (-2.1%) | - | - | 1주 약세 / 보안 테마 선별 보류 | NAC·EDR 매출, 공공 조달 의존도, 현금흐름·희석 여부 |
 | 2026-05-24 | AvePoint | NASDAQ | [후보 노트](/2026/05/24/stock-candidate-note-ai-security-data-protection/) | $10.29 | $10.91 (+6.0%) | - | - | 1주 강세 / SaaS 성장 확인 필요 | ARR, SaaS gross margin, 영업현금흐름 |
 | 2026-05-23 | 코스메카코리아 | KOSDAQ | [후보 노트](/2026/05/23/stock-candidate-note-k-beauty-export-odm/) | 75,300원 | 71,400원 (-5.2%) | - | - | 1주 약세 / ODM 가격 부담 확인 | 미국 자회사 손익, 인디 브랜드 주문, 재고·매출채권 |
@@ -71,15 +71,15 @@ URL: "/notes/stock-tracker/"
 | 2026-05-11 | Modine Manufacturing | NYSE | [분석 글](/2026/05/11/modine-manufacturing-mod-analysis/) | $273.00 | $271.26 (-0.6%) | - | - | 1주 보합 / 마진 확인 필요 | FY2026 실적, 데이터센터 매출, 마진 정상화 |
 | 2026-05-08 | 세아베스틸지주 | KOSPI | [분석 글](/2026/05/08/seah-besteel-holdings-001430-analysis/) | 69,700원 | 70,100원 (+0.6%) | - | - | 1주 보합 / 가격 부담 유지 | 철강 업황 회복, 희석·우발채무 원문, 특수강 마진 |
 | 2026-05-08 | Powell Industries | NASDAQ | [분석 글](/2026/05/08/powell-industries-powl-analysis/) | $305.93 | $292.65 (-4.3%) | - | - | 1주 하락 / 과열 경고 유효 | backlog 질, 마진 지속성, 멀티플 정상화 |
-| 2026-05-07 | 에스티아이 | KOSDAQ | [분석 글](/2026/05/07/sti-039440-analysis/) | 39,950원 | 34,050원 (-14.8%) | - | - | 1주 약세 / 추격 리스크 확인 | Nova Tech 계약 매출화, HBM 장비 수주, 2026년 이익 |
-| 2026-05-07 | Onto Innovation | NYSE | [분석 글](/2026/05/07/onto-innovation-onto-analysis/) | $294.05 | $277.28 (-5.7%) | - | - | 1주 약세 / 프리미엄 부담 | 첨단 패키징 수요, EPS 성장, 신규 수주 |
-| 2026-05-06 | HK이노엔 | KOSDAQ | [분석 글](/2026/05/06/hk-innon-195940-analysis/) | 52,000원 | 50,300원 (-3.3%) | - | - | 1주 약세 / 실적 확인 필요 | 케이캡 성장, ETC 마진, R&D 비용 |
-| 2026-05-06 | Argan | NYSE | [분석 글](/2026/05/06/argan-agx-analysis/) | $720.00 | $719.92 (-0.0%) | - | - | 1주 보합 / 고평가 경고 유지 | 수주잔고 전환, 프로젝트 마진, 목표가 괴리 |
-| 2026-05-06 | Broadcom | NASDAQ | [분석 글](/2026/05/06/broadcom-avgo-analysis/) | $427.36 | $416.79 (-2.5%) | - | - | 1주 약세 / 분할 접근 유지 | AI 매출, VMware 통합, FCF |
-| 2026-05-02 | 티앤엘 | KOSDAQ | [분석 글](/2026/05/02/tnl-340570-analysis/) | 61,200원 | 58,400원 (-4.6%) | - | - | 1주 약세 / 고객 집중도 확인 | ODM 물량, 미국 고객 재주문, 마진 |
-| 2026-05-02 | Itron | NASDAQ | [분석 글](/2026/05/02/itron-itri-analysis/) | $85.40 | $81.87 (-4.1%) | - | - | 1주 약세 / 저평가 논리 재점검 | 부채비율, 인수 통합, FCF |
-| 2026-05-01 | SNT에너지 | KOSPI | [분석 글](/2026/05/01/snt-energy-100840-analysis/) | 56,200원 | 56,800원 (+1.1%) | - | - | 1주 보합 / 추격보다 확인 | Air Cooler·HRSG 수주, 1Q 이후 이익률, 프로젝트 원가 |
-| 2026-05-01 | Axcelis Technologies | NASDAQ | [분석 글](/2026/05/01/axcelis-technologies-acls-analysis/) | $139.11 | $163.03 (+17.2%) | - | - | 1주 강세 / 회복 기대는 맞았지만 과열 경계 | SiC 투자 회복, 중국 규제, 주문 회복 |
+| 2026-05-07 | 에스티아이 | KOSDAQ | [분석 글](/2026/05/07/sti-039440-analysis/) | 39,950원 | 34,050원 (-14.8%) | 28,000원 (-29.9%) | - | 1개월 약세 / 추격 리스크 확인 | Nova Tech 계약 매출화, HBM 장비 수주, 2026년 이익 |
+| 2026-05-07 | Onto Innovation | NYSE | [분석 글](/2026/05/07/onto-innovation-onto-analysis/) | $294.05 | $277.28 (-5.7%) | $253.24 (-13.9%) | - | 1개월 약세 / 프리미엄 부담 확인 | 첨단 패키징 수요, EPS 성장, 신규 수주 |
+| 2026-05-06 | HK이노엔 | KOSDAQ | [분석 글](/2026/05/06/hk-innon-195940-analysis/) | 52,000원 | 50,300원 (-3.3%) | 41,200원 (-20.8%) | - | 1개월 약세 / 방어주 논리 재점검 | 케이캡 성장, ETC 마진, R&D 비용 |
+| 2026-05-06 | Argan | NYSE | [분석 글](/2026/05/06/argan-agx-analysis/) | $720.00 | $719.92 (-0.0%) | $694.72 (-3.5%) | - | 1개월 소폭 약세 / 고평가 경고 유지 | 수주잔고 전환, 프로젝트 마진, 목표가 괴리 |
+| 2026-05-06 | Broadcom | NASDAQ | [분석 글](/2026/05/06/broadcom-avgo-analysis/) | $427.36 | $416.79 (-2.5%) | $385.73 (-9.7%) | - | 1개월 약세 / 분할 접근 유지 | AI 매출, VMware 통합, FCF |
+| 2026-05-02 | 티앤엘 | KOSDAQ | [분석 글](/2026/05/02/tnl-340570-analysis/) | 61,200원 | 58,400원 (-4.6%) | 54,400원 (-11.1%) | - | 1개월 약세 / 고객 집중도 확인 | ODM 물량, 미국 고객 재주문, 마진 |
+| 2026-05-02 | Itron | NASDAQ | [분석 글](/2026/05/02/itron-itri-analysis/) | $85.40 | $81.87 (-4.1%) | $83.94 (-1.7%) | - | 1개월 보합권 / 저평가 논리 재점검 | 부채비율, 인수 통합, FCF |
+| 2026-05-01 | SNT에너지 | KOSPI | [분석 글](/2026/05/01/snt-energy-100840-analysis/) | 56,200원 | 56,800원 (+1.1%) | 36,800원 (-34.5%) | - | 1개월 급락 / 프로젝트 원가·수주 재점검 | Air Cooler·HRSG 수주, 1Q 이후 이익률, 프로젝트 원가 |
+| 2026-05-01 | Axcelis Technologies | NASDAQ | [분석 글](/2026/05/01/axcelis-technologies-acls-analysis/) | $139.11 | $163.03 (+17.2%) | $150.42 (+8.1%) | - | 1개월 강세 유지 / 과열 경계 | SiC 투자 회복, 중국 규제, 주문 회복 |
 
 ## 확인 필요
 
