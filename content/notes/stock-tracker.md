@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-08 | 한국카본 | KOSPI | [분석 글](/2026/06/08/hankuk-carbon-017960-analysis/) | 32,250원 | - | - | - | 후속 관찰 / LNG 보냉재 실적 확인 | 반기 영업이익률, 수주잔고, 종속회사 유상증자·출자, 원재료 가격 |
+| 2026-06-08 | Curtiss-Wright | NYSE | [분석 글](/2026/06/08/curtiss-wright-cw-analysis/) | $733.14 | - | - | - | 후속 관찰 / 방산·해군·원전 프리미엄 가격 부담 | Naval & Power backlog, FCF 가이던스, P/E 정상화, 마진 유지 |
 | 2026-06-07 | 테크윙 | KOSDAQ | [후보 노트](/2026/06/07/stock-candidate-note-ai-memory-storage-bottleneck/) | 54,700원 | - | - | - | 후속 분석 후보 / HBM 검사장비 확인 | HBM 검사장비 매출, 수주잔고, 순손실 원인, DART 희석 여부 |
 | 2026-06-07 | Western Digital | NASDAQ | [후보 노트](/2026/06/07/stock-candidate-note-ai-memory-storage-bottleneck/) | $511.72 | - | - | - | 후속 분석 후보 / AI 스토리지 병목 확인 | HDD 공급 부족, 장기계약, 가격 결정력, FCF·밸류에이션 |
 | 2026-06-06 | 피에스텍 | KOSDAQ | [후보 노트](/2026/06/06/stock-candidate-note-grid-digital-metering-infrastructure/) | 5,720원 | - | - | - | 후속 분석 후보 / 전력망 계량 확인 | 보안미터기 납품, 태양광 매출 인식, 당기순이익 반복성, DART 희석 여부 |
