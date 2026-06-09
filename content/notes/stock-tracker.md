@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-10 | 가온전선 | KOSPI | [후보 노트](/2026/06/10/stock-candidate-note-ai-power-grid-electrical-contractors/) | 322,000원 | - | - | - | 후속 분석 후보 / AI 데이터센터 케이블 확인 | LSCUS·버스덕트 매출, 미국 수출, 영업이익률, DART 희석 여부 |
+| 2026-06-10 | MYR Group | NASDAQ | [후보 노트](/2026/06/10/stock-candidate-note-ai-power-grid-electrical-contractors/) | $431.70 | - | - | - | 후속 분석 후보 / 전력망 전기공사 확인 | T&D backlog, C&I margin, 운전자본, 프로젝트 원가 |
 | 2026-06-09 | 키움증권 | KOSPI | [후보 노트](/2026/06/09/stock-candidate-note-brokerage-trading-platforms/) | 330,500원 | - | - | - | 후속 분석 후보 / 거래대금 레버리지 확인 | 위탁매매 수수료, 신용공여 잔액, 이자수익, 충당금 |
 | 2026-06-09 | Interactive Brokers | NASDAQ | [후보 노트](/2026/06/09/stock-candidate-note-brokerage-trading-platforms/) | $84.40 | - | - | - | 후속 분석 후보 / 글로벌 거래활동 확인 | DARTs, 고객자산, 마진대출, 금리 민감도 |
 | 2026-06-08 | 한국카본 | KOSPI | [분석 글](/2026/06/08/hankuk-carbon-017960-analysis/) | 32,250원 | - | - | - | 후속 관찰 / LNG 보냉재 실적 확인 | 반기 영업이익률, 수주잔고, 종속회사 유상증자·출자, 원재료 가격 |
