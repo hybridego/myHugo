@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-11 | 한전KPS | KOSPI | [분석 글](/2026/06/11/kepco-kps-051600-analysis/) | 46,850원 | - | - | - | 후속 관찰 / 원전 정비 회복 확인 | 2Q 원전 정비 매출, 영업이익률, 외주비·재료비, DART 우발채무 |
+| 2026-06-11 | Comfort Systems USA | NYSE | [분석 글](/2026/06/11/comfort-systems-usa-fix-analysis/) | $1,830.29 | - | - | - | 후속 관찰 / AI 데이터센터 기계·전기 공사 확인 | backlog, operating margin, data center mix, FCF, project cost risk |
 | 2026-06-10 | 가온전선 | KOSPI | [후보 노트](/2026/06/10/stock-candidate-note-ai-power-grid-electrical-contractors/) | 322,000원 | - | - | - | 후속 분석 후보 / AI 데이터센터 케이블 확인 | LSCUS·버스덕트 매출, 미국 수출, 영업이익률, DART 희석 여부 |
 | 2026-06-10 | MYR Group | NASDAQ | [후보 노트](/2026/06/10/stock-candidate-note-ai-power-grid-electrical-contractors/) | $431.70 | - | - | - | 후속 분석 후보 / 전력망 전기공사 확인 | T&D backlog, C&I margin, 운전자본, 프로젝트 원가 |
 | 2026-06-09 | 키움증권 | KOSPI | [후보 노트](/2026/06/09/stock-candidate-note-brokerage-trading-platforms/) | 330,500원 | - | - | - | 후속 분석 후보 / 거래대금 레버리지 확인 | 위탁매매 수수료, 신용공여 잔액, 이자수익, 충당금 |
