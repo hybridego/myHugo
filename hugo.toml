@@ -1,7 +1,7 @@
 baseurl = "https://hybridego.github.io/"
 title = "Lionel Blog"
 theme = "hugo-theme-cleanwhite"
-languageCode = "ko-kr"
+locale = "ko-KR"
 preserveTaxonomyNames = true
 hasCJKLanguage = true
 enableRobotsTXT = true
@@ -20,10 +20,12 @@ enableRobotsTXT = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
+  title = "Lionel Blog"
   header_image = "img/home-bg-jeep.jpg"
-  SEOTitle = "Lionel 블로그 | Lionel Blog"
-  description = "Lionel.J, programmer, open source enthusiast, life adventurer | This is Lionel's blog, discovering a bigger world with you."
-  keyword = "Lionel.J, lionel jeon, Lionel Jeon, hybridego, Lionel's web log, Lionel's blog, Lionel Blog, blog, personal website, internet, Web, cloud native, PaaS, Istio, Kubernetes, microservices"
+  SEOTitle = "Lionel Blog | 주식 리서치와 프로그래밍"
+  description = "주식 리서치, 투자 후보 추적, Linux·Hugo·Rust·AI 개발 기록을 정리합니다."
+  descriptionLength = 80
+  keyword = "Lionel Blog, Lionel.J, hybridego, 주식 리서치, 주식 분석, 투자 후보, 국내주식, 미국주식, 프로그래밍, Linux, Hugo, Rust, AI, Kubernetes, microservices"
   slogan = "The road is under your feet, the heart looks to the distance"
   upstreamAttribution = true
 
@@ -85,6 +87,7 @@ home = ["HTML", "RSS", "Algolia"]
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   twitter       = "https://x.com/LioJeon"
+  twitter_handle = "@LioJeon"
   linkedin       = "https://www.linkedin.com/in/hocheol-jeon-5569b067/"
   # stackoverflow  = "https://stackoverflow.com/users/yourstackoverflowid"  
   #instagram     = "full profile url in instagram"
