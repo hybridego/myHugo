@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-13 | SGC에너지 | KOSPI | [후보 노트](/2026/06/13/stock-candidate-note-ai-power-supply-distributed-generation/) | 58,400원 | - | - | - | 후속 분석 후보 / AI 전력확보 간접 수혜 확인 | 발전·에너지 영업이익률, REC 판매, 건설 리스크, 차입금, 데이터센터 직접 계약 |
+| 2026-06-13 | Vistra | NYSE | [후보 노트](/2026/06/13/stock-candidate-note-ai-power-supply-distributed-generation/) | $148.02 | - | - | - | 후속 분석 후보 / Helix 전력 파트너 확인 | Helix 계약 구조, EBITDA 가이던스, FCF, 전력가격 헤지, 규제 리스크 |
 | 2026-06-12 | 유니셈 | KOSDAQ | [후보 노트](/2026/06/12/stock-candidate-note-ai-optical-power-conversion/) | 10,820원 | - | - | - | 후속 분석 후보 / 반도체 팹 환경제어 확인 | 스크러버·칠러 매출, HBM 라인 수주, 영업이익률, DART 희석 여부 |
 | 2026-06-12 | Advanced Energy Industries | NASDAQ | [후보 노트](/2026/06/12/stock-candidate-note-ai-optical-power-conversion/) | $333.37 | - | - | - | 후속 분석 후보 / AI 데이터센터 전력변환 확인 | data center computing 매출, 800V DC 채택, 재고, 영업현금흐름, 전환사채 희석 |
 | 2026-06-11 | 한전KPS | KOSPI | [분석 글](/2026/06/11/kepco-kps-051600-analysis/) | 46,850원 | - | - | - | 후속 관찰 / 원전 정비 회복 확인 | 2Q 원전 정비 매출, 영업이익률, 외주비·재료비, DART 우발채무 |
