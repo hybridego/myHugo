@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-15 | 티에스이 | KOSDAQ | [분석 글](/2026/06/15/tse-131290-analysis/) | 270,500원 | - | - | - | 후속 관찰 / HBM·DRAM 테스트 부품 실적 확인 | 2Q 매출·영업이익률, 매출채권 회수, 재고, 고객사 CAPEX, DART 희석 여부 |
+| 2026-06-15 | TTM Technologies | NASDAQ | [분석 글](/2026/06/15/ttm-technologies-ttmi-analysis/) | $194.05 | - | - | - | 후속 관찰 / AI 데이터센터·방산 PCB 수요 확인 | 2Q 가이던스 달성, book-to-bill, A&D backlog, Data Center 비중, FCF |
 | 2026-06-14 | 제룡산업 | KOSDAQ | [후보 노트](/2026/06/14/stock-candidate-note-ai-grid-protection-metering/) | 7,650원 | - | - | - | 후속 분석 후보 / AI 전력망 보호·계측 확인 | 반기 매출 구성, 수주잔고, 영업이익률, 전력망 제품 비중, DART 희석 여부 |
 | 2026-06-14 | Littelfuse | NASDAQ | [후보 노트](/2026/06/14/stock-candidate-note-ai-grid-protection-metering/) | $472.14 | - | - | - | 후속 분석 후보 / 데이터센터 회로보호 확인 | 2Q 전자·산업 매출, 48V 보호 제품 매출 언급, 재고, FCF, 밸류에이션 부담 |
 | 2026-06-13 | SGC에너지 | KOSPI | [후보 노트](/2026/06/13/stock-candidate-note-ai-power-supply-distributed-generation/) | 58,400원 | - | - | - | 후속 분석 후보 / AI 전력확보 간접 수혜 확인 | 발전·에너지 영업이익률, REC 판매, 건설 리스크, 차입금, 데이터센터 직접 계약 |
