@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-16 | 오이솔루션 | KOSDAQ | [후보 노트](/2026/06/16/stock-candidate-note-ai-fiber-optical-datacenter/) | 31,550원 | - | - | - | 후속 분석 후보 / 데이터센터 광원·광트랜시버 확인 | 2Q 영업흑자, CPO 외부 광원 진척, 데이터센터 매출 비중, 고객 집중도, DART 희석 여부 |
+| 2026-06-16 | Corning | NYSE | [후보 노트](/2026/06/16/stock-candidate-note-ai-fiber-optical-datacenter/) | $187.88 | - | - | - | 후속 분석 후보 / AI 광섬유 병목 확인 | 2Q Optical Communications 성장률, 고객 선투자 계약, 마진, FCF, 밸류에이션 부담 |
 | 2026-06-15 | 티에스이 | KOSDAQ | [분석 글](/2026/06/15/tse-131290-analysis/) | 270,500원 | - | - | - | 후속 관찰 / HBM·DRAM 테스트 부품 실적 확인 | 2Q 매출·영업이익률, 매출채권 회수, 재고, 고객사 CAPEX, DART 희석 여부 |
 | 2026-06-15 | TTM Technologies | NASDAQ | [분석 글](/2026/06/15/ttm-technologies-ttmi-analysis/) | $194.05 | - | - | - | 후속 관찰 / AI 데이터센터·방산 PCB 수요 확인 | 2Q 가이던스 달성, book-to-bill, A&D backlog, Data Center 비중, FCF |
 | 2026-06-14 | 제룡산업 | KOSDAQ | [후보 노트](/2026/06/14/stock-candidate-note-ai-grid-protection-metering/) | 7,650원 | - | - | - | 후속 분석 후보 / AI 전력망 보호·계측 확인 | 반기 매출 구성, 수주잔고, 영업이익률, 전력망 제품 비중, DART 희석 여부 |
