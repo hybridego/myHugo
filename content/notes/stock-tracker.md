@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-17 | LIG디펜스앤에어로스페이스 | KOSPI | [후보 노트](/2026/06/17/stock-candidate-note-air-defense-missile-electronics/) | 1,002,000원 | - | - | - | 후속 분석 후보 / 중동 방공 미사일 수요 확인 | 천궁-II 추가 수출 공시, 수주잔고, 수출 마진, 급등 후 밸류에이션, DART 희석 여부 |
+| 2026-06-17 | RTX | NYSE | [후보 노트](/2026/06/17/stock-candidate-note-air-defense-missile-electronics/) | $186.77 | - | - | - | 후속 분석 후보 / Patriot·GEM-T 방공 매출 확인 | Raytheon 매출 성장률, Patriot·GEM-T 물량, 방산 백로그, 공급망 비용, FCF |
 | 2026-06-16 | 오이솔루션 | KOSDAQ | [후보 노트](/2026/06/16/stock-candidate-note-ai-fiber-optical-datacenter/) | 31,550원 | - | - | - | 후속 분석 후보 / 데이터센터 광원·광트랜시버 확인 | 2Q 영업흑자, CPO 외부 광원 진척, 데이터센터 매출 비중, 고객 집중도, DART 희석 여부 |
 | 2026-06-16 | Corning | NYSE | [후보 노트](/2026/06/16/stock-candidate-note-ai-fiber-optical-datacenter/) | $187.88 | - | - | - | 후속 분석 후보 / AI 광섬유 병목 확인 | 2Q Optical Communications 성장률, 고객 선투자 계약, 마진, FCF, 밸류에이션 부담 |
 | 2026-06-15 | 티에스이 | KOSDAQ | [분석 글](/2026/06/15/tse-131290-analysis/) | 270,500원 | - | - | - | 후속 관찰 / HBM·DRAM 테스트 부품 실적 확인 | 2Q 매출·영업이익률, 매출채권 회수, 재고, 고객사 CAPEX, DART 희석 여부 |
