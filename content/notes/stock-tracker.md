@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-18 | 우진 | KOSPI | [분석 글](/2026/06/18/woojin-105840-analysis/) | 20,050원 | - | - | - | 후속 관찰 / 원전 계측기·반도체 온도센서 확인 | 2Q 매출·영업이익률, 반도체 센서 성장률, 원전 계측기 수주, DART 희석 여부 |
+| 2026-06-18 | BWX Technologies | NYSE | [분석 글](/2026/06/18/bwx-technologies-bwxt-analysis/) | $203.07 | - | - | - | 후속 관찰 / 원전 공급망·mPower 옵션 확인 | 2Q EBITDA, Commercial Operations 마진, FCF 가이던스, mPower NRC 일정, 부채 |
 | 2026-06-17 | LIG디펜스앤에어로스페이스 | KOSPI | [후보 노트](/2026/06/17/stock-candidate-note-air-defense-missile-electronics/) | 1,002,000원 | - | - | - | 후속 분석 후보 / 중동 방공 미사일 수요 확인 | 천궁-II 추가 수출 공시, 수주잔고, 수출 마진, 급등 후 밸류에이션, DART 희석 여부 |
 | 2026-06-17 | RTX | NYSE | [후보 노트](/2026/06/17/stock-candidate-note-air-defense-missile-electronics/) | $186.77 | - | - | - | 후속 분석 후보 / Patriot·GEM-T 방공 매출 확인 | Raytheon 매출 성장률, Patriot·GEM-T 물량, 방산 백로그, 공급망 비용, FCF |
 | 2026-06-16 | 오이솔루션 | KOSDAQ | [후보 노트](/2026/06/16/stock-candidate-note-ai-fiber-optical-datacenter/) | 31,550원 | - | - | - | 후속 분석 후보 / 데이터센터 광원·광트랜시버 확인 | 2Q 영업흑자, CPO 외부 광원 진척, 데이터센터 매출 비중, 고객 집중도, DART 희석 여부 |
