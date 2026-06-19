@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-20 | 동진쎄미켐 | KOSDAQ | [후보 노트](/2026/06/20/stock-candidate-note-ai-semiconductor-materials-equipment/) | 60,300원 | - | - | - | 후속 분석 후보 / AI 반도체 포토레지스트·공정 소재 확인 | 2Q 매출·영업이익률, 포토레지스트 매출, CMP 소재, 고객사 CAPEX, DART 희석 여부 |
+| 2026-06-20 | Photronics | NASDAQ | [후보 노트](/2026/06/20/stock-candidate-note-ai-semiconductor-materials-equipment/) | $30.73 | - | - | - | 후속 분석 후보 / 포토마스크 수요 회복 확인 | IC 포토마스크 매출, FPD 의존도, Allen·Korea 증설, FCF, 밸류에이션 |
 | 2026-06-19 | 코스맥스 | KOSPI | [후보 노트](/2026/06/19/stock-candidate-note-k-beauty-global-consumer/) | 165,600원 | - | - | - | 후속 분석 후보 / K-뷰티 ODM·미국 턴어라운드 확인 | 2Q 매출·영업이익률, 미국 법인 손실 축소, 평택 증설 가동률, 재고·매출채권 |
 | 2026-06-19 | Ulta Beauty | NASDAQ | [후보 노트](/2026/06/19/stock-candidate-note-k-beauty-global-consumer/) | $456.13 | - | - | - | 후속 분석 후보 / 미국 뷰티 소비·리테일 마진 확인 | comparable sales, gross margin, 재고, 멤버십 지표, 판촉 강도 |
 | 2026-06-18 | 우진 | KOSPI | [분석 글](/2026/06/18/woojin-105840-analysis/) | 20,050원 | - | - | - | 후속 관찰 / 원전 계측기·반도체 온도센서 확인 | 2Q 매출·영업이익률, 반도체 센서 성장률, 원전 계측기 수주, DART 희석 여부 |
