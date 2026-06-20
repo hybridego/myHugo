@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-21 | 대한전선 | KOSPI | [후보 노트](/2026/06/21/stock-candidate-note-ai-datacenter-grid-interconnection/) | 38,250원 | - | - | - | 후속 분석 후보 / AI 데이터센터 전력 접속·초고압 케이블 확인 | 2Q 신규 수주, 수주잔고, 초고압·해저·HVDC 매출, 영업이익률, DART 희석 여부 |
+| 2026-06-21 | Atkore | NYSE | [후보 노트](/2026/06/21/stock-candidate-note-ai-datacenter-grid-interconnection/) | $81.17 | - | - | - | 후속 분석 후보 / 전기 도관·인프라 부품 턴어라운드 확인 | FY2026 조정 EBITDA, 전기 도관 수요, 현금흐름, 가격 경쟁, 데이터센터 직접 노출 |
 | 2026-06-20 | 동진쎄미켐 | KOSDAQ | [후보 노트](/2026/06/20/stock-candidate-note-ai-semiconductor-materials-equipment/) | 60,300원 | - | - | - | 후속 분석 후보 / AI 반도체 포토레지스트·공정 소재 확인 | 2Q 매출·영업이익률, 포토레지스트 매출, CMP 소재, 고객사 CAPEX, DART 희석 여부 |
 | 2026-06-20 | Photronics | NASDAQ | [후보 노트](/2026/06/20/stock-candidate-note-ai-semiconductor-materials-equipment/) | $30.73 | - | - | - | 후속 분석 후보 / 포토마스크 수요 회복 확인 | IC 포토마스크 매출, FPD 의존도, Allen·Korea 증설, FCF, 밸류에이션 |
 | 2026-06-19 | 코스맥스 | KOSPI | [후보 노트](/2026/06/19/stock-candidate-note-k-beauty-global-consumer/) | 165,600원 | - | - | - | 후속 분석 후보 / K-뷰티 ODM·미국 턴어라운드 확인 | 2Q 매출·영업이익률, 미국 법인 손실 축소, 평택 증설 가동률, 재고·매출채권 |
