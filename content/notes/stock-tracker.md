@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-06-21T09:12:00+09:00
-publishDate: 2026-06-21T09:12:00+09:00
+date: 2026-06-22T08:34:00+09:00
+publishDate: 2026-06-22T08:34:00+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-22 | LS에코에너지 | KOSPI | [분석 글](/2026/06/22/ls-eco-energy-229640-analysis/) | 61,000원 | - | - | - | 후속 관찰 / AI 데이터센터 전력망·초고압 케이블 확인 | 2Q 매출·영업이익률, 북미 초고압 케이블 수주, 통신케이블 물량, 구리·환율, DART 희석 여부 |
+| 2026-06-22 | IES Holdings | NASDAQ | [분석 글](/2026/06/22/ies-holdings-iesc-analysis/) | $712.39 | - | - | - | 후속 관찰 / 데이터센터 전기공사 backlog 확인 | FY3Q Communications 성장, Infrastructure Solutions 마진, backlog 전환, Residential 약세, 내부자 매도 |
 | 2026-06-21 | 대한전선 | KOSPI | [후보 노트](/2026/06/21/stock-candidate-note-ai-datacenter-grid-interconnection/) | 38,250원 | - | - | - | 후속 분석 후보 / AI 데이터센터 전력 접속·초고압 케이블 확인 | 2Q 신규 수주, 수주잔고, 초고압·해저·HVDC 매출, 영업이익률, DART 희석 여부 |
 | 2026-06-21 | Atkore | NYSE | [후보 노트](/2026/06/21/stock-candidate-note-ai-datacenter-grid-interconnection/) | $81.17 | - | - | - | 후속 분석 후보 / 전기 도관·인프라 부품 턴어라운드 확인 | FY2026 조정 EBITDA, 전기 도관 수요, 현금흐름, 가격 경쟁, 데이터센터 직접 노출 |
 | 2026-06-20 | 동진쎄미켐 | KOSDAQ | [후보 노트](/2026/06/20/stock-candidate-note-ai-semiconductor-materials-equipment/) | 60,300원 | - | - | - | 후속 분석 후보 / AI 반도체 포토레지스트·공정 소재 확인 | 2Q 매출·영업이익률, 포토레지스트 매출, CMP 소재, 고객사 CAPEX, DART 희석 여부 |
