@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-24 | HD건설기계 | KOSPI | [후보 노트](/2026/06/24/stock-candidate-note-middle-east-reconstruction-construction-equipment/) | 121,900원 | - | - | - | 후속 분석 후보 / 중동 재건·건설기계 지역 매출 확인 | 2Q 지역별 매출, 중동·아프리카 수주, 합병 시너지, 영업이익률, DART 희석 여부 |
+| 2026-06-24 | Terex | NYSE | [후보 노트](/2026/06/24/stock-candidate-note-middle-east-reconstruction-construction-equipment/) | $67.94 | - | - | - | 후속 분석 후보 / 재건·유틸리티 장비 backlog 확인 | backlog 전환, book-to-bill, Specialty Vehicles 통합, FCF, 중동 직접 노출 |
 | 2026-06-23 | GST | KOSDAQ | [후보 노트](/2026/06/23/stock-candidate-note-ai-datacenter-cooling-thermal-management/) | 56,000원 | - | - | - | 후속 분석 후보 / 액침냉각·스크러버·칠러 실적 확인 | 액침냉각 수주, 매출 비중, 스크러버·칠러 마진, 고객사 CAPEX, DART 희석 여부 |
 | 2026-06-23 | Carrier Global | NYSE | [후보 노트](/2026/06/23/stock-candidate-note-ai-datacenter-cooling-thermal-management/) | $71.85 | - | - | - | 후속 분석 후보 / 데이터센터 냉각 주문 전환 확인 | 데이터센터 backlog 매출화, Commercial HVAC 마진, 관세·원가, FCF, 기존 HVAC 수요 |
 | 2026-06-22 | LS에코에너지 | KOSPI | [분석 글](/2026/06/22/ls-eco-energy-229640-analysis/) | 61,000원 | - | - | - | 후속 관찰 / AI 데이터센터 전력망·초고압 케이블 확인 | 2Q 매출·영업이익률, 북미 초고압 케이블 수주, 통신케이블 물량, 구리·환율, DART 희석 여부 |
