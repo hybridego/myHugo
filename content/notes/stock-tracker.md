@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-26 | SK하이닉스 | KOSPI | [후보 노트](/2026/06/26/stock-candidate-note-ai-memory-hbm/) | 2,917,000원 | - | - | - | 후속 분석 후보 / AI 메모리·HBM 실적 검증 | 2Q HBM 매출 비중, 영업이익률, CAPEX, DRAM 가격, 고객별 공급 계약 |
+| 2026-06-26 | Micron Technology | NASDAQ | [후보 노트](/2026/06/26/stock-candidate-note-ai-memory-hbm/) | $1,213.56 | - | - | - | 후속 분석 후보 / HBM 수요와 가이던스 확인 | FY4Q 가이던스, HBM 계약, gross margin, FCF, 공급 증가 속도 |
 | 2026-06-24 | HD건설기계 | KOSPI | [후보 노트](/2026/06/24/stock-candidate-note-middle-east-reconstruction-construction-equipment/) | 121,900원 | - | - | - | 후속 분석 후보 / 중동 재건·건설기계 지역 매출 확인 | 2Q 지역별 매출, 중동·아프리카 수주, 합병 시너지, 영업이익률, DART 희석 여부 |
 | 2026-06-24 | Terex | NYSE | [후보 노트](/2026/06/24/stock-candidate-note-middle-east-reconstruction-construction-equipment/) | $67.94 | - | - | - | 후속 분석 후보 / 재건·유틸리티 장비 backlog 확인 | backlog 전환, book-to-bill, Specialty Vehicles 통합, FCF, 중동 직접 노출 |
 | 2026-06-23 | GST | KOSDAQ | [후보 노트](/2026/06/23/stock-candidate-note-ai-datacenter-cooling-thermal-management/) | 56,000원 | - | - | - | 후속 분석 후보 / 액침냉각·스크러버·칠러 실적 확인 | 액침냉각 수주, 매출 비중, 스크러버·칠러 마진, 고객사 CAPEX, DART 희석 여부 |
