@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-06-30 | HD현대일렉트릭 | KOSPI | [후보 노트](/2026/06/30/stock-candidate-note-ai-power-bottleneck/) | 937,000원 | - | - | - | 후속 분석 후보 / AI 전력 병목과 초고압 변압기 수주 확인 | 2Q 수주잔고, 북미 매출, 영업이익률, 현금흐름, DART 희석 여부 |
+| 2026-06-30 | Vertiv | NYSE | [후보 노트](/2026/06/30/stock-candidate-note-ai-power-bottleneck/) | $307.01 | - | - | - | 후속 분석 후보 / 데이터센터 전력·냉각 수요 확인 | backlog, book-to-bill, 액체냉각 매출, 조정 영업마진, FCF |
 | 2026-06-29 | 삼성전자 | KOSPI | [분석 글](/2026/06/29/samsung-electronics-005930-analysis/) | 339,500원 | - | - | - | 후속 관찰 / AI 메모리 회복은 강하지만 가격 부담 확인 | 2Q DS 영업이익, HBM4 매출, DRAM 가격, 310,000원 방어, DART 희석 여부 |
 | 2026-06-29 | GE Vernova | NYSE | [분석 글](/2026/06/29/ge-vernova-gev-analysis/) | $1,045.17 | - | - | - | 후속 관찰 / AI 전력 병목과 백로그의 이익 전환 확인 | 2Q orders, Electrification book-to-bill, Power backlog, Wind 손실, FCF 가이던스 |
 | 2026-06-27 | LG에너지솔루션 | KOSPI | [후보 노트](/2026/06/27/stock-candidate-note-ai-datacenter-ess/) | 331,500원 | - | - | - | 후속 분석 후보 / AI 데이터센터 ESS와 EV 둔화 상쇄 확인 | 2Q ESS 매출 비중, DTE 6GWh 납품 일정, 북미 생산 가동률, 영업손익, 원재료·가격 경쟁 |
