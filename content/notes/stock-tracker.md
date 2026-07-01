@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-02 | HD한국조선해양 | KOSPI | [분석 글](/2026/07/02/hd-ksoe-009540-analysis/) | 358,500원 | - | - | - | 후속 관찰 / 조선 순환매와 수주 마진 확인 | 2Q 매출·영업이익률, 신규 수주 목표 달성률, 선종 믹스, 후판·인건비, DART 희석 여부 |
+| 2026-07-02 | General Dynamics | NYSE | [분석 글](/2026/07/02/general-dynamics-gd-analysis/) | $362.96 | - | - | - | 후속 관찰 / 방산 조선 backlog와 가격 부담 동시 확인 | 2Q book-to-bill, Marine Systems backlog, Marine Systems margin, Gulfstream deliveries, FCF |
 | 2026-07-01 | 셀트리온 | KOSPI | [후보 노트](/2026/07/01/stock-candidate-note-healthcare-rotation/) | 173,300원 | - | - | - | 후속 분석 후보 / 헬스케어 순환매와 바이오시밀러 실적 개선 확인 | 2Q 매출·매출총이익률, Zymfentra 처방, 미국 직접판매 비용, 바이오시밀러 규제 완화, DART 희석 여부 |
 | 2026-07-01 | Eli Lilly | NYSE | [후보 노트](/2026/07/01/stock-candidate-note-healthcare-rotation/) | $1,199.13 | - | - | - | 후속 분석 후보 / GLP-1 성장과 헬스케어 방어 자금 동시 확인 | Mounjaro·Zepbound 매출, 가격 압박, 공급 증설, FY2026 가이던스, 밸류에이션 부담 |
 | 2026-06-30 | HD현대일렉트릭 | KOSPI | [후보 노트](/2026/06/30/stock-candidate-note-ai-power-bottleneck/) | 937,000원 | - | - | - | 후속 분석 후보 / AI 전력 병목과 초고압 변압기 수주 확인 | 2Q 수주잔고, 북미 매출, 영업이익률, 현금흐름, DART 희석 여부 |
