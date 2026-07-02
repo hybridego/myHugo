@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-03 | 고영 | KOSDAQ | [후보 노트](/2026/07/03/stock-candidate-note-physical-ai-machine-vision/) | 29,650원 | - | - | - | 후속 분석 후보 / 피지컬 AI 머신비전과 3D 검사 수요 확인 | 2Q 매출·영업이익률, AI 서버·광모듈 검사 수요, 의료로봇·우주 매출, 재고·매출채권, DART 희석 여부 |
+| 2026-07-03 | Cognex | NASDAQ | [후보 노트](/2026/07/03/stock-candidate-note-physical-ai-machine-vision/) | $67.80 | - | - | - | 후속 분석 후보 / 머신비전과 AI 비전 제품 주문 확인 | Q2 revenue guidance, AI vision product orders, gross margin, Asia competition, FCF |
 | 2026-07-02 | HD한국조선해양 | KOSPI | [분석 글](/2026/07/02/hd-ksoe-009540-analysis/) | 358,500원 | - | - | - | 후속 관찰 / 조선 순환매와 수주 마진 확인 | 2Q 매출·영업이익률, 신규 수주 목표 달성률, 선종 믹스, 후판·인건비, DART 희석 여부 |
 | 2026-07-02 | General Dynamics | NYSE | [분석 글](/2026/07/02/general-dynamics-gd-analysis/) | $362.96 | - | - | - | 후속 관찰 / 방산 조선 backlog와 가격 부담 동시 확인 | 2Q book-to-bill, Marine Systems backlog, Marine Systems margin, Gulfstream deliveries, FCF |
 | 2026-07-01 | 셀트리온 | KOSPI | [후보 노트](/2026/07/01/stock-candidate-note-healthcare-rotation/) | 173,300원 | - | - | - | 후속 분석 후보 / 헬스케어 순환매와 바이오시밀러 실적 개선 확인 | 2Q 매출·매출총이익률, Zymfentra 처방, 미국 직접판매 비용, 바이오시밀러 규제 완화, DART 희석 여부 |
