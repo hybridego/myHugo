@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-05 | 대덕전자 | KOSPI | [후보 노트](/2026/07/05/stock-candidate-note-ai-substrate-interconnect/) | 129,600원 | - | - | - | 후속 분석 후보 / AI 서버 기판과 FC-BGA 수요 확인 | 2Q 매출·영업이익률, FC-BGA·FC-CSP 매출, 미국 매출, 가동률, DART 희석 여부 |
+| 2026-07-05 | Amphenol | NYSE | [후보 노트](/2026/07/05/stock-candidate-note-ai-substrate-interconnect/) | $164.59 | - | - | - | 후속 분석 후보 / AI 데이터센터 인터커넥트와 주문 확인 | Q2 orders, book-to-bill, high-speed interconnect demand, margin, FCF |
 | 2026-07-04 | 풍산 | KOSPI | [후보 노트](/2026/07/04/stock-candidate-note-copper-power-materials/) | 66,800원 | - | - | - | 후속 분석 후보 / 구리와 방산 탄약 이익 확인 | 2Q 방산 매출, 신동 부문 마진, 구리 가격 민감도, 운전자본, DART 희석 여부 |
 | 2026-07-04 | Mueller Industries | NYSE | [후보 노트](/2026/07/04/stock-candidate-note-copper-power-materials/) | $56.50 | - | - | - | 후속 분석 후보 / 구리 제품 가격 전가와 현금흐름 확인 | Q2 제품별 수요, 구리 가격 전가, 재고, 영업현금흐름, Bison Metals 통합 |
 | 2026-07-03 | 고영 | KOSDAQ | [후보 노트](/2026/07/03/stock-candidate-note-physical-ai-machine-vision/) | 29,650원 | - | - | - | 후속 분석 후보 / 피지컬 AI 머신비전과 3D 검사 수요 확인 | 2Q 매출·영업이익률, AI 서버·광모듈 검사 수요, 의료로봇·우주 매출, 재고·매출채권, DART 희석 여부 |
