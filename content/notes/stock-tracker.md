@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-07 | 지엔씨에너지 | KOSDAQ | [후보 노트](/2026/07/07/stock-candidate-note-ai-datacenter-backup-power/) | 29,650원 | - | - | - | 후속 분석 후보 / AI 데이터센터 비상발전기 수요와 마진 회복 확인 | 2Q 매출·영업이익률, 수주잔고, 환헤지 손익, 원가 전가, DART 희석 여부 |
+| 2026-07-07 | Generac | NYSE | [후보 노트](/2026/07/07/stock-candidate-note-ai-datacenter-backup-power/) | $257.65 | - | - | - | 후속 분석 후보 / 하이퍼스케일 예비전원 계약의 매출 전환 확인 | C&I sales, backlog, hyperscale delivery, Enercon integration, margin, FCF |
 | 2026-07-05 | 대덕전자 | KOSPI | [후보 노트](/2026/07/05/stock-candidate-note-ai-substrate-interconnect/) | 129,600원 | - | - | - | 후속 분석 후보 / AI 서버 기판과 FC-BGA 수요 확인 | 2Q 매출·영업이익률, FC-BGA·FC-CSP 매출, 미국 매출, 가동률, DART 희석 여부 |
 | 2026-07-05 | Amphenol | NYSE | [후보 노트](/2026/07/05/stock-candidate-note-ai-substrate-interconnect/) | $164.59 | - | - | - | 후속 분석 후보 / AI 데이터센터 인터커넥트와 주문 확인 | Q2 orders, book-to-bill, high-speed interconnect demand, margin, FCF |
 | 2026-07-04 | 풍산 | KOSPI | [후보 노트](/2026/07/04/stock-candidate-note-copper-power-materials/) | 66,800원 | - | - | - | 후속 분석 후보 / 구리와 방산 탄약 이익 확인 | 2Q 방산 매출, 신동 부문 마진, 구리 가격 민감도, 운전자본, DART 희석 여부 |
