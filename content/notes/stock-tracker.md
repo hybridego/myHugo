@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-08 | KB금융 | KOSPI | [후보 노트](/2026/07/08/stock-candidate-note-bank-capital-return/) | 173,200원 | - | - | - | 후속 분석 후보 / 은행 주주환원과 자본비율 확인 | 2Q 순이익, CET1 비율, 추가 자사주 매입·소각, 비은행 이익, 충당금 |
+| 2026-07-08 | JPMorgan Chase | NYSE | [후보 노트](/2026/07/08/stock-candidate-note-bank-capital-return/) | $339.15 | - | - | - | 후속 분석 후보 / 스트레스 테스트 이후 배당·자사주 환원 확인 | 7월 14일 실적, 순이자이익, 충당금, CET1, buyback pace |
 | 2026-07-07 | 지엔씨에너지 | KOSDAQ | [후보 노트](/2026/07/07/stock-candidate-note-ai-datacenter-backup-power/) | 29,650원 | - | - | - | 후속 분석 후보 / AI 데이터센터 비상발전기 수요와 마진 회복 확인 | 2Q 매출·영업이익률, 수주잔고, 환헤지 손익, 원가 전가, DART 희석 여부 |
 | 2026-07-07 | Generac | NYSE | [후보 노트](/2026/07/07/stock-candidate-note-ai-datacenter-backup-power/) | $257.65 | - | - | - | 후속 분석 후보 / 하이퍼스케일 예비전원 계약의 매출 전환 확인 | C&I sales, backlog, hyperscale delivery, Enercon integration, margin, FCF |
 | 2026-07-05 | 대덕전자 | KOSPI | [후보 노트](/2026/07/05/stock-candidate-note-ai-substrate-interconnect/) | 129,600원 | - | - | - | 후속 분석 후보 / AI 서버 기판과 FC-BGA 수요 확인 | 2Q 매출·영업이익률, FC-BGA·FC-CSP 매출, 미국 매출, 가동률, DART 희석 여부 |
