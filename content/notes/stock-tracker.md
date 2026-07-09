@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-10 | 농심 | KOSPI | [후보 노트](/2026/07/10/stock-candidate-note-k-food-defensive-staples/) | 349,500원 | - | - | - | 후속 분석 후보 / K푸드 수출과 원가 부담 동시 확인 | 2Q 매출·영업이익률, 북미·유럽 법인 성장률, 원재료·물류비, 판촉비, 해외 라면 수요 |
+| 2026-07-10 | McCormick | NYSE | [후보 노트](/2026/07/10/stock-candidate-note-k-food-defensive-staples/) | $51.52 | - | - | - | 후속 분석 후보 / 방어적 소비재와 유기적 성장 확인 | organic sales, Consumer volume, Flavor Solutions margin, Unilever Foods integration, FCF |
 | 2026-07-09 | KB금융 | KOSPI | [분석 글](/2026/07/09/kb-financial-105560-analysis/) | 171,000원 | - | - | - | 후속 관찰 / 은행 주주환원은 좋지만 가격 여유 확인 필요 | 2Q 순이익, CET1 비율, 자사주 매입·소각, RWA, 충당금 |
 | 2026-07-09 | JPMorgan Chase | NYSE | [분석 글](/2026/07/09/jpmorgan-chase-jpm-analysis/) | $331.10 | - | - | - | 후속 관찰 / 자본환원 기준주지만 2Q 실적 전 가격 규율 필요 | 7월 14일 실적, NII, 충당금, CET1, buyback pace |
 | 2026-07-08 | KB금융 | KOSPI | [후보 노트](/2026/07/08/stock-candidate-note-bank-capital-return/) | 173,200원 | - | - | - | 후속 분석 후보 / 은행 주주환원과 자본비율 확인 | 2Q 순이익, CET1 비율, 추가 자사주 매입·소각, 비은행 이익, 충당금 |
