@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-11 | 한전기술 | KOSPI | [후보 노트](/2026/07/11/stock-candidate-note-nuclear-baseload-power/) | 102,200원 | - | - | - | 후속 분석 후보 / 원전 설계 수요와 가격 부담 동시 확인 | 원전 설계 수주잔고, 해외 프로젝트 참여, 영업이익률, DART 희석 여부, 우발채무 |
+| 2026-07-11 | Constellation Energy | NASDAQ | [후보 노트](/2026/07/11/stock-candidate-note-nuclear-baseload-power/) | $250.85 | - | - | - | 후속 분석 후보 / 원전 fleet 이용률과 데이터센터 전력 수요 확인 | nuclear capacity factor, Calpine integration, FCF, net debt, power price sensitivity |
 | 2026-07-10 | 농심 | KOSPI | [후보 노트](/2026/07/10/stock-candidate-note-k-food-defensive-staples/) | 349,500원 | - | - | - | 후속 분석 후보 / K푸드 수출과 원가 부담 동시 확인 | 2Q 매출·영업이익률, 북미·유럽 법인 성장률, 원재료·물류비, 판촉비, 해외 라면 수요 |
 | 2026-07-10 | McCormick | NYSE | [후보 노트](/2026/07/10/stock-candidate-note-k-food-defensive-staples/) | $51.52 | - | - | - | 후속 분석 후보 / 방어적 소비재와 유기적 성장 확인 | organic sales, Consumer volume, Flavor Solutions margin, Unilever Foods integration, FCF |
 | 2026-07-09 | KB금융 | KOSPI | [분석 글](/2026/07/09/kb-financial-105560-analysis/) | 171,000원 | - | - | - | 후속 관찰 / 은행 주주환원은 좋지만 가격 여유 확인 필요 | 2Q 순이익, CET1 비율, 자사주 매입·소각, RWA, 충당금 |
