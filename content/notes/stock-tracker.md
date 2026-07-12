@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-13 | 지니언스 | KOSDAQ | [분석 글](/2026/07/13/genians-263860-analysis/) | 12,640원 | - | - | - | 후속 관찰 / AI 보안 수요와 1분기 실적 개선의 반복성 확인 | 2Q 매출·영업이익률, ZTNA·MDR 매출 비중, 해외 매출, DART 희석 여부, 12,000원 방어 |
+| 2026-07-13 | Qualys | NASDAQ | [분석 글](/2026/07/13/qualys-qlys-analysis/) | $152.69 | - | - | - | 후속 관찰 / 고마진 사이버보안 소프트웨어와 가격 부담 동시 확인 | 2Q revenue guidance, FY26 guidance, GAAP operating margin, FCF, buyback pace |
 | 2026-07-12 | NHN KCP | KOSDAQ | [후보 노트](/2026/07/12/stock-candidate-note-stablecoin-payment-infra/) | 12,910원 | - | - | - | 후속 분석 후보 / 스테이블코인 결제 인프라와 PG 본업 성장 확인 | PG·VAN 매출 구성, 영업이익률, 현금흐름, DART 희석 여부, 원화 스테이블코인 법제화 |
 | 2026-07-12 | Visa | NYSE | [후보 노트](/2026/07/12/stock-candidate-note-stablecoin-payment-infra/) | $348.97 | - | - | - | 후속 분석 후보 / 기존 결제망의 스테이블코인 흡수 가능성 확인 | payment transactions, cross-border volume, service revenue, operating margin, Open USD revenue sharing |
 | 2026-07-11 | 한전기술 | KOSPI | [후보 노트](/2026/07/11/stock-candidate-note-nuclear-baseload-power/) | 102,200원 | - | - | - | 후속 분석 후보 / 원전 설계 수요와 가격 부담 동시 확인 | 원전 설계 수주잔고, 해외 프로젝트 참여, 영업이익률, DART 희석 여부, 우발채무 |
