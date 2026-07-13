@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-07-12T09:10:00+09:00
-publishDate: 2026-07-12T09:10:00+09:00
+date: 2026-07-14T08:33:00+09:00
+publishDate: 2026-07-14T08:33:00+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-14 | 유진테크 | KOSDAQ | [후보 노트](/2026/07/14/stock-candidate-note-ai-semiconductor-equipment-earnings/) | 153,100원 | - | - | - | 후속 분석 후보 / DRAM 전환 투자와 1분기 이익 개선의 반복성 확인 | 2Q 매출·영업이익률, 수주잔고, 유제너스 흑자 전환, 프리커서 사업, DART 희석 여부 |
+| 2026-07-14 | Applied Materials | NASDAQ | [후보 노트](/2026/07/14/stock-candidate-note-ai-semiconductor-equipment-earnings/) | $570.50 | - | - | - | 후속 분석 후보 / AI 장비 CAPEX 기대와 가격 부담 동시 확인 | next-quarter orders, inventory, operating cash flow, semiconductor equipment growth outlook, China/export-control sensitivity |
 | 2026-07-13 | 지니언스 | KOSDAQ | [분석 글](/2026/07/13/genians-263860-analysis/) | 12,640원 | - | - | - | 후속 관찰 / AI 보안 수요와 1분기 실적 개선의 반복성 확인 | 2Q 매출·영업이익률, ZTNA·MDR 매출 비중, 해외 매출, DART 희석 여부, 12,000원 방어 |
 | 2026-07-13 | Qualys | NASDAQ | [분석 글](/2026/07/13/qualys-qlys-analysis/) | $152.69 | - | - | - | 후속 관찰 / 고마진 사이버보안 소프트웨어와 가격 부담 동시 확인 | 2Q revenue guidance, FY26 guidance, GAAP operating margin, FCF, buyback pace |
 | 2026-07-12 | NHN KCP | KOSDAQ | [후보 노트](/2026/07/12/stock-candidate-note-stablecoin-payment-infra/) | 12,910원 | - | - | - | 후속 분석 후보 / 스테이블코인 결제 인프라와 PG 본업 성장 확인 | PG·VAN 매출 구성, 영업이익률, 현금흐름, DART 희석 여부, 원화 스테이블코인 법제화 |
