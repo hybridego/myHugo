@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-15 | 클래시스 | KOSDAQ | [후보 노트](/2026/07/15/stock-candidate-note-medical-device-aesthetics-defensive-growth/) | 45,550원 | - | - | - | 후속 분석 후보 / 미용의료 장비와 소모품 반복 매출 확인 | 2Q 매출·영업이익률, 카트리지 매출 비중, 브라질 유통망 인수 효과, 해외 매출, DART 희석 여부 |
+| 2026-07-15 | Boston Scientific | NYSE | [후보 노트](/2026/07/15/stock-candidate-note-medical-device-aesthetics-defensive-growth/) | $42.64 | - | - | - | 후속 분석 후보 / 의료기기 매출 성장과 52주 저점권 가격 확인 | Q2 organic growth, EP·WATCHMAN·FARAPULSE 성장, adjusted EPS guidance, Cardiovascular margin, FCF |
 | 2026-07-14 | 유진테크 | KOSDAQ | [후보 노트](/2026/07/14/stock-candidate-note-ai-semiconductor-equipment-earnings/) | 153,100원 | - | - | - | 후속 분석 후보 / DRAM 전환 투자와 1분기 이익 개선의 반복성 확인 | 2Q 매출·영업이익률, 수주잔고, 유제너스 흑자 전환, 프리커서 사업, DART 희석 여부 |
 | 2026-07-14 | Applied Materials | NASDAQ | [후보 노트](/2026/07/14/stock-candidate-note-ai-semiconductor-equipment-earnings/) | $570.50 | - | - | - | 후속 분석 후보 / AI 장비 CAPEX 기대와 가격 부담 동시 확인 | next-quarter orders, inventory, operating cash flow, semiconductor equipment growth outlook, China/export-control sensitivity |
 | 2026-07-13 | 지니언스 | KOSDAQ | [분석 글](/2026/07/13/genians-263860-analysis/) | 12,640원 | - | - | - | 후속 관찰 / AI 보안 수요와 1분기 실적 개선의 반복성 확인 | 2Q 매출·영업이익률, ZTNA·MDR 매출 비중, 해외 매출, DART 희석 여부, 12,000원 방어 |
