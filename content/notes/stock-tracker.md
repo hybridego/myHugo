@@ -25,6 +25,8 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-16 | 삼성전기 | KOSPI | [분석 글](/2026/07/16/samsung-electro-mechanics-009150-analysis/) | 1,413,000원 | - | - | - | 후속 관찰 / AI 서버 MLCC와 FCBGA 수요는 강하지만 밸류에이션 부담 큼 | 2Q 매출·영업이익률, 패키지솔루션 매출, AI 서버 MLCC 공급, 외국인 수급, DART 희석 여부 |
+| 2026-07-16 | ASML | NASDAQ | [분석 글](/2026/07/16/asml-asml-analysis/) | $1,815.27 | - | - | - | 후속 관찰 / 2026년 가이던스 상향은 강하지만 forward PE 부담 확인 | 3Q 매출 가이던스 달성, gross margin, order intake, 중국 매출 비중, 고객 CAPEX |
 | 2026-07-15 | 클래시스 | KOSDAQ | [후보 노트](/2026/07/15/stock-candidate-note-medical-device-aesthetics-defensive-growth/) | 45,550원 | - | - | - | 후속 분석 후보 / 미용의료 장비와 소모품 반복 매출 확인 | 2Q 매출·영업이익률, 카트리지 매출 비중, 브라질 유통망 인수 효과, 해외 매출, DART 희석 여부 |
 | 2026-07-15 | Boston Scientific | NYSE | [후보 노트](/2026/07/15/stock-candidate-note-medical-device-aesthetics-defensive-growth/) | $42.64 | - | - | - | 후속 분석 후보 / 의료기기 매출 성장과 52주 저점권 가격 확인 | Q2 organic growth, EP·WATCHMAN·FARAPULSE 성장, adjusted EPS guidance, Cardiovascular margin, FCF |
 | 2026-07-14 | 유진테크 | KOSDAQ | [후보 노트](/2026/07/14/stock-candidate-note-ai-semiconductor-equipment-earnings/) | 153,100원 | - | - | - | 후속 분석 후보 / DRAM 전환 투자와 1분기 이익 개선의 반복성 확인 | 2Q 매출·영업이익률, 수주잔고, 유제너스 흑자 전환, 프리커서 사업, DART 희석 여부 |
