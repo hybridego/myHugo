@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-07-14T08:33:00+09:00
-publishDate: 2026-07-14T08:33:00+09:00
+date: 2026-07-17T00:57:00+09:00
+publishDate: 2026-07-17T00:57:00+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -25,6 +25,7 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-17 | S-Oil | KOSPI | [후보 노트](/2026/07/17/stock-candidate-note-refining-margin-cycle/) | 144,900원 | - | - | - | 후속 분석 후보 / 정제마진은 강하지만 이달 급등 뒤 추격 보류 | 2Q 재고효과 제외 이익·현금흐름, 정제마진, 정기보수, 샤힌 CAPEX, DART 희석 여부 |
 | 2026-07-16 | 삼성전기 | KOSPI | [분석 글](/2026/07/16/samsung-electro-mechanics-009150-analysis/) | 1,413,000원 | - | - | - | 후속 관찰 / AI 서버 MLCC와 FCBGA 수요는 강하지만 밸류에이션 부담 큼 | 2Q 매출·영업이익률, 패키지솔루션 매출, AI 서버 MLCC 공급, 외국인 수급, DART 희석 여부 |
 | 2026-07-16 | ASML | NASDAQ | [분석 글](/2026/07/16/asml-asml-analysis/) | $1,815.27 | - | - | - | 후속 관찰 / 2026년 가이던스 상향은 강하지만 forward PE 부담 확인 | 3Q 매출 가이던스 달성, gross margin, order intake, 중국 매출 비중, 고객 CAPEX |
 | 2026-07-15 | 클래시스 | KOSDAQ | [후보 노트](/2026/07/15/stock-candidate-note-medical-device-aesthetics-defensive-growth/) | 45,550원 | - | - | - | 후속 분석 후보 / 미용의료 장비와 소모품 반복 매출 확인 | 2Q 매출·영업이익률, 카트리지 매출 비중, 브라질 유통망 인수 효과, 해외 매출, DART 희석 여부 |
@@ -157,6 +158,7 @@ URL: "/notes/stock-tracker/"
 
 아래 항목은 과거 글에서 아이디어로 남겼지만, 기준가와 추적 기준을 다시 맞춘 뒤 표에 올릴 예정이다.
 
+- 2026-07-17: Valero Energy - 글 작성 시 미국장이 진행 중이라 Nasdaq 장중가만 확인됨. 7월 16일 정규장 종가로 기준가 표준화 필요
 - 2026-04-30: Amkor Technology, 원익QnC, 태광
 - 2026-04-29: AECOM, 고영
 - 2026-04-27: 제이에스코퍼레이션
