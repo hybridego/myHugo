@@ -21,7 +21,7 @@ home = ["HTML", "RSS", "Algolia"]
 
 [params]
   title = "Lionel Blog"
-  header_image = "img/home-bg-jeep.jpg"
+  header_image = "img/home-bg-jeep.webp"
   SEOTitle = "Lionel Blog | 주식 리서치와 프로그래밍"
   description = "주식 리서치, 투자 후보 추적, Linux·Hugo·Rust·AI 개발 기록을 정리합니다."
   descriptionLength = 80
@@ -47,10 +47,10 @@ home = ["HTML", "RSS", "Algolia"]
 
   # Sidebar settings
   sidebar_about_description = "Software Developer, Embedded Systems Engineer, Linux Application Developer, Open Source Enthusiast and Life Adventurer"
-  sidebar_avatar = "img/red_panda_avatar.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "img/red_panda_avatar.webp"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
-  featured_condition_size = 1 
+  featured_condition_size = 3
 
   # Baidu Analytics
   ba_track_id = ""
@@ -79,8 +79,8 @@ home = ["HTML", "RSS", "Algolia"]
   about_me = true
 
   # Include any custom CSS and/or JS files, url or relative to /static folder
-  custom_css = ["css/copy-code.css", "css/datatype.css"]
-  custom_js = ["js/copy-code.js"]
+  custom_css = ["css/copy-code.css", "css/datatype.css", "css/color-system.css"]
+  custom_js = ["js/copy-code.js", "js/responsive-tables.js"]
   [params.social]
   rss            = true 
   email          = "hybridego@gmail.com"

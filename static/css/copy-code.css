@@ -7,23 +7,35 @@
     top: 0.5em;
     right: 0.5em;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+    transition: opacity 180ms ease-out;
 }
 
-.highlight:hover .code-toolbar {
+.highlight:hover .code-toolbar,
+.highlight:focus-within .code-toolbar {
     opacity: 1;
 }
 
 .copy-code-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
+    min-width: 44px;
+    min-height: 44px;
+    color: var(--surface);
+    background: var(--ink);
+    border: 1px solid color-mix(in oklch, var(--surface) 20%, transparent);
+    border-radius: 2px;
     padding: 0.5em 0.8em;
-    border-radius: 3px;
     cursor: pointer;
     font-size: 0.9em;
 }
 
-.copy-code-button:hover {
-    background-color: #555;
+.copy-code-button:hover,
+.copy-code-button:focus-visible {
+    color: var(--surface);
+    background: var(--brand-strong);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .code-toolbar {
+        transition: none;
+    }
 }

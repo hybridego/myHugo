@@ -29,15 +29,17 @@
             {{ end }}
         {{ end }}
     {{ else }}
-        Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }} on {{ .Date.Format "Monday, January 2, 2006" }}
-        <!-- Don't show "Last Modified on" if update happened on the same day. -->
+        <span class="post-meta-author">{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</span>
+        <span aria-hidden="true">·</span>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006. 01. 02." }}</time>
+        <!-- Don't show the modified date when it matches the publication date. -->
         {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
-            <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }} 
+            <span aria-hidden="true">·</span>
+            <span>수정 <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006. 01. 02." }}</time></span>
         {{ end }}
     {{ end }}
     </p>
 
 </div>
-<hr>
 {{ end }}
 </div>

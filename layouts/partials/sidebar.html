@@ -14,7 +14,7 @@
         <div class="short-about">
             {{ with .Site.Params.sidebar_avatar }}
             <a href="{{ "/about" | relLangURL }}">
-               <img src="{{ . | relURL }}" alt="avatar" style="cursor: pointer" />
+               <img src="{{ . | relURL }}" alt="Lionel.J 프로필 이미지" width="400" height="400" loading="lazy" decoding="async" style="cursor: pointer" />
             </a>
             {{ end }}
             {{ with .Site.Params.sidebar_about_description }}
@@ -24,7 +24,7 @@
            <ul class="list-inline">
                {{ if .Site.Params.social.email }}
                <li>
-                   <a href="mailto:{{ .Site.Params.social.email }}">
+                   <a href="mailto:{{ .Site.Params.social.email }}" aria-label="이메일 보내기">
                       <span class="fa-stack fa-lg">
                           <i class="fa fa-circle fa-stack-2x"></i>
                           <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -34,7 +34,7 @@
                {{ end }}
                {{ with .Site.Params.social.twitter }}
                <li>
-                   <a href="{{ . }}">
+                   <a href="{{ . }}" aria-label="X 프로필">
                        <span class="fa-stack fa-lg">
                            <i class="fas fa-circle fa-stack-2x"></i>
                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -74,7 +74,7 @@
                {{ end }}
                {{ with .Site.Params.social.wechat }}
                <li>
-                   <a target="_blank" href="{{ . | relURL}}">
+                   <a target="_blank" rel="noopener" href="{{ . | relURL}}" aria-label="WeChat QR 코드">
                        <span class="fa-stack fa-lg">
                            <i class="fas fa-circle fa-stack-2x"></i>
                            <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
@@ -84,7 +84,7 @@
                {{ end }}
                {{ with .Site.Params.social.github }}
                <li>
-                   <a target="_blank" href="{{ . }}">
+                   <a target="_blank" rel="noopener" href="{{ . }}" aria-label="GitHub 프로필">
                        <span class="fa-stack fa-lg">
                            <i class="fas fa-circle fa-stack-2x"></i>
                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -114,7 +114,7 @@
                {{ end }}
                {{ with .Site.Params.social.linkedin }}
                <li>
-                   <a target="_blank" href="{{ . }}">
+                   <a target="_blank" rel="noopener" href="{{ . }}" aria-label="LinkedIn 프로필">
                        <span class="fa-stack fa-lg">
                            <i class="fas fa-circle fa-stack-2x"></i>
                            <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -213,7 +213,7 @@
         <h5>QUICK LINKS</h5>
         <ul class="list-inline">
             {{ range .Site.Params.bookmark_link }}
-            <li><a target="_blank" href="{{.href }}">{{.title}}</a></li>
+            <li><a target="_blank" rel="noopener" href="{{.href }}">{{.title}}</a></li>
             {{ end }}
         </ul>
     </section>
@@ -243,7 +243,7 @@
         <h5>FRIENDS</h5>
         <ul class="list-inline">
             {{ range .Site.Params.friend_link }}
-            <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
+            <li><a target="_blank" rel="noopener" href="{{.href}}">{{.title}}</a></li>
             {{ end }}
         </ul>
     </section>

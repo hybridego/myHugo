@@ -1,4 +1,3 @@
-
 {{ define "main" }}
 <!-- Post Content -->
 <article>
@@ -14,29 +13,26 @@
             {{ if eq (.Param "multilingual") true }}
                 {{ partial "multilingual-sel.html" . }}
 
-                <!-- Chinese Version -->
-                <div class="ko post-container">
+                <!-- Korean Version -->
+                <div class="ko post-container" lang="ko">
                     {{$file :=  "/about/index-ko.md"}}
                     {{ $file | readFile | markdownify}}
                 </div>
-            
+
                 <!-- English Version -->
-                <div class="en post-container">
+                <div class="en post-container" lang="en">
                     {{ .Content }}
                 </div>
             {{ else }}
                 {{ .Content }}
             {{ end }}
-             
+
             {{ partial "comments.html" . }}
-            
+
             </div>
-            
+
             {{ partial "sidebar.html" . }}
         </div>
     </div>
 </article>
-
 {{ end }}
-
-

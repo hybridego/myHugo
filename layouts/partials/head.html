@@ -92,8 +92,15 @@
     {{ end }}
     <!-- end ogp -->
 
-    <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}">
-    <link rel="icon" href="{{ "img/favicon.png" | relURL }}" type="image/png">
+    <link rel="icon" href="{{ "img/favicon.png" | relURL }}" type="image/png" sizes="128x128">
+    {{ $headerImage := .Params.image | default .Site.Params.header_image }}
+    {{ with $headerImage }}
+    {{ $headerPath := strings.TrimPrefix "/" . }}
+    {{ $isRemote := or (hasPrefix . "https://") (hasPrefix . "http://") }}
+    {{ if and (not (eq $.Layout "post")) (or $isRemote (fileExists (printf "static/%s" $headerPath))) }}
+    <link rel="preload" as="image" href="{{ . | relURL }}" fetchpriority="high">
+    {{ end }}
+    {{ end }}
 
     {{ $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" $brandTitle "url" .Site.BaseURL "description" $description "keywords" $keywordText "inLanguage" $languageCode }}
     {{ if .IsPage }}
@@ -119,24 +126,19 @@
 
     <!--  Custom CSS  -->
     {{ range .Site.Params.custom_css -}}
-    <link rel="stylesheet" href="{{ . | absURL }}">
+    <link rel="stylesheet" href="{{ . | relURL }}">
     {{- end }}
 
-    <!-- jQuery -->
+    {{ if eq .Layout "post" }}
+    <!-- Legacy post interactions. Modern page layouts do not need this stack. -->
     <script src="{{ "js/jquery.min.js" | relURL }}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
-
-    <!-- Hux Theme JavaScript -->
     <script src="{{ "js/hux-blog.min.js" | relURL }}"></script>
-
-    <!-- lazy load image JavaScript -->
-    <script src="{{ "js/lazysizes.min.js" | relURL }}"></script>
+    {{ end }}
 
     <!-- Custom JS -->
     {{ range .Site.Params.custom_js }}
-    <script src="{{ . | absURL }}"></script>
+    <script src="{{ . | relURL }}" defer></script>
     {{ end }}
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2995694833554782"

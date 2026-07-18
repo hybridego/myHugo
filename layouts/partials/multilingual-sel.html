@@ -1,5 +1,6 @@
  <!-- Language Selector -->
- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+ <label class="sr-only" for="about-language">소개 언어 선택</label>
+ <select id="about-language" class="sel-lang" onchange="onLanChange(this.value)">
     <option value="0" selected> Korean </option>
     <option value="1"> English </option>
 </select>

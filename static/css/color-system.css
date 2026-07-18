@@ -1,0 +1,449 @@
+/* Lionel Blog: restrained financial-editorial color system */
+:root {
+  --canvas: oklch(98.2% 0.007 78);
+  --surface: oklch(99% 0.004 78);
+  --surface-muted: oklch(96.2% 0.012 92);
+  --ink: oklch(24% 0.018 248);
+  --ink-soft: oklch(42% 0.018 245);
+  --ink-muted: oklch(54% 0.014 238);
+  --hairline: oklch(87.5% 0.012 82);
+  --brand: oklch(43% 0.052 162);
+  --brand-strong: oklch(34% 0.045 162);
+  --brand-soft: oklch(94.5% 0.018 156);
+  --focus: oklch(60% 0.095 62);
+  --focus-soft: oklch(95% 0.024 70);
+  --danger: oklch(48% 0.14 28);
+}
+
+html {
+  background: var(--canvas);
+}
+
+body {
+  color: var(--ink);
+  background: var(--canvas);
+}
+
+::selection {
+  color: var(--ink);
+  background: var(--brand-soft);
+}
+
+a {
+  color: var(--brand-strong);
+  text-decoration-color: color-mix(in oklch, var(--brand) 48%, transparent);
+  text-underline-offset: 0.18em;
+}
+
+a:hover,
+a:focus {
+  color: var(--ink);
+  text-decoration-color: var(--brand);
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.intro-header {
+  background-color: oklch(31% 0.022 245 / 0.62);
+  background-blend-mode: multiply;
+  border-bottom: 2px solid color-mix(in oklch, var(--focus) 58%, var(--canvas));
+}
+
+.intro-header .site-heading,
+.intro-header .post-heading,
+.intro-header .page-heading {
+  color: oklch(97.5% 0.007 78);
+  text-shadow: 0 2px 18px oklch(16% 0.02 245 / 0.48);
+}
+
+.intro-header .site-heading .subheading,
+.intro-header .page-heading .subheading,
+.intro-header .post-heading .subheading,
+.intro-header .post-heading .meta {
+  color: oklch(91% 0.01 80);
+}
+
+.navbar-custom.is-fixed {
+  background-color: oklch(98.5% 0.006 78 / 0.96);
+  border-bottom-color: var(--hairline);
+}
+
+.navbar-custom .navbar-toggle:focus-visible {
+  background: var(--surface) !important;
+  border-color: var(--focus) !important;
+  box-shadow: 0 0 0 3px var(--focus-soft);
+  outline: 3px solid var(--focus) !important;
+  outline-offset: 3px;
+}
+
+.navbar-custom.invert .navbar-brand,
+.navbar-custom.invert .nav li a,
+.navbar-custom.is-fixed .navbar-brand,
+.navbar-custom.is-fixed .nav li a {
+  color: var(--ink);
+}
+
+.navbar-custom.invert .navbar-brand:hover,
+.navbar-custom.invert .navbar-brand:focus,
+.navbar-custom.invert .nav li a:hover,
+.navbar-custom.invert .nav li a:focus,
+.navbar-custom.is-fixed .navbar-brand:hover,
+.navbar-custom.is-fixed .navbar-brand:focus,
+.navbar-custom.is-fixed .nav li a:hover,
+.navbar-custom.is-fixed .nav li a:focus {
+  color: var(--brand-strong);
+}
+
+.post-preview > a {
+  display: block;
+  color: inherit;
+  padding: 0.35rem 0 0.6rem;
+  text-decoration: none;
+}
+
+.post-preview > a:hover,
+.post-preview > a:focus-visible {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-preview > a > .post-title {
+  position: relative;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  color: var(--ink);
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.4rem;
+  transition: color 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.post-preview > a > .post-title::before,
+.post-preview > a > .post-title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.post-preview > a > .post-title::before {
+  height: 1px;
+  background: color-mix(in oklch, var(--brand) 24%, var(--hairline));
+}
+
+.post-preview > a > .post-title::after {
+  height: 3px;
+  background: var(--brand);
+  opacity: 0.94;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 240ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.post-preview > a:hover .post-title,
+.post-preview > a:focus-visible .post-title {
+  color: var(--brand-strong);
+}
+
+.post-preview > a:hover .post-title::after,
+.post-preview > a:focus-visible .post-title::after {
+  transform: scaleX(1);
+  transition-duration: 360ms;
+  transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.post-preview > a > .post-subtitle {
+  color: var(--ink-muted);
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.post-preview .post-content-preview {
+  color: var(--ink-soft);
+  font-style: normal;
+  line-height: 1.65;
+}
+
+.post-preview .post-meta,
+.post-meta {
+  color: var(--ink-muted);
+  font-family: inherit;
+  font-size: 0.82em;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.015em;
+  line-height: 1.5;
+  margin-top: 1.15rem;
+  margin-bottom: 0;
+}
+
+.post-preview .post-meta-author {
+  color: var(--ink-soft);
+  font-weight: 600;
+}
+
+.post-preview + .post-preview {
+  margin-top: 3.4rem;
+}
+
+hr {
+  border-color: var(--hairline);
+}
+
+.post-container a {
+  color: var(--brand-strong);
+}
+
+.post-container a:hover,
+.post-container a:focus {
+  color: var(--ink);
+}
+
+.post-container p a,
+.post-container li a,
+.post-container blockquote a {
+  text-decoration-line: underline;
+  text-decoration-thickness: max(1px, 0.08em);
+}
+
+.post-container .pager a {
+  text-decoration: none;
+}
+
+.entry-shang .zs.btn-bred {
+  color: var(--surface);
+  background: var(--brand-strong);
+  border-color: var(--brand-strong);
+}
+
+article .post-container h1,
+article .post-container h2,
+article .post-container h3,
+article .post-container h4 {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+  scroll-margin-top: 7rem;
+  text-wrap: balance;
+}
+
+article .post-container h2 {
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0.35em;
+}
+
+article .post-container h5,
+article .post-container h6 {
+  color: var(--brand-strong);
+}
+
+blockquote {
+  color: var(--ink-soft);
+  background: var(--surface-muted);
+  border-left-color: var(--brand);
+  border-left-width: 3px;
+  font-style: normal;
+  line-height: 1.7;
+  padding: 0.85rem 1.25rem;
+}
+
+code:not(pre code) {
+  color: var(--ink);
+  background: var(--focus-soft);
+}
+
+.table > thead > tr > th,
+.post-container table thead th {
+  color: var(--ink);
+  background: var(--surface-muted);
+  border-bottom-color: var(--brand);
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.table > tbody > tr:nth-of-type(even),
+.post-container table tbody tr:nth-of-type(even) {
+  background: color-mix(in oklch, var(--surface-muted) 55%, var(--canvas));
+}
+
+.post-container .table > thead > tr > th,
+.post-container .table > tbody > tr > td,
+.post-container table > thead > tr > th,
+.post-container table > tbody > tr > td {
+  padding: 0.75em 0.8em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.post-container .table > tbody > tr > td,
+.post-container table > tbody > tr > td {
+  vertical-align: top;
+}
+
+.sidebar-container {
+  color: var(--ink-soft);
+}
+
+.sidebar-container .short-about img {
+  aspect-ratio: 1;
+  height: auto;
+  object-fit: cover;
+  border: 1px solid var(--hairline);
+  border-radius: 50%;
+}
+
+.sidebar-container h5,
+.sidebar-container h5 a {
+  color: var(--ink) !important;
+}
+
+.sidebar-container a {
+  color: var(--ink-soft) !important;
+}
+
+.sidebar-container a:hover,
+.sidebar-container a:active,
+.sidebar-container a:focus {
+  color: var(--brand-strong) !important;
+}
+
+.sidebar-container .tags a {
+  color: var(--ink-soft) !important;
+  background: var(--surface-muted);
+  border-color: var(--hairline);
+}
+
+.sidebar-container .tags a:hover,
+.sidebar-container .tags a:active,
+.sidebar-container .tags a:focus {
+  color: var(--brand-strong) !important;
+  background: var(--brand-soft);
+  border-color: color-mix(in oklch, var(--brand) 42%, var(--hairline));
+}
+
+.sidebar-container .fa-circle,
+footer .fa-circle,
+.sidebar-container li:nth-child(3n + 2) .fa-circle,
+footer li:nth-child(3n + 2) .fa-circle,
+.sidebar-container li:nth-child(3n) .fa-circle,
+footer li:nth-child(3n) .fa-circle {
+  color: var(--ink);
+}
+
+.sidebar-container a:hover .fa-circle,
+.sidebar-container a:focus .fa-circle,
+footer a:hover .fa-circle,
+footer a:focus .fa-circle {
+  color: var(--brand-strong);
+}
+
+.pager li > a,
+.pager li > span {
+  color: var(--ink);
+  background: var(--surface);
+  border-color: var(--hairline);
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+  color: var(--brand-strong);
+  background: var(--brand-soft);
+  border-color: color-mix(in oklch, var(--brand) 42%, var(--hairline));
+}
+
+footer {
+  color: var(--ink-soft);
+  background: var(--surface-muted);
+  border-top: 1px solid var(--hairline);
+}
+
+footer .copyright.text-muted {
+  color: var(--ink-soft);
+}
+
+footer a {
+  color: var(--ink-soft) !important;
+}
+
+.table-scroll {
+  max-width: 100%;
+  margin-block: 1.4em;
+}
+
+.table-scroll table {
+  margin-block: 0;
+}
+
+.table-scroll:focus-visible {
+  outline: 3px solid color-mix(in oklch, var(--focus) 78%, transparent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 767px) {
+  body {
+    background: var(--surface);
+  }
+
+  .post-preview > a {
+    padding-block: 0.3rem 0.5rem;
+  }
+
+  .post-preview + .post-preview {
+    margin-top: 2.8rem;
+  }
+
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-scroll table {
+    width: 100%;
+    min-width: 30rem;
+    table-layout: fixed;
+  }
+
+  .table-scroll table:has(tr > :nth-child(3)) {
+    min-width: 45rem;
+  }
+
+  .table-scroll table:has(tr > :nth-child(4)) {
+    min-width: 60rem;
+  }
+
+  .table-scroll table:has(tr > :nth-child(5)) {
+    min-width: 75rem;
+  }
+
+  .table-scroll th,
+  .table-scroll td {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .navbar-custom.is-fixed {
+    background: color-mix(in oklch, var(--surface) 95%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-preview > a > .post-title,
+  .post-preview > a > .post-title::after,
+  .post-preview > a:hover .post-title::after,
+  .post-preview > a:focus-visible .post-title::after {
+    transition: none;
+  }
+}
