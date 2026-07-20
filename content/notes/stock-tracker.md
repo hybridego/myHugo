@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-07-20T08:31:42+09:00
-publishDate: 2026-07-20T08:31:42+09:00
+date: 2026-07-21T08:31:24+09:00
+publishDate: 2026-07-21T08:31:24+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -25,6 +25,7 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-21 | 3M | NYSE | [분석 글](/2026/07/21/3m-mmm-earnings-preview/) | $159.84 | - | - | - | Hold / Watch / 마진 회복은 확인됐지만 매출 가속과 법률 합의금 지급 뒤 현금흐름 확인 | 2Q 유기적 성장·영업이익률·FCF, 자사주 매입, 순부채, PFAS 합의금 |
 | 2026-07-20 | Alphabet | NASDAQ | [분석 글](/2026/07/20/alphabet-googl-earnings-preview/) | $346.77 | - | - | - | Hold / Watch / Search와 Cloud는 강하지만 CAPEX와 희석 부담 확인 전 관찰 | 7월 22일 Search·Cloud 성장, Cloud 마진, CAPEX·FCF, ATM 집행, Gemini 일정 |
 | 2026-07-17 | Progressive | NYSE | [분석 글](/2026/07/17/progressive-pgr-analysis/) | $205.80 | - | - | - | 후속 관찰 / 계약 성장은 유지됐지만 6월 합산비율 90.0%의 지속 여부 확인 | 7월·8월 합산비율, 계약 증가율, 보험료 인상률과 손실비용, 10-Q 준비금, $190 부근 가격 |
 | 2026-07-17 | S-Oil | KOSPI | [후보 노트](/2026/07/17/stock-candidate-note-refining-margin-cycle/) | 144,900원 | - | - | - | 후속 분석 후보 / 정제마진은 강하지만 이달 급등 뒤 추격 보류 | 2Q 재고효과 제외 이익·현금흐름, 정제마진, 정기보수, 샤힌 CAPEX, DART 희석 여부 |
