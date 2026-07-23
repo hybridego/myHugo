@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-07-23T08:31:23+09:00
-publishDate: 2026-07-23T08:31:23+09:00
+date: 2026-07-24T08:32:34+09:00
+publishDate: 2026-07-24T08:32:34+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -161,6 +161,7 @@ URL: "/notes/stock-tracker/"
 
 아래 항목은 과거 글에서 아이디어로 남겼지만, 기준가와 추적 기준을 다시 맞춘 뒤 표에 올릴 예정이다.
 
+- 2026-07-24: Tesla - 2분기 실적 후 `Avoid / Watch`. 7월 23일 마감 보도는 $319.69지만 확인 시점 Nasdaq 일별 API가 7월 22일까지만 반영돼 공식 종가 갱신 뒤 기준가 표준화 필요
 - 2026-07-17: Valero Energy - 글 작성 시 미국장이 진행 중이라 Nasdaq 장중가만 확인됨. 7월 16일 정규장 종가로 기준가 표준화 필요
 - 2026-04-30: Amkor Technology, 원익QnC, 태광
 - 2026-04-29: AECOM, 고영
