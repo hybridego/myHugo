@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-07-24T08:32:34+09:00
-publishDate: 2026-07-24T08:32:34+09:00
+date: 2026-07-25T08:33:10+09:00
+publishDate: 2026-07-25T08:33:10+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -25,6 +25,7 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
+| 2026-07-25 | Intel | NASDAQ | [실적 복기](/2026/07/25/intel-intc-q2-earnings-review/) | $92.32 | - | - | - | Avoid / Watch / DCAI 59% 성장은 강하지만 외부 파운드리 매출·현금흐름과 가격 부담 확인 | 3Q DCAI 성장·서버 ASP, 외부 Foundry 매출, Foundry 손실, 조정 FCF, 주식 수·부채 |
 | 2026-07-21 | 3M | NYSE | [실적 복기](/2026/07/22/3m-mmm-q2-earnings-review/) | $159.84 | - | - | - | Hold / Watch / 2Q 매출 가속은 확인됐지만 7.3% 급등 뒤 가격 여유와 GAAP 현금흐름 점검 | 3Q 사업부 성장·GAAP 영업현금흐름·현금 잔액·순부채, PFAS 지급액 |
 | 2026-07-20 | Alphabet | NASDAQ | [실적 복기](/2026/07/23/alphabet-googl-q2-earnings-review/) | $346.77 | - | - | - | Hold / Watch / Cloud 82% 성장과 35.6% 마진은 강하지만 FCF 적자와 CAPEX·희석 부담 확인 | 3Q Search·Cloud 성장, Cloud 마진, FCF 회복, ATM·우선주 희석, 2027년 CAPEX |
 | 2026-07-17 | Progressive | NYSE | [분석 글](/2026/07/17/progressive-pgr-analysis/) | $205.80 | - | - | - | 후속 관찰 / 계약 성장은 유지됐지만 6월 합산비율 90.0%의 지속 여부 확인 | 7월·8월 합산비율, 계약 증가율, 보험료 인상률과 손실비용, 10-Q 준비금, $190 부근 가격 |
