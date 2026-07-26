@@ -12,9 +12,6 @@ URL: "/2026/07/02/general-dynamics-gd-analysis/"
 draft: false
 ---
 
-Current date: 2026-07-02
-Analysis target: General Dynamics (GD)
-
 # 퀀텀 리프 5-Step 정량 분석 보고서: General Dynamics (GD)
 
 보고일: 2026-07-02

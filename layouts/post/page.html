@@ -1,0 +1,93 @@
+{{ define "header" }}
+<style type="text/css">
+    header.intro-header {
+        background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL }}{{ end }}')
+    }
+</style>
+<header class="intro-header{{ if eq .Params.headerstyle "text" }} style-text{{ end }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <p class="site-title"><a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a></p>
+                    <span class="subheading">{{ .Site.Params.slogan }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container">
+                {{ if eq (.Param "multilingual") true }}
+                    {{ partial "multilingual-sel.html" . }}
+                    <div class="ko post-container" lang="ko">
+                        {{ $file := "/about/index-ko.md" }}
+                        {{ $file | readFile | markdownify }}
+                    </div>
+                    <div class="en post-container" lang="en">
+                        {{ .Content }}
+                    </div>
+                {{ else }}
+                    {{ $content := replaceRE `(?sU)<h1[^>]*>.*</h1>` "" .Content 1 }}
+                    <header class="article-header">
+                        <h1>{{ .Title }}</h1>
+                        {{ with .Params.subtitle }}
+                        <p class="article-subtitle">{{ . }}</p>
+                        {{ end }}
+                        <p class="article-meta">
+                            <span>{{ .Params.author | default .Site.Title }}</span>
+                            <span aria-hidden="true">·</span>
+                            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2006.01.02" }}</time>
+                            {{ if and (not .Lastmod.IsZero) (not (eq (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02"))) }}
+                            <span aria-hidden="true">·</span>
+                            <span>수정 <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">{{ .Lastmod.Format "2006.01.02" }}</time></span>
+                            {{ end }}
+                        </p>
+                        {{ with .GetTerms "tags" }}
+                        <ul class="article-tags" aria-label="글 태그">
+                            {{ range . }}
+                            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+                    </header>
+                    {{ $content | safeHTML }}
+                {{ end }}
+
+                {{ partial "related-posts.html" . }}
+
+                {{ if or .PrevInSection .NextInSection }}
+                <nav class="post-navigation" aria-label="이전 및 다음 글">
+                    {{ with .PrevInSection }}
+                    <a class="post-navigation__link post-navigation__link--previous" href="{{ .RelPermalink }}" rel="prev">
+                        <span>이전 글</span>
+                        <strong>{{ .LinkTitle }}</strong>
+                    </a>
+                    {{ end }}
+                    {{ with .NextInSection }}
+                    <a class="post-navigation__link post-navigation__link--next" href="{{ .RelPermalink }}" rel="next">
+                        <span>다음 글</span>
+                        <strong>{{ .LinkTitle }}</strong>
+                    </a>
+                    {{ end }}
+                </nav>
+                {{ end }}
+
+                {{ partial "comments.html" . }}
+            </div>
+
+            {{ partial "sidebar.html" . }}
+        </div>
+    </div>
+</article>
+{{ end }}

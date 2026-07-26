@@ -12,9 +12,6 @@ draft: false
 URL: "/2026/06/18/bwx-technologies-bwxt-analysis/"
 ---
 
-Current date: 2026-06-18  
-Analysis target: BWX Technologies (BWXT)
-
 # 퀀텀 리프 5-Step 정량 분석 보고서: BWX Technologies (BWXT)
 
 보고일: 2026-06-18

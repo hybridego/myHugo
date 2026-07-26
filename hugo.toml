@@ -16,6 +16,24 @@ enableRobotsTXT = true
 [pagination]
   pagerSize = 10 # frontpage pagination
 
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = true
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 60
+
+  [[related.indices]]
+    name = "date"
+    weight = 10
+    pattern = "2006"
+
 [outputs]
 home = ["HTML", "RSS", "Algolia"]
 
@@ -24,7 +42,7 @@ home = ["HTML", "RSS", "Algolia"]
   header_image = "img/home-bg-jeep.webp"
   SEOTitle = "Lionel Blog | 주식 리서치와 프로그래밍"
   description = "주식 리서치, 투자 후보 추적, Linux·Hugo·Rust·AI 개발 기록을 정리합니다."
-  descriptionLength = 80
+  descriptionLength = 160
   keyword = "Lionel Blog, Lionel.J, hybridego, 주식 리서치, 주식 분석, 투자 후보, 국내주식, 미국주식, 프로그래밍, Linux, Hugo, Rust, AI, Kubernetes, microservices"
   slogan = "The road is under your feet, the heart looks to the distance"
   upstreamAttribution = true

@@ -12,9 +12,6 @@ draft: false
 URL: "/2026/06/15/ttm-technologies-ttmi-analysis/"
 ---
 
-Current date: 2026-06-15  
-Analysis target: TTM Technologies (TTMI)
-
 # 퀀텀 리프 5-Step 정량 분석 보고서: TTM Technologies (TTMI)
 
 보고일: 2026-06-15

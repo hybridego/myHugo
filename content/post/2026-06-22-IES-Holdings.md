@@ -12,9 +12,6 @@ draft: false
 URL: "/2026/06/22/ies-holdings-iesc-analysis/"
 ---
 
-Current date: 2026-06-22  
-Analysis target: IES Holdings (IESC)
-
 # 퀀텀 리프 5-Step 정량 분석 보고서: IES Holdings (IESC)
 
 보고일: 2026-06-22

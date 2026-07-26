@@ -14,8 +14,6 @@ URL: "/2026/04/24/centrus-energy-leu/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Centrus Energy (LEU)
 
-- Current date: 2026-04-24
-- Analysis target: Centrus Energy (LEU, NYSE American)
 - Data timestamp: 2026-04-24 06:15 KST 작성, 2025년 연간 실적은 2026-02-10 회사 발표 기준, 일부 주가/시가총액은 2026-04-19~20 공개 시장자료 기준
 - Note: 실시간 시세와 일부 SEC 원문 수치 추출에는 제한이 있었다. 그래서 회사 IR, SEC 10-Q 검색 결과, Reuters/PRNewswire 공개 기사, 공개 시장 데이터 스니펫을 교차 확인했고, 확인이 약한 항목은 보수적으로 적었다.
 

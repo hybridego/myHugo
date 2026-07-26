@@ -2,10 +2,11 @@
   const initResponsiveTables = () => {
     const tables = document.querySelectorAll("article .post-container table");
 
-    tables.forEach((table) => {
+    tables.forEach((table, index) => {
       if (table.parentElement?.classList.contains("table-scroll")) return;
 
       const wrapper = document.createElement("div");
+      const accessibleLabel = `가로로 스크롤할 수 있는 데이터 표 ${index + 1}`;
       wrapper.className = "table-scroll";
       table.parentNode.insertBefore(wrapper, table);
       wrapper.appendChild(table);
@@ -16,7 +17,7 @@
         if (isScrollable) {
           wrapper.tabIndex = 0;
           wrapper.setAttribute("role", "region");
-          wrapper.setAttribute("aria-label", "가로로 스크롤할 수 있는 데이터 표");
+          wrapper.setAttribute("aria-label", accessibleLabel);
         } else {
           wrapper.removeAttribute("tabindex");
           wrapper.removeAttribute("role");

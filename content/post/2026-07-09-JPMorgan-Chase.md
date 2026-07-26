@@ -12,9 +12,6 @@ URL: "/2026/07/09/jpmorgan-chase-jpm-analysis/"
 draft: false
 ---
 
-Current date: 2026-07-09
-Analysis target: JPMorgan Chase (JPM)
-
 # 퀀텀 리프 5-Step 정량 분석 보고서: JPMorgan Chase (JPM)
 
 보고일: 2026-07-09

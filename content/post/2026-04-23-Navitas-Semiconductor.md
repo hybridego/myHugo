@@ -14,8 +14,6 @@ URL: "/2026/04/23/navitas-semiconductor-nvts/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Navitas Semiconductor (NVTS)
 
-- Current date: 2026-04-23
-- Analysis target: Navitas Semiconductor (NVTS, NASDAQ)
 - Data timestamp: 2026-04-23 06:34 KST 작성, 재무 수치는 2026-02-24 회사 발표 기준, 시가총액은 2026-04-10~22 공개 시장자료 기준
 - Note: SEC 원문 일부는 직접 열람 대신 회사 IR/보도자료와 공개 시장자료를 교차 확인했다. 실시간 시세·배수는 변동 가능성이 있어 보수적으로 해석했다.
 

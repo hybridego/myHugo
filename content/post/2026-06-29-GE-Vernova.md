@@ -12,9 +12,6 @@ URL: "/2026/06/29/ge-vernova-gev-analysis/"
 draft: false
 ---
 
-Current date: 2026-06-29
-Analysis target: GE Vernova (GEV)
-
 # 퀀텀 리프 5-Step 정량 분석 보고서: GE Vernova (GEV)
 
 보고일: 2026-06-29

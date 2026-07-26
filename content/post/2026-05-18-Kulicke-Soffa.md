@@ -12,9 +12,6 @@ draft: false
 URL: "/2026/05/18/kulicke-soffa-klic-analysis/"
 ---
 
-Current date: 2026-05-18  
-Analysis target: Kulicke & Soffa Industries (KLIC)
-
 # 퀀텀 리프 5-Step 정량 분석 보고서: Kulicke & Soffa (KLIC)
 
 보고일: 2026-05-18

@@ -14,8 +14,6 @@ URL: "/2026/04/23/astera-labs-alab/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Astera Labs (ALAB)
 
-- Current date: 2026-04-23
-- Analysis target: Astera Labs (ALAB, NASDAQ)
 - Data timestamp: 2026-04-23 05:46 KST 작성, 재무 수치는 2026-02-10 회사 IR 공개자료와 2026-04-21~22 공개 시장자료 기준
 - Note: SEC 원문 일부는 점검으로 직접 열람이 불안정했다. 그래서 회사 IR, 공시 색인, 시장 데이터로 교차 확인했고, 검증이 어려운 항목은 보수적으로 적었다.
 

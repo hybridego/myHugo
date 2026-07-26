@@ -27,6 +27,8 @@
                 {{ .Content }}
             {{ end }}
 
+            {{ partial "related-posts.html" . }}
+
             {{ partial "comments.html" . }}
 
             </div>

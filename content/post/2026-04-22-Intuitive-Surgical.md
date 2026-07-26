@@ -14,8 +14,6 @@ URL: "/2026/04/22/intuitive-surgical-isrg/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Intuitive Surgical (ISRG)
 
-- Current date: 2026-04-22
-- Analysis target: Intuitive Surgical (ISRG, NASDAQ)
 - Data timestamp: 2026-04-22 21:23 KST 작성, 시세/밸류에이션 기준은 2026-04-21 종가 및 2026-04-21~22 공개 자료 기준
 - Note: 일부 역사적 백분위수는 공개 데이터 한계로 근사 판단만 제시하며, 검증이 어려운 수치는 억지로 단정하지 않았다.
 

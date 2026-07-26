@@ -1,0 +1,18 @@
+{{ if eq .Type "post" }}
+    {{ $related := .Site.RegularPages.Related . | first 4 }}
+    {{ with $related }}
+    <aside class="related-posts" aria-labelledby="related-posts-title">
+        <h2 id="related-posts-title" class="related-posts__title">함께 읽을 글</h2>
+        <ul class="related-posts__list" role="list">
+            {{ range . }}
+            <li class="related-posts__item">
+                <a class="related-posts__link" href="{{ .RelPermalink }}">
+                    <span>{{ .LinkTitle }}</span>
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </aside>
+    {{ end }}
+{{ end }}

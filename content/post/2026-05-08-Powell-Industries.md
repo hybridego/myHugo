@@ -14,8 +14,6 @@ URL: "/2026/05/08/powell-industries-powl-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Powell Industries (POWL)
 
-- Current date: 2026-05-08
-- Analysis target: Powell Industries (POWL, NASDAQ, US)
 - Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-05-08 08:49 KST 기준, 2026-05-07 미국장 마감 및 FY2026 Q2 실적 발표 기준
 - 주요 출처: [StockAnalysis POWL Overview](https://stockanalysis.com/stocks/powl/), [StockAnalysis POWL Financials](https://stockanalysis.com/stocks/powl/financials/), [StockAnalysis POWL Statistics](https://stockanalysis.com/stocks/powl/statistics/), [StockAnalysis POWL Forecast](https://stockanalysis.com/stocks/powl/forecast/), [Q2 FY2026 8-K/earnings release mirror](https://www.stocktitan.net/sec-filings/POWL/8-k-powell-industries-inc-reports-material-event-2ef2e43e6c7e.html), [SEC EDGAR](https://www.sec.gov/)
