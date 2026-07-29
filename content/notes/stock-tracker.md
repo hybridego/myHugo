@@ -26,10 +26,12 @@ URL: "/notes/stock-tracker/"
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
 | 2026-07-25 | Intel | NASDAQ | [실적 복기](/2026/07/25/intel-intc-q2-earnings-review/) | $92.32 | - | - | - | Avoid / Watch / DCAI 59% 성장은 강하지만 외부 파운드리 매출·현금흐름과 가격 부담 확인 | 3Q DCAI 성장·서버 ASP, 외부 Foundry 매출, Foundry 손실, 조정 FCF, 주식 수·부채 |
+| 2026-07-24 | Tesla | NASDAQ | [실적 복기](/2026/07/24/tesla-tsla-q2-earnings-review/) | $319.69 | - | - | - | Avoid / Watch / 매출은 늘었지만 1.4% 영업이익률과 FCF 적자, 희석 부담 확인 | 3Q 자동차 마진, FCF, Robotaxi 단위경제, CAPEX, 발행주식 수 |
 | 2026-07-21 | 3M | NYSE | [실적 복기](/2026/07/22/3m-mmm-q2-earnings-review/) | $159.84 | - | - | - | Hold / Watch / 2Q 매출 가속은 확인됐지만 7.3% 급등 뒤 가격 여유와 GAAP 현금흐름 점검 | 3Q 사업부 성장·GAAP 영업현금흐름·현금 잔액·순부채, PFAS 지급액 |
 | 2026-07-20 | Alphabet | NASDAQ | [실적 복기](/2026/07/23/alphabet-googl-q2-earnings-review/) | $346.77 | - | - | - | Hold / Watch / Cloud 82% 성장과 35.6% 마진은 강하지만 FCF 적자와 CAPEX·희석 부담 확인 | 3Q Search·Cloud 성장, Cloud 마진, FCF 회복, ATM·우선주 희석, 2027년 CAPEX |
 | 2026-07-17 | Progressive | NYSE | [분석 글](/2026/07/17/progressive-pgr-analysis/) | $205.80 | $213.83 (+3.9%) | - | - | 1주 강세 / 계약 성장과 합산비율 검증은 계속 필요 | 7월·8월 합산비율, 계약 증가율, 보험료 인상률과 손실비용, 10-Q 준비금, $190 부근 가격 |
 | 2026-07-17 | S-Oil | KOSPI | [후보 노트](/2026/07/17/stock-candidate-note-refining-margin-cycle/) | 144,900원 | 151,200원 (+4.3%) | - | - | 1주 강세 / 재고효과 제외 이익 확인 전 추격 보류 | 2Q 재고효과 제외 이익·현금흐름, 정제마진, 정기보수, 샤힌 CAPEX, DART 희석 여부 |
+| 2026-07-17 | Valero Energy | NYSE | [후보 노트](/2026/07/17/stock-candidate-note-refining-margin-cycle/) | $300.26 | $305.26 (+1.7%) | - | - | 1주 강세 / 고점권 가격이어서 2Q 정제마진과 처리량 확인 전 추격 보류 | 2Q 배럴당 정제마진, 처리량, 가동률, 자사주 매입, 7월 30일 실적 |
 | 2026-07-16 | 삼성전기 | KOSPI | [분석 글](/2026/07/16/samsung-electro-mechanics-009150-analysis/) | 1,413,000원 | 1,326,000원 (-6.2%) | - | - | 1주 약세 / AI 서버 MLCC 논리와 가격 부담 동시 재점검 | 2Q 매출·영업이익률, 패키지솔루션 매출, AI 서버 MLCC 공급, 외국인 수급, DART 희석 여부 |
 | 2026-07-16 | ASML | NASDAQ | [분석 글](/2026/07/16/asml-asml-analysis/) | $1,815.27 | $1,757.09 (-3.2%) | - | - | 1주 약세 / 가이던스보다 고평가 부담 확인 | 3Q 매출 가이던스 달성, gross margin, order intake, 중국 매출 비중, 고객 CAPEX |
 | 2026-07-15 | 클래시스 | KOSDAQ | [후보 노트](/2026/07/15/stock-candidate-note-medical-device-aesthetics-defensive-growth/) | 45,550원 | 44,450원 (-2.4%) | - | - | 1주 약세 / 소모품 반복 매출과 해외 마진 확인 필요 | 2Q 매출·영업이익률, 카트리지 매출 비중, 브라질 유통망 인수 효과, 해외 매출, DART 희석 여부 |
@@ -162,8 +164,6 @@ URL: "/notes/stock-tracker/"
 
 아래 항목은 과거 글에서 아이디어로 남겼지만, 기준가와 추적 기준을 다시 맞춘 뒤 표에 올릴 예정이다.
 
-- 2026-07-24: Tesla - 2분기 실적 후 `Avoid / Watch`. 7월 23일 마감 보도는 $319.69지만 확인 시점 Nasdaq 일별 API가 7월 22일까지만 반영돼 공식 종가 갱신 뒤 기준가 표준화 필요
-- 2026-07-17: Valero Energy - 글 작성 시 미국장이 진행 중이라 Nasdaq 장중가만 확인됨. 7월 16일 정규장 종가로 기준가 표준화 필요
 - 2026-04-30: Amkor Technology, 원익QnC, 태광
 - 2026-04-29: AECOM, 고영
 - 2026-04-27: 제이에스코퍼레이션
