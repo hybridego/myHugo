@@ -25,10 +25,10 @@ URL: "/notes/stock-tracker/"
 
 | 발행일 | 종목 | 시장 | 글 | 기준가 | 1주 | 1개월 | 3개월 | 현재 판단 | 다음 확인 포인트 |
 |---|---|---|---|---:|---:|---:|---:|---|---|
-| 2026-07-25 | Intel | NASDAQ | [실적 복기](/2026/07/25/intel-intc-q2-earnings-review/) | $92.32 | - | - | - | Avoid / Watch / DCAI 59% 성장은 강하지만 외부 파운드리 매출·현금흐름과 가격 부담 확인 | 3Q DCAI 성장·서버 ASP, 외부 Foundry 매출, Foundry 손실, 조정 FCF, 주식 수·부채 |
-| 2026-07-24 | Tesla | NASDAQ | [실적 복기](/2026/07/24/tesla-tsla-q2-earnings-review/) | $319.69 | - | - | - | Avoid / Watch / 매출은 늘었지만 1.4% 영업이익률과 FCF 적자, 희석 부담 확인 | 3Q 자동차 마진, FCF, Robotaxi 단위경제, CAPEX, 발행주식 수 |
-| 2026-07-21 | 3M | NYSE | [실적 복기](/2026/07/22/3m-mmm-q2-earnings-review/) | $159.84 | - | - | - | Hold / Watch / 2Q 매출 가속은 확인됐지만 7.3% 급등 뒤 가격 여유와 GAAP 현금흐름 점검 | 3Q 사업부 성장·GAAP 영업현금흐름·현금 잔액·순부채, PFAS 지급액 |
-| 2026-07-20 | Alphabet | NASDAQ | [실적 복기](/2026/07/23/alphabet-googl-q2-earnings-review/) | $346.77 | - | - | - | Hold / Watch / Cloud 82% 성장과 35.6% 마진은 강하지만 FCF 적자와 CAPEX·희석 부담 확인 | 3Q Search·Cloud 성장, Cloud 마진, FCF 회복, ATM·우선주 희석, 2027년 CAPEX |
+| 2026-07-25 | Intel | NASDAQ | [실적 복기](/2026/07/25/intel-intc-q2-earnings-review/) | $92.32 | $90.20 (-2.3%) | - | - | 1주 약세 / DCAI 성장보다 외부 Foundry 매출·현금흐름 검증 우선 | 3Q DCAI 성장·서버 ASP, 외부 Foundry 매출, Foundry 손실, 조정 FCF, 주식 수·부채 |
+| 2026-07-24 | Tesla | NASDAQ | [실적 복기](/2026/07/24/tesla-tsla-q2-earnings-review/) | $319.69 | $311.21 (-2.7%) | - | - | 1주 약세 / 실적 급락 뒤 반등했지만 기준가 미회복, 마진·FCF 확인 우선 | 3Q 자동차 마진, FCF, Robotaxi 단위경제, CAPEX, 발행주식 수 |
+| 2026-07-21 | 3M | NYSE | [실적 복기](/2026/07/22/3m-mmm-q2-earnings-review/) | $159.84 | $182.48 (+14.2%) | - | - | 1주 강세 / 상향 가이던스 반영 뒤 가격 부담과 GAAP 현금흐름 점검 | 3Q 사업부 성장·GAAP 영업현금흐름·현금 잔액·순부채, PFAS 지급액 |
+| 2026-07-20 | Alphabet | NASDAQ | [실적 복기](/2026/07/23/alphabet-googl-q2-earnings-review/) | $346.77 | $326.56 (-5.8%) | - | - | 1주 약세 / Cloud 성장보다 FCF 적자와 CAPEX·희석 부담 재점검 | 3Q Search·Cloud 성장, Cloud 마진, FCF 회복, ATM·우선주 희석, 2027년 CAPEX |
 | 2026-07-17 | Progressive | NYSE | [분석 글](/2026/07/17/progressive-pgr-analysis/) | $205.80 | $213.83 (+3.9%) | - | - | 1주 강세 / 계약 성장과 합산비율 검증은 계속 필요 | 7월·8월 합산비율, 계약 증가율, 보험료 인상률과 손실비용, 10-Q 준비금, $190 부근 가격 |
 | 2026-07-17 | S-Oil | KOSPI | [후보 노트](/2026/07/17/stock-candidate-note-refining-margin-cycle/) | 144,900원 | 151,200원 (+4.3%) | - | - | 1주 강세 / 재고효과 제외 이익 확인 전 추격 보류 | 2Q 재고효과 제외 이익·현금흐름, 정제마진, 정기보수, 샤힌 CAPEX, DART 희석 여부 |
 | 2026-07-17 | Valero Energy | NYSE | [후보 노트](/2026/07/17/stock-candidate-note-refining-margin-cycle/) | $300.26 | $305.26 (+1.7%) | - | - | 1주 강세 / 고점권 가격이어서 2Q 정제마진과 처리량 확인 전 추격 보류 | 2Q 배럴당 정제마진, 처리량, 가동률, 자사주 매입, 7월 30일 실적 |
