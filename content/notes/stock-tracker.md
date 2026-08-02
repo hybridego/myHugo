@@ -2,8 +2,8 @@
 layout: page
 title: "Stock Idea Tracker"
 description: "블로그에 공개한 주식 아이디어를 같은 기준으로 추적하는 기록장."
-date: 2026-07-26T08:34:30+09:00
-publishDate: 2026-07-26T08:34:30+09:00
+date: 2026-08-02T09:19:06+09:00
+publishDate: 2026-08-02T09:19:06+09:00
 URL: "/notes/stock-tracker/"
 ---
 
@@ -58,16 +58,16 @@ URL: "/notes/stock-tracker/"
 | 2026-07-04 | Mueller Industries | NYSE | [후보 노트](/2026/07/04/stock-candidate-note-copper-power-materials/) | $56.50 | $56.99 (+0.9%) | - | - | 1주 보합권 / 구리 제품 가격 전가와 현금흐름 확인 | Q2 제품별 수요, 구리 가격 전가, 재고, 영업현금흐름, Bison Metals 통합 |
 | 2026-07-03 | 고영 | KOSDAQ | [후보 노트](/2026/07/03/stock-candidate-note-physical-ai-machine-vision/) | 29,650원 | 28,800원 (-2.9%) | - | - | 1주 약세 / 피지컬 AI보다 실제 검사장비 주문 확인 우선 | 2Q 매출·영업이익률, AI 서버·광모듈 검사 수요, 의료로봇·우주 매출, 재고·매출채권, DART 희석 여부 |
 | 2026-07-03 | Cognex | NASDAQ | [후보 노트](/2026/07/03/stock-candidate-note-physical-ai-machine-vision/) | $67.80 | $66.80 (-1.5%) | - | - | 1주 약보합 / 머신비전 회복은 Q2 가이던스 달성 확인 필요 | Q2 revenue guidance, AI vision product orders, gross margin, Asia competition, FCF |
-| 2026-07-02 | HD한국조선해양 | KOSPI | [분석 글](/2026/07/02/hd-ksoe-009540-analysis/) | 358,500원 | 327,500원 (-8.6%) | - | - | 1주 약세 / 조선 순환매보다 가격·수주 마진 검증 우선 | 2Q 매출·영업이익률, 신규 수주 목표 달성률, 선종 믹스, 후판·인건비, DART 희석 여부 |
-| 2026-07-02 | General Dynamics | NYSE | [분석 글](/2026/07/02/general-dynamics-gd-analysis/) | $362.96 | $374.60 (+3.2%) | - | - | 1주 강세 / 방산 조선 backlog 방어력 확인 | 2Q book-to-bill, Marine Systems backlog, Marine Systems margin, Gulfstream deliveries, FCF |
-| 2026-07-01 | 셀트리온 | KOSPI | [후보 노트](/2026/07/01/stock-candidate-note-healthcare-rotation/) | 173,300원 | 176,800원 (+2.0%) | - | - | 1주 소폭 강세 / 바이오시밀러 실적 개선 확인 필요 | 2Q 매출·매출총이익률, Zymfentra 처방, 미국 직접판매 비용, 바이오시밀러 규제 완화, DART 희석 여부 |
-| 2026-07-01 | Eli Lilly | NYSE | [후보 노트](/2026/07/01/stock-candidate-note-healthcare-rotation/) | $1,199.13 | $1,215.83 (+1.4%) | - | - | 1주 소폭 강세 / GLP-1 성장성은 유효하나 가격 부담 확인 | Mounjaro·Zepbound 매출, 가격 압박, 공급 증설, FY2026 가이던스, 밸류에이션 부담 |
-| 2026-06-30 | HD현대일렉트릭 | KOSPI | [후보 노트](/2026/06/30/stock-candidate-note-ai-power-bottleneck/) | 937,000원 | 899,000원 (-4.1%) | - | - | 1주 약세 / AI 전력 병목보다 변압기 가격 부담 확인 | 2Q 수주잔고, 북미 매출, 영업이익률, 현금흐름, DART 희석 여부 |
-| 2026-06-30 | Vertiv | NYSE | [후보 노트](/2026/06/30/stock-candidate-note-ai-power-bottleneck/) | $307.01 | $305.58 (-0.5%) | - | - | 1주 보합 / 데이터센터 전력·냉각 직접성은 유지 | backlog, book-to-bill, 액체냉각 매출, 조정 영업마진, FCF |
-| 2026-06-29 | 삼성전자 | KOSPI | [분석 글](/2026/06/29/samsung-electronics-005930-analysis/) | 339,500원 | 318,000원 (-6.3%) | - | - | 1주 약세 / AI 메모리 논리보다 가격 부담 확인 | 2Q DS 영업이익, HBM4 매출, DRAM 가격, 310,000원 방어, DART 희석 여부 |
-| 2026-06-29 | GE Vernova | NYSE | [분석 글](/2026/06/29/ge-vernova-gev-analysis/) | $1,045.17 | $1,152.04 (+10.2%) | - | - | 1주 강세 / AI 전력 병목과 백로그 프리미엄 확인 | 2Q orders, Electrification book-to-bill, Power backlog, Wind 손실, FCF 가이던스 |
-| 2026-06-27 | LG에너지솔루션 | KOSPI | [후보 노트](/2026/06/27/stock-candidate-note-ai-datacenter-ess/) | 331,500원 | 362,500원 (+9.4%) | - | - | 1주 강세 / ESS 기대는 남았지만 수익성 확인 전 추격 경계 | 2Q ESS 매출 비중, DTE 6GWh 납품 일정, 북미 생산 가동률, 영업손익, 원재료·가격 경쟁 |
-| 2026-06-27 | Fluence Energy | NASDAQ | [후보 노트](/2026/06/27/stock-candidate-note-ai-datacenter-ess/) | $19.27 | $17.00 (-11.8%) | - | - | 1주 약세 / ESS backlog가 이익으로 바뀌는 속도 확인 필요 | 10-Q backlog, remaining performance obligations, FY2026 가이던스, 현금흐름, 추가 자금조달 |
+| 2026-07-02 | HD한국조선해양 | KOSPI | [분석 글](/2026/07/02/hd-ksoe-009540-analysis/) | 358,500원 | 327,500원 (-8.6%) | 확인 필요 | - | 1주 약세 / 조선 순환매보다 가격·수주 마진 검증 우선 | 2Q 매출·영업이익률, 신규 수주 목표 달성률, 선종 믹스, 후판·인건비, DART 희석 여부 |
+| 2026-07-02 | General Dynamics | NYSE | [분석 글](/2026/07/02/general-dynamics-gd-analysis/) | $362.96 | $374.60 (+3.2%) | 확인 필요 | - | 1주 강세 / 방산 조선 backlog 방어력 확인 | 2Q book-to-bill, Marine Systems backlog, Marine Systems margin, Gulfstream deliveries, FCF |
+| 2026-07-01 | 셀트리온 | KOSPI | [후보 노트](/2026/07/01/stock-candidate-note-healthcare-rotation/) | 173,300원 | 176,800원 (+2.0%) | 확인 필요 | - | 1주 소폭 강세 / 바이오시밀러 실적 개선 확인 필요 | 2Q 매출·매출총이익률, Zymfentra 처방, 미국 직접판매 비용, 바이오시밀러 규제 완화, DART 희석 여부 |
+| 2026-07-01 | Eli Lilly | NYSE | [후보 노트](/2026/07/01/stock-candidate-note-healthcare-rotation/) | $1,199.13 | $1,215.83 (+1.4%) | 확인 필요 | - | 1주 소폭 강세 / GLP-1 성장성은 유효하나 가격 부담 확인 | Mounjaro·Zepbound 매출, 가격 압박, 공급 증설, FY2026 가이던스, 밸류에이션 부담 |
+| 2026-06-30 | HD현대일렉트릭 | KOSPI | [후보 노트](/2026/06/30/stock-candidate-note-ai-power-bottleneck/) | 937,000원 | 899,000원 (-4.1%) | 확인 필요 | - | 1주 약세 / AI 전력 병목보다 변압기 가격 부담 확인 | 2Q 수주잔고, 북미 매출, 영업이익률, 현금흐름, DART 희석 여부 |
+| 2026-06-30 | Vertiv | NYSE | [후보 노트](/2026/06/30/stock-candidate-note-ai-power-bottleneck/) | $307.01 | $305.58 (-0.5%) | 확인 필요 | - | 1주 보합 / 데이터센터 전력·냉각 직접성은 유지 | backlog, book-to-bill, 액체냉각 매출, 조정 영업마진, FCF |
+| 2026-06-29 | 삼성전자 | KOSPI | [분석 글](/2026/06/29/samsung-electronics-005930-analysis/) | 339,500원 | 318,000원 (-6.3%) | 확인 필요 | - | 1주 약세 / AI 메모리 논리보다 가격 부담 확인 | 2Q DS 영업이익, HBM4 매출, DRAM 가격, 310,000원 방어, DART 희석 여부 |
+| 2026-06-29 | GE Vernova | NYSE | [분석 글](/2026/06/29/ge-vernova-gev-analysis/) | $1,045.17 | $1,152.04 (+10.2%) | 확인 필요 | - | 1주 강세 / AI 전력 병목과 백로그 프리미엄 확인 | 2Q orders, Electrification book-to-bill, Power backlog, Wind 손실, FCF 가이던스 |
+| 2026-06-27 | LG에너지솔루션 | KOSPI | [후보 노트](/2026/06/27/stock-candidate-note-ai-datacenter-ess/) | 331,500원 | 362,500원 (+9.4%) | 확인 필요 | - | 1주 강세 / ESS 기대는 남았지만 수익성 확인 전 추격 경계 | 2Q ESS 매출 비중, DTE 6GWh 납품 일정, 북미 생산 가동률, 영업손익, 원재료·가격 경쟁 |
+| 2026-06-27 | Fluence Energy | NASDAQ | [후보 노트](/2026/06/27/stock-candidate-note-ai-datacenter-ess/) | $19.27 | $17.00 (-11.8%) | 확인 필요 | - | 1주 약세 / ESS backlog가 이익으로 바뀌는 속도 확인 필요 | 10-Q backlog, remaining performance obligations, FY2026 가이던스, 현금흐름, 추가 자금조달 |
 | 2026-06-26 | SK하이닉스 | KOSPI | [후보 노트](/2026/06/26/stock-candidate-note-ai-memory-hbm/) | 2,917,000원 | 2,425,000원 (-16.9%) | 1,759,000원 (-39.7%) | - | 1개월 급락 확대 / HBM 논리보다 가격 부담과 실적 검증 우선 | 2Q HBM 매출 비중, 영업이익률, CAPEX, DRAM 가격, 고객별 공급 계약 |
 | 2026-06-26 | Micron Technology | NASDAQ | [후보 노트](/2026/06/26/stock-candidate-note-ai-memory-hbm/) | $1,213.56 | $975.56 (-19.6%) | $920.95 (-24.1%) | - | 1개월 급락 확대 / HBM 가이던스와 고평가 부담 재점검 | FY4Q 가이던스, HBM 계약, gross margin, FCF, 공급 증가 속도 |
 | 2026-06-24 | HD건설기계 | KOSPI | [후보 노트](/2026/06/24/stock-candidate-note-middle-east-reconstruction-construction-equipment/) | 121,900원 | 118,800원 (-2.5%) | 132,700원 (+8.9%) | - | 1개월 강세 전환 / 지역별 매출과 마진으로 검산 | 2Q 지역별 매출, 중동·아프리카 수주, 합병 시너지, 영업이익률, DART 희석 여부 |
@@ -155,10 +155,10 @@ URL: "/notes/stock-tracker/"
 | 2026-05-06 | HK이노엔 | KOSDAQ | [분석 글](/2026/05/06/hk-innon-195940-analysis/) | 52,000원 | 50,300원 (-3.3%) | 41,200원 (-20.8%) | - | 1개월 약세 / 방어주 논리 재점검 | 케이캡 성장, ETC 마진, R&D 비용 |
 | 2026-05-06 | Argan | NYSE | [분석 글](/2026/05/06/argan-agx-analysis/) | $720.00 | $719.92 (-0.0%) | $694.72 (-3.5%) | - | 1개월 소폭 약세 / 고평가 경고 유지 | 수주잔고 전환, 프로젝트 마진, 목표가 괴리 |
 | 2026-05-06 | Broadcom | NASDAQ | [분석 글](/2026/05/06/broadcom-avgo-analysis/) | $427.36 | $416.79 (-2.5%) | $385.73 (-9.7%) | - | 1개월 약세 / 분할 접근 유지 | AI 매출, VMware 통합, FCF |
-| 2026-05-02 | 티앤엘 | KOSDAQ | [분석 글](/2026/05/02/tnl-340570-analysis/) | 61,200원 | 58,400원 (-4.6%) | 54,400원 (-11.1%) | - | 1개월 약세 / 고객 집중도 확인 | ODM 물량, 미국 고객 재주문, 마진 |
-| 2026-05-02 | Itron | NASDAQ | [분석 글](/2026/05/02/itron-itri-analysis/) | $85.40 | $81.87 (-4.1%) | $83.94 (-1.7%) | - | 1개월 보합권 / 저평가 논리 재점검 | 부채비율, 인수 통합, FCF |
-| 2026-05-01 | SNT에너지 | KOSPI | [분석 글](/2026/05/01/snt-energy-100840-analysis/) | 56,200원 | 56,800원 (+1.1%) | 36,800원 (-34.5%) | - | 1개월 급락 / 프로젝트 원가·수주 재점검 | Air Cooler·HRSG 수주, 1Q 이후 이익률, 프로젝트 원가 |
-| 2026-05-01 | Axcelis Technologies | NASDAQ | [분석 글](/2026/05/01/axcelis-technologies-acls-analysis/) | $139.11 | $163.03 (+17.2%) | $150.42 (+8.1%) | - | 1개월 강세 유지 / 과열 경계 | SiC 투자 회복, 중국 규제, 주문 회복 |
+| 2026-05-02 | 티앤엘 | KOSDAQ | [분석 글](/2026/05/02/tnl-340570-analysis/) | 61,200원 | 58,400원 (-4.6%) | 54,400원 (-11.1%) | 확인 필요 | 1개월 약세 / 고객 집중도 확인 | ODM 물량, 미국 고객 재주문, 마진 |
+| 2026-05-02 | Itron | NASDAQ | [분석 글](/2026/05/02/itron-itri-analysis/) | $85.40 | $81.87 (-4.1%) | $83.94 (-1.7%) | 확인 필요 | 1개월 보합권 / 저평가 논리 재점검 | 부채비율, 인수 통합, FCF |
+| 2026-05-01 | SNT에너지 | KOSPI | [분석 글](/2026/05/01/snt-energy-100840-analysis/) | 56,200원 | 56,800원 (+1.1%) | 36,800원 (-34.5%) | 확인 필요 | 1개월 급락 / 프로젝트 원가·수주 재점검 | Air Cooler·HRSG 수주, 1Q 이후 이익률, 프로젝트 원가 |
+| 2026-05-01 | Axcelis Technologies | NASDAQ | [분석 글](/2026/05/01/axcelis-technologies-acls-analysis/) | $139.11 | $163.03 (+17.2%) | $150.42 (+8.1%) | 확인 필요 | 1개월 강세 유지 / 과열 경계 | SiC 투자 회복, 중국 규제, 주문 회복 |
 
 ## 확인 필요
 
