@@ -1,8 +1,8 @@
 ---
 author: Lionel.J
-title: "퀀텀 리프 5-Step 정량 분석 보고서: Progressive (PGR)"
+title: "Progressive (PGR) 분석: 계약 성장에도 합산비율 90%는 경고인가"
 subtitle: "미국주식 장기 가치투자 분석"
-description: "Progressive의 보험료 성장, 합산비율 악화, 밸류에이션과 리스크를 2026년 2분기 실적 기준으로 분석한 미국주식 리포트."
+description: "Progressive(PGR)의 2026년 2분기 보험료와 계약 성장, 6월 합산비율 90.0%, 정상 EPS 시나리오를 검산해 실적 급락 뒤 관찰 조건을 정리했다."
 date: 2026-07-17T08:32:01+09:00
 publishDate: 2026-07-17T08:32:01+09:00
 image: ""
@@ -12,7 +12,7 @@ URL: "/2026/07/17/progressive-pgr-analysis/"
 draft: false
 ---
 
-# 퀀텀 리프 5-Step 정량 분석 보고서: Progressive (PGR)
+# Progressive (PGR) 분석: 계약 성장에도 합산비율 90%는 경고인가
 
 보고일: 2026-07-17
 
