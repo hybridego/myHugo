@@ -6,7 +6,7 @@ description: "LS ELECTRIC의 전력기기·스마트에너지 사업, AI 데이�
 date: 2026-05-11T22:29:30+09:00
 publishDate: 2026-05-11T22:29:30+09:00
 image: ""
-tags: [ stock, korea, 010120, LSELECTRIC ]
+tags: [ stock, korea, "010120", LSELECTRIC ]
 categories: [ Stock ]
 draft: false
 URL: "/2026/05/11/ls-electric-010120-analysis/"
