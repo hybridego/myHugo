@@ -14,7 +14,6 @@ URL: "/2026/05/01/axcelis-technologies-acls-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Axcelis Technologies (ACLS)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-05-01 09:00 KST 기준, 2026-04-30 미국장 마감 및 2025년 연간 공개자료 기준
 - 주요 출처: [StockAnalysis ACLS Overview](https://stockanalysis.com/stocks/acls/), [StockAnalysis ACLS Financials](https://stockanalysis.com/stocks/acls/financials/), [StockAnalysis ACLS Statistics](https://stockanalysis.com/stocks/acls/statistics/), [StockAnalysis ACLS Forecast](https://stockanalysis.com/stocks/acls/forecast/), [SEC EDGAR Axcelis filings](https://www.sec.gov/cgi-bin/browse-edgar?CIK=1113232&owner=exclude&action=getcompany), [Axcelis Investor Relations](https://investor.axcelis.com/), [Axcelis Q4 2025 관련 StockAnalysis 뉴스/전사 자료](https://stockanalysis.com/stocks/acls/)
 

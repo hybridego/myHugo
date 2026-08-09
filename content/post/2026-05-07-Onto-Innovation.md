@@ -14,7 +14,6 @@ URL: "/2026/05/07/onto-innovation-onto-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Onto Innovation (ONTO)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-05-07 08:47 KST 기준, 2026-05-06 미국장 마감 및 2026년 1분기 공개자료 기준
 - 주요 출처: [StockAnalysis ONTO Overview](https://stockanalysis.com/stocks/onto/), [StockAnalysis ONTO Financials](https://stockanalysis.com/stocks/onto/financials/), [StockAnalysis ONTO Statistics](https://stockanalysis.com/stocks/onto/statistics/), [StockAnalysis ONTO Forecast](https://stockanalysis.com/stocks/onto/forecast/), [SEC EDGAR ONTO filings](https://www.sec.gov/cgi-bin/browse-edgar?CIK=ONTO&owner=exclude&action=getcompany), [SEC 2025 10-K](https://www.sec.gov/Archives/edgar/data/704532/000119312526066937/onto-20260103.htm), [SEC Q1 2026 8-K earnings release](https://www.sec.gov/Archives/edgar/data/704532/000119312526206365/onto-ex99_1.htm), [SEC Q1 2026 10-Q](https://www.sec.gov/Archives/edgar/data/704532/000119312526206707/onto-20260331.htm)
 

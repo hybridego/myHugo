@@ -14,7 +14,6 @@ URL: "/2026/06/08/curtiss-wright-cw-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Curtiss-Wright (CW)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-06-08 08:29 KST 기준, 2026-06-05 미국장 종가와 공개자료 기준
 - 주요 출처: [Curtiss-Wright 2025 Annual Report financial information](https://cdn.curtisswright.com/admin/files/doc_financials/annual/2025/financial-information.html), [Curtiss-Wright 2025 Annual Report PDF](https://curtisswright.com/sites/default/files/Investor-Relations/governance/Annual-meeting/CW%20AR2025_w10K%20Final.pdf), [Curtiss-Wright 2026년 1분기 실적 발표](https://www.businesswire.com/news/home/20260506697798/en/Curtiss-Wright-Reports-First-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance-for-Sales-Operating-Margin-EPS-and-Free-Cash-Flow), [StockAnalysis CW 시세·통계](https://stockanalysis.com/stocks/cw/), [Tallac Options CW 일별 가격](https://www.tallacoptions.com/Stocks/CW), [Reuters/Investing.com AI 전력 M&A 보도](https://www.investing.com/news/stock-market-news/nextera-energy-to-buy-dominion-in-668-billion-us-power-deal-4695477), [Axios 한국 핵추진 잠수함 보도](https://www.axios.com/2026/05/27/south-korea-nuclear-submarine-shipbuilding)
 

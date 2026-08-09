@@ -14,7 +14,6 @@ URL: "/2026/04/30/amkor-technology-amkr-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Amkor Technology (AMKR)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-04-30 12:24 KST 기준, 2026-04-29 미국장 마감 및 2026년 1분기 회사 발표 기준
 - 주요 출처: [Amkor 2026년 1분기 실적 발표](https://ir.amkor.com/news-releases/news-release-details/amkor-technology-reports-financial-results-first-quarter-2026), [Amkor Quarterly Results](https://ir.amkor.com/financial-information/quarterly-results), [Amkor Annual Reports](https://ir.amkor.com/financial-information/annual-reports), [SEC EDGAR 10-K 검색](https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001047127&type=10-K&owner=exclude&action=getcompany), [StockAnalysis AMKR Overview](https://stockanalysis.com/stocks/amkr/), [StockAnalysis AMKR Financials](https://stockanalysis.com/stocks/amkr/financials/), [StockAnalysis AMKR Statistics](https://stockanalysis.com/stocks/amkr/statistics/), [StockAnalysis AMKR Forecast](https://stockanalysis.com/stocks/amkr/forecast/)
 

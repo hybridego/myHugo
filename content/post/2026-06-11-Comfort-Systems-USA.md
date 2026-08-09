@@ -14,7 +14,6 @@ URL: "/2026/06/11/comfort-systems-usa-fix-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Comfort Systems USA (FIX)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-06-11 08:30 KST 기준, 공개자료와 지연 시세 기준
 - 주요 출처: [Comfort Systems USA 2026년 1분기 실적](https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-first-quarter-2026-results), [Comfort Systems USA 2025년 연간 실적](https://investors.comfortsystemsusa.com/news-releases/news-release-details/comfort-systems-usa-reports-fourth-quarter-and-full-year-2025), [SEC 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/1035983/000110465926017530/fix-20251231x10k.htm), [IBD 2026-06-10 FIX 보도](https://www.investors.com/research/ibd-stock-of-the-day/comfort-systems-stock-fix-pullback-entry-ai-data-centers/), [Reuters Events 에너지 포럼 아젠다](https://events.reutersevents.com/energy-transition/global-energy-transition-new-york/agenda)
 

@@ -14,7 +14,6 @@ URL: "/2026/05/14/sterling-infrastructure-strl-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Sterling Infrastructure (STRL)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-05-14 08:34 KST 기준, 2026-05-13 미국장 지연 시세와 공개자료 기준
 - 주요 출처: [Sterling 2025 Form 10-K](https://www.sec.gov/Archives/edgar/data/0000874238/000087423826000041/a20251231annualreport.pdf), [Sterling IR 이벤트·프레젠테이션](https://www.strlco.com/investor-relations/events-presentations/), [StockTitan 1Q26 10-Q 요약](https://www.stocktitan.net/sec-filings/STRL/10-q-sterling-infrastructure-inc-quarterly-earnings-report-8b26cba20fd6.html), [Motley Fool 1Q26 콜 트랜스크립트](https://www.fool.com/earnings/call-transcripts/2026/05/05/sterling-strl-q1-2026-earnings-transcript/), [Fintel 2025 10-K 요약](https://fintel.io/doc/sec-sterling-infrastructure-inc-874238-10k-2026-february-26-20510-1807), [SEC EDGAR](https://www.sec.gov/edgar/browse/?CIK=874238)
 

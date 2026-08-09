@@ -14,7 +14,6 @@ URL: "/2026/05/11/modine-manufacturing-mod-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: Modine Manufacturing (MOD)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-05-11 22:29 KST 기준, 2026-05-08 미국장 마감 및 2026-05-11 프리마켓 공개자료 기준
 - 주요 출처: [StockAnalysis MOD Overview](https://stockanalysis.com/stocks/mod/), [StockAnalysis MOD Statistics](https://stockanalysis.com/stocks/mod/statistics/), [SEC FY2025 10-K](https://www.sec.gov/Archives/edgar/data/67347/000155837025008058/mod-20250331x10k.htm), [SEC FY2026 Q3 10-Q](https://www.sec.gov/Archives/edgar/data/67347/000110465926010790/mod-20251231x10q.htm), [S&P Global 데이터센터 전력수요](https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/050626-surging-us-data-center-power-demand-tests-sustainability-targets), [Reuters/Goldman 데이터센터 전력수요 보도](https://longbridge.com/en/news/285317374)
 

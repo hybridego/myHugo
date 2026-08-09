@@ -14,7 +14,6 @@ URL: "/2026/05/12/nvent-electric-nvt-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: nVent Electric (NVT)
 
-- Report mode: US long-term value / quantitative review
 - Data timestamp: 2026-05-12 08:34 KST 기준, 2026-05-09 미국장 마감 및 공개자료 기준
 - 주요 출처: [nVent Q1 2026 SEC press release](https://www.sec.gov/Archives/edgar/data/1720635/000162828026029098/q12026nvtpressrelease.htm), [nVent Q1 2026 10-Q 요약](https://www.tradingview.com/news/tradingview%3Ab3cac6947df40%3A0-nvent-electric-plc-1q-2026-revenue-1-24b-eps-0-87-10-q-summary/), [MarketScreener Q1 2026 presentation summary](https://www.marketscreener.com/news/nvent-electric-q1-2026-earnings-presentation-ce7f58d9db8afe25), [StockAnalysis NVT transcripts](https://stockanalysis.com/stocks/nvt/transcripts/), [S&P Global AI 전력 인프라](https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/02/ge-vernova-to-ride-electrification-wave-as-ai-power-demand-accelerates), [SEC EDGAR](https://www.sec.gov/edgar/browse/?CIK=1720635)
 

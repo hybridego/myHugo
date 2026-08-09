@@ -12,12 +12,6 @@ URL: "/2026/03/13/RFHIC-stock-analysis/"
 draft: false
 ---
 
-## Current date
-2026-03-13
-
-## Analysis target
-RFHIC (218410)
-
 ## 1. 팀 리더 통합 결론
 
 - **판단:** **Buy ~ Strong Buy 사이**

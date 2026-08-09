@@ -14,7 +14,6 @@ URL: "/2026/05/11/ls-electric-010120-analysis/"
 
 # 퀀텀 리프 5-Step 정량 분석 보고서: LS ELECTRIC (010120)
 
-- Report mode: Korean long-term value / quantitative review
 - Data timestamp: 2026-05-11 22:29 KST 기준, 2026-05-11 장마감 및 공개자료 기준
 - 주요 출처: [StockAnalysis LS ELECTRIC](https://stockanalysis.com/quote/krx/010120/), [AJU PRESS 전력기기 업황](https://www.ajupress.com/view/20260427181670459), [ChosunBiz 북미 AI 데이터센터 수주](https://biz.chosun.com/en/en-finance/2026/04/14/W62HTBB3PVD6THLEATAMIJI5S4/?outputType=amp), [Yonhap LS Power Solution 수주](https://en.yna.co.kr/view/AEN20260406002200320?section=economy-finance%2Feconomy), [DART 전자공시](https://dart.fss.or.kr/)
 
