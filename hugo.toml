@@ -5,6 +5,10 @@ locale = "ko-KR"
 preserveTaxonomyNames = true
 hasCJKLanguage = true
 enableRobotsTXT = true
+enableGitInfo = true
+
+[frontmatter]
+  lastmod = ["lastmod", "modified", "date", "publishdate", "pubdate", "published"]
 
 [services]
   # Enable comments by entering your Disqus shortname
@@ -161,7 +165,7 @@ mediaType = "application/json"
 notAlternative = true
 
 [params.algolia]
-vars = ["title", "summary", "date", "publishdate", "permalink"]
+vars = ["title", "summary", "date", "publishdate", "lastmod", "permalink"]
 params = ["categories", "tags"]
 
 # Note: [outputs.Algolia] section removed - it was causing "Unknown kind" warnings

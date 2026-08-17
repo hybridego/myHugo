@@ -5,6 +5,7 @@ subtitle: "미국주식 장기 가치투자 분석"
 description: "JPMorgan Chase의 2026년 2분기 반복 순이익 169억달러, CET1 14.1%, 62억달러 자사주 매입과 357.94달러 주가 부담을 점검했다."
 date: 2026-07-09T08:34:00+09:00
 publishDate: 2026-07-09T08:34:00+09:00
+lastmod: 2026-08-09T08:39:25+09:00
 image: ""
 tags: [ stock, us, JPM, JPMorgan-Chase ]
 categories: [ Stock ]

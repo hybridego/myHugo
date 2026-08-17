@@ -5,6 +5,7 @@ subtitle: "미국주식 장기 가치투자 분석"
 description: "Progressive(PGR)의 2026년 2분기 보험료와 계약 성장, 6월 합산비율 90.0%, 정상 EPS 시나리오를 검산해 실적 급락 뒤 관찰 조건을 정리했다."
 date: 2026-07-17T08:32:01+09:00
 publishDate: 2026-07-17T08:32:01+09:00
+lastmod: 2026-08-05T08:31:53+09:00
 image: ""
 tags: [ stock, us, PGR, Progressive, insurance ]
 categories: [ Stock ]

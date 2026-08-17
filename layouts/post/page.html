@@ -47,11 +47,7 @@
                         <p class="article-meta">
                             <span>{{ .Params.author | default .Site.Title }}</span>
                             <span aria-hidden="true">·</span>
-                            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "2006.01.02" }}</time>
-                            {{ if and (not .Lastmod.IsZero) (not (eq (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02"))) }}
-                            <span aria-hidden="true">·</span>
-                            <span>수정 <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}">{{ .Lastmod.Format "2006.01.02" }}</time></span>
-                            {{ end }}
+                            {{ partial "post-dates.html" . }}
                         </p>
                         {{ with .GetTerms "tags" }}
                         <ul class="article-tags" aria-label="글 태그">

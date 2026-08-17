@@ -1,2 +1,3 @@
-{{ $paginator := .Paginate (where (where .Site.Pages "Type" "post") "IsPage" true) }}
+{{ $pages := where (where .Site.RegularPages "Type" "post") "Kind" "page" }}
+{{ $paginator := .Paginate $pages.ByLastmod.Reverse }}
 {{ partial "posts.html" . }}

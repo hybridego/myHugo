@@ -281,6 +281,10 @@ article .post-container .article-header h1 {
   font-variant-numeric: tabular-nums;
 }
 
+.post-date-updated {
+  color: var(--brand-strong);
+}
+
 .article-tags {
   display: flex;
   flex-wrap: wrap;
