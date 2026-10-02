@@ -2,6 +2,7 @@
 layout:     post
 title:      "Algolia를 사용하여 Gitpage 블로그에 사이트 내 검색 기능 제공"
 subtitle:   ""
+description: "GitHub Pages 블로그에 Algolia 검색 엔진을 연동하여 빠른 전문 검색 기능을 구축하는 방법을 다룹니다."
 date:       2018-05-21 11:00:00
 author:     "Lionel.J"
 image: "/img/2018-05-06-cryptocurrency_week1/bitcoin_header.jpg"

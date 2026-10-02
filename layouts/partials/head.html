@@ -102,11 +102,24 @@
     {{ end }}
     {{ end }}
 
-    {{ $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" $brandTitle "url" .Site.BaseURL "description" $description "keywords" $keywordText "inLanguage" $languageCode }}
+    {{ $searchUrl := printf "%ssearch/?q={search_term_string}" .Site.BaseURL }}
+    {{ $potentialAction := dict "@type" "SearchAction" "target" $searchUrl "query-input" "required name=search_term_string" }}
+    {{ $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" $brandTitle "url" .Site.BaseURL "description" $description "keywords" $keywordText "inLanguage" $languageCode "potentialAction" $potentialAction }}
     {{ if .IsPage }}
         {{ $schema = dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" $pageTitle "description" $description "url" .Permalink "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00") "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00") "author" (dict "@type" "Person" "name" $authorName) "publisher" (dict "@type" "Person" "name" $authorName) "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink) "image" $image "keywords" $keywordText "inLanguage" $languageCode }}
     {{ end }}
     <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+    {{ if .IsPage }}
+    {{ $breadcrumbList := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" .Site.BaseURL) }}
+    {{ with .Section }}
+        {{ $breadcrumbList = $breadcrumbList | append (dict "@type" "ListItem" "position" 2 "name" (. | title) "item" (printf "%s%s/" $.Site.BaseURL .)) }}
+        {{ $breadcrumbList = $breadcrumbList | append (dict "@type" "ListItem" "position" 3 "name" $pageTitle "item" $.Permalink) }}
+    {{ else }}
+        {{ $breadcrumbList = $breadcrumbList | append (dict "@type" "ListItem" "position" 2 "name" $pageTitle "item" $.Permalink) }}
+    {{ end }}
+    {{ $breadcrumbSchema := dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $breadcrumbList }}
+    <script type="application/ld+json">{{ $breadcrumbSchema | jsonify | safeJS }}</script>
+    {{ end }}
 
     {{ if .Site.Params.disqus_proxy }}
     <link rel="stylesheet" href="{{ "css/iDisqus.min.css" | relURL }}"/>
@@ -131,9 +144,9 @@
 
     {{ if eq .Layout "post" }}
     <!-- Legacy post interactions. Modern page layouts do not need this stack. -->
-    <script src="{{ "js/jquery.min.js" | relURL }}"></script>
-    <script src="{{ "js/bootstrap.min.js" | relURL }}"></script>
-    <script src="{{ "js/hux-blog.min.js" | relURL }}"></script>
+    <script src="{{ "js/jquery.min.js" | relURL }}" defer></script>
+    <script src="{{ "js/bootstrap.min.js" | relURL }}" defer></script>
+    <script src="{{ "js/hux-blog.min.js" | relURL }}" defer></script>
     {{ end }}
 
     <!-- Custom JS -->

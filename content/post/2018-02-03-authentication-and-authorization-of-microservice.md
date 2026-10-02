@@ -84,7 +84,7 @@ HMACSHA256(
 ```
 
 이 세 부분은 Base64로 인코딩된 후 조합되어 최종적으로 클라이언트에 반환되는 토큰 문자열이 되며, 각 부분은 "."으로 구분됩니다. 다음 그림은 위 예시에서 최종적으로 형성된 토큰입니다.
-![](https://cdn.auth0.com/content/jwt/encoded-jwt3.png)
+![JWT (JSON Web Token) 구조 및 인코딩 다이어그램](https://cdn.auth0.com/content/jwt/encoded-jwt3.png)
 토큰을 사용하여 사용자 인증을 수행할 때, 서버는 더 이상 사용자 상태를 저장하지 않으며, 클라이언트는 매 요청 시 토큰을 서버로 전송하여 신원 인증을 수행해야 합니다. 토큰 전송 방식은 [rfc6750](https://tools.ietf.org/html/rfc6750)에 규정되어 있으며, Authorization: Bearer HTTP 헤더를 사용하여 전송합니다.
 ```
 Authorization: Bearer mF_9.B5f-4.1JqM
@@ -95,7 +95,7 @@ Authorization: Bearer mF_9.B5f-4.1JqM
 1. 서버는 토큰을 클라이언트에 반환하고, 클라이언트는 이를 로컬에 저장합니다(일반적으로 쿠키 형태로 저장).
 1. 클라이언트는 이전에 발급받은 토큰을 포함하여 서버에 접근 요청을 보냅니다.
 1. 서버는 토큰을 검증하여 사용자의 신원과 리소스 접근 권한을 확인하고, 그에 따라 처리합니다(접근 거부 또는 허용).
-![](https://cdn.auth0.com/content/jwt/jwt-diagram.png)
+![JWT 기반 사용자 인증 및 권한 부여 워크플로우](https://cdn.auth0.com/content/jwt/jwt-diagram.png)
 <center>토큰을 사용한 사용자 인증 흐름도</center>
 
 ### 싱글 사인온 구현

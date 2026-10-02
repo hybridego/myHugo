@@ -50,7 +50,7 @@ API 게이트웨이와 서비스 메시의 주요 차이점은 API 게이트웨�
 
 그림 1: API 게이트웨이와 서비스 메시의 실제 적용
 
-![](/img/2018-04-11-service-mesh-vs-api-gateway/service-mesh-vs-api-gateway.png)
+![API Gateway와 Service Mesh의 역할 비교 다이어그램](/img/2018-04-11-service-mesh-vs-api-gateway/service-mesh-vs-api-gateway.png)
 
 위 그림에서 볼 수 있듯이, 서비스 메시는 사이드카(Sidecar)로 서비스와 함께 배포되며, 서비스의 비즈니스 로직과는 독립적입니다.
 
@@ -67,7 +67,7 @@ API 게이트웨이와 서비스 메시의 관계는 제가 최근에 계속 고
 API 게이트웨이는 마이크로서비스 참조의 트래픽 진입점으로서 효율성에 대한 요구 사항이 높습니다. 만약 API 게이트웨이와 함께 사이드카를 배포한다면 효율성에 어느 정도 영향을 미칠 수 있습니다.
 
 저는 이에 대한 테스트를 수행하지 않았지만, 이론적으로 서비스 디스커버리, 재시도, 회로 차단 등 로직은 API 게이트웨이에 있든 서비스 메시 안에 있든 소요 시간은 비슷할 것입니다. 사이드카를 배포하는 것은 단순히 로컬 연결을 생성하는 데 드는 추가 비용만 발생시킵니다. 아래 그림과 같습니다:
-![](/img/2018-04-11-service-mesh-vs-api-gateway/api-gateway-with-service-mesh.png)
+![사이드카 프록시들로 형성된 서비스 메시 네트워크](/img/2018-04-11-service-mesh-vs-api-gateway/api-gateway-with-service-mesh.png)
 
 API 게이트웨이와 서비스 메시의 기능을 명확하게 분리하여, API 게이트웨이는 애플리케이션 로직을 담당하고 서비스 메시는 서비스 통신, 메트릭 수집 등 마이크로서비스 인프라를 담당하도록 하면 아키텍처적으로 더욱 명확해집니다. 효율성 문제는 API 게이트웨이를 수평 확장하여 해결할 수 있습니다.
 

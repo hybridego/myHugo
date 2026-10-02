@@ -12,8 +12,6 @@ layout: page
 
 - <a href="https://hybridego.net/" target="_blank">Hybridego blog.</a>
 
-- <a href="/notes/stock-tracker/">Stock idea tracker</a>
-
 
 ---
 

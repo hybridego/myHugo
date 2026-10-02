@@ -2,6 +2,7 @@
 layout:     post
 title:      "Clean White Theme for Hugo"
 subtitle:   "How to set up this theme"
+description: "Hugo를 위한 Clean White 테마의 소개 및 기본 설정 가이드입니다."
 date:       2019-01-09
 author:     "Lionel.J"
 ---

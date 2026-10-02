@@ -21,13 +21,13 @@ categories: [ Tech ]
 
 <!--more-->
 마이크로서비스 아키텍처의 발전 과정을 되짚어 봅시다. 서비스 메시가 등장하기 전에는 아래 그림과 같이 서비스 검색, 회로 차단, 재시도, 타임아웃 등 서비스 통신 로직을 마이크로서비스 애플리케이션 프로세스 내에서 처리했습니다.
-![](/img/istio-install_and_example/5-a.png)
+![모놀리식에서 마이크로서비스로의 서비스 분할 구조](/img/istio-install_and_example/5-a.png)
 이 서비스 통신을 담당하는 로직을 추상화하고 일반화하여 애플리케이션이 호출할 수 있는 코드 라이브러리를 형성할 수 있습니다. 그러나 애플리케이션은 여전히 다양한 언어 코드 라이브러리의 호출 세부 사항을 처리해야 하며, 다양한 코드 라이브러리는 서로 호환되지 않아 애플리케이션이 사용하는 언어 및 코드 프레임워크에 큰 제약을 가합니다.
 
 더 나아가, 이 로직을 애플리케이션 프로세스에서 추출하여 별도의 프로세스로 배포하고 이를 서비스 간 통신 프록시로 사용하면 아래 그림과 같습니다.
-![](/img/istio-install_and_example/6-a.png)
+![마이크로서비스 간 서비스 디스커버리 및 통신 구조](/img/istio-install_and_example/6-a.png)
 통신 프록시 프로세스가 애플리케이션 프로세스와 함께 배포되므로, 이러한 배포 방식을 "사이드카"(오토바이의 사이드카)라고 비유적으로 부릅니다.
-![](/img/istio-install_and_example/sidecar.jpg)
+![사이드카 패턴 (Sidecar Pattern) 아키텍처 다이어그램](/img/istio-install_and_example/sidecar.jpg)
 애플리케이션 간의 모든 트래픽은 프록시를 거쳐야 합니다. 프록시는 사이드카 방식으로 애플리케이션과 동일한 호스트에 배포되므로 애플리케이션과 프록시 간의 통신은 신뢰할 수 있는 것으로 간주됩니다. 그런 다음 프록시가 대상 서비스를 찾아 통신의 신뢰성과 보안 문제를 담당합니다.
 
 서비스가 대량으로 배포될 때, 서비스에 배포된 사이드카 프록시 간의 연결은 아래 그림과 같은 메시를 형성하며, 이를 서비스 메시(Service Mesh)라고 부르며 다음과 같은 서비스 메시 정의를 도출합니다.
@@ -36,10 +36,10 @@ _서비스 메시는 서비스 간 통신을 처리하는 인프라 계층입니
 
 _William Morgan _[_WHAT’S A SERVICE MESH? AND WHY DO I NEED ONE?_](https://buoyant.io/2017/04/25/whats-a-service-mesh-and-why-do-i-need-one/)_
 
-![](/img/istio-install_and_example/mesh1.png)
+![서비스 메시 (Service Mesh) 데이터 플레인 및 컨트롤 플레인 구조](/img/istio-install_and_example/mesh1.png)
 
 서비스 메시의 기본 개념을 이해했으니, 다음으로 [Istio](https://istio.io/)를 소개하겠습니다. Istio는 Google, IBM, Lyft에서 개발한 서비스 메시(Service Mesh) 오픈 소스 프로젝트로, Google이 Kubernetes에 이어 내놓은 또 하나의 걸작입니다. Istio는 아키텍처가 진보적이고 설계가 합리적이어서 발표되자마자 Linkerd, nginmesh 등 다른 서비스 메시 프로젝트의 협력과 Red Hat/Pivotal/Weaveworks/Tigera/Datawire 등의 적극적인 호응을 얻었습니다.
-![](/img/istio-install_and_example/Istio-Architecture.PNG)
+![Istio 서비스 메시 전체 아키텍처 다이어그램](/img/istio-install_and_example/Istio-Architecture.PNG)
 가까운 미래에 마이크로서비스의 표준 인프라는 서비스 배포 및 클러스터 관리를 위한 Kubernetes와 서비스 통신 및 관리를 위한 Istio를 채택할 것으로 예상됩니다. 이 둘은 상호 보완적이며 필수적입니다.
 
 ## Kubernetes 설치
@@ -50,7 +50,7 @@ Istio는 아키텍처 설계상 Kubernetes, Cloud Foundry, Mesos 등 다양한 �
 
 Istio 제어 평면 Pilot의 아키텍처 다이어그램에서 다양한 배포 플랫폼이 플러그인 방식으로 Istio에 통합되어 Istio에 서비스 등록 및 검색 기능을 제공할 수 있음을 알 수 있습니다.
 
-![](/img/istio-install_and_example/PilotAdapters.PNG)
+![Istio Pilot 플랫폼 어댑터 구조](/img/istio-install_and_example/PilotAdapters.PNG)
 
 Kubernetes 클러스터 배포는 비교적 복잡하며, [Rancher](http://rancher.com)는 Kubernetes 배포 템플릿을 제공하여 원클릭 설치를 통해 Kubernetes 클러스터 설치 프로세스를 크게 단순화할 수 있습니다.
 
@@ -78,12 +78,12 @@ sudo docker run -d --restart=always -p 8080:8080 rancher/server
 ### Rancher 관리 인터페이스에 로그인하여 k8s 클러스터 생성
 
 Rancher 관리 인터페이스의 기본 포트는 8080입니다. 브라우저에서 해당 인터페이스를 열고 메뉴 Default->Manage Environment->Add Environment를 통해 Kubernetes 클러스터를 추가합니다. 여기에 Kubernetes라는 이름과 설명을 입력하고 Kubernetes 템플릿을 선택한 다음 create를 클릭하여 Kubernetes 환경을 생성합니다.
-![](/img/istio-install_and_example/Rancher.PNG)
+![Rancher 쿠버네티스 클러스터 관리 대시보드](/img/istio-install_and_example/Rancher.PNG)
 
 메뉴를 클릭하여 Kubernetes Environment로 전환한 다음 오른쪽 상단의 Add a host를 클릭하여 Kubernetes 클러스터에 호스트를 추가합니다. 클러스터에 추가되는 호스트에는 요구 사항에 맞는 Docker 버전이 미리 설치되어 있어야 합니다.
 
 그런 다음 Rancher 페이지의 지침에 따라 호스트에서 스크립트를 실행하여 Rancher 에이전트를 시작하고 호스트를 Rancher 클러스터에 추가합니다. 스크립트에 Rancher 서버 주소가 포함되어 있으므로 호스트에서 해당 주소로 ping이 가능해야 합니다.
-![](/img/istio-install_and_example/Rancher-add-host.PNG)
+![Rancher 호스트 노드 추가 화면](/img/istio-install_and_example/Rancher-add-host.PNG)
 
 호스트가 클러스터에 추가되면 Rancher는 호스트에 Kubernetes 이미지를 풀하고 Kubernetes 관련 서비스를 시작합니다. 설치 환경의 네트워크 상황에 따라 몇 분에서 수십 분까지 걸릴 수 있습니다.
 
@@ -100,7 +100,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 ```
 
 Rancher 관리 인터페이스에 로그인하여 All Environments->kubernetes->KUBERNETES->CLI create config의 내용을 ~/.kube/config에 복사하여 Kubectl과 Kubernetes 서버의 연결 정보를 구성합니다.
-![](/img/istio-install_and_example/Rancher-kubectl.PNG)
+![Rancher 웹 CLI를 통한 kubectl 실행 화면](/img/istio-install_and_example/Rancher-kubectl.PNG)
 
 ## Istio 설치
 
@@ -184,7 +184,7 @@ reviews       10.43.219.248   <none>        9080/TCP   6m
 브라우저에서 애플리케이션 페이지를 엽니다. 주소는 istio-ingress의 외부 IP입니다.
 
 `http://10.12.25.116/productpage`
-![](/img/istio-install_and_example/Bookinfo.PNG)
+![Istio Bookinfo 샘플 애플리케이션 아키텍처](/img/istio-install_and_example/Bookinfo.PNG)
 
 ## Istio Proxy 구현 원리 이해
 
@@ -321,7 +321,7 @@ Pod가 위치한 네트워크 네임스페이스의 iptables 규칙에서 Pod의
 Bookinfo 애플리케이션의 productpage 페이지를 여러 번 새로 고치면, 페이지에 표시되는 Book Reviews가 때로는 빨간 별표가 있는 평가 정보, 때로는 검은 별표가 있는 평가 정보, 때로는 텍스트 평가 정보만 표시되는 것을 발견할 수 있습니다.
 이는 Bookinfo 애플리케이션이 3가지 버전의 Reviews 서비스를 배포했으며, 각 버전의 반환 결과가 다르기 때문입니다. 라우팅 규칙이 설정되지 않은 경우, 기본 라우팅은 요청을 각 버전의 서비스로 무작위로 라우팅합니다. 아래 그림과 같습니다.
 
-![](/img/istio-install_and_example/withistio.svg)
+![Istio 프록시가 주입된 Bookinfo 마이크로서비스 다이어그램](/img/istio-install_and_example/withistio.svg)
 
 route-rule.yaml 라우팅 규칙을 생성하여 모든 요청 트래픽을 Reviews-v1 서비스로 유도합니다.
 
@@ -346,7 +346,7 @@ istioctl create -f route-rule.yaml -n default
 ```
 
 productpage 페이지를 다시 열면, 아무리 새로 고쳐도 표시되는 페이지는 항상 v1 버전의 출력, 즉 별표 없는 평가 내용이 됩니다.
-![](/img/istio-install_and_example/Bookinfo-no-star.PNG)
+![Bookinfo 리뷰 서비스 별점 없는 기본 화면 (Reviews V1)](/img/istio-install_and_example/Bookinfo-no-star.PNG)
 이 라우팅 규칙을 삭제합니다.
 
 ```
@@ -383,7 +383,7 @@ kubectl apply -f istio-0.2.10/install/kubernetes/addons/zipkin.yaml
 
 브라우저에서 Zipkin 페이지를 열면, 엔드투엔드 호출이 어떤 서비스를 거쳤는지, 각 서비스가 소요한 시간 등 자세한 정보를 추적할 수 있습니다. 아래 그림과 같습니다.
 `http://10.12.25.116:30001`
-![](/img/istio-install_and_example/zipkin.PNG)
+![Zipkin 분산 트레이싱 대시보드 화면](/img/istio-install_and_example/zipkin.PNG)
 
 ## 성능 지표 모니터링
 
@@ -417,7 +417,7 @@ kubectl apply -f istio-0.2.10/install/kubernetes/addons/grafana.yaml
 먼저 브라우저에서 Bookinfo 페이지 `http://10.12.25.116/productpage`를 열고 몇 번 새로 고쳐 성능 지표 데이터를 생성합니다.
 
 그런 다음 Grafana 페이지 `http://10.12.25.116:30002/dashboard/db/istio-dashboard`를 열어 성능 지표를 확인합니다. 아래 그림과 같습니다.
-![](/img/istio-install_and_example/grafana.PNG)
+![Grafana 서비스 메시 성능 메트릭 모니터링 대시보드](/img/istio-install_and_example/grafana.PNG)
 
 ## 참고
 

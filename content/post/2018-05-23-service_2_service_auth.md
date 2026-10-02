@@ -46,7 +46,7 @@ SPIFFE SVID는 현재 X.509 디지털 인증서로 구현되며, X.509 SVID에�
 
 #### Istio Auth 오픈 소스 구현
 Istio 서비스 메시 프로젝트의 Auth 구성 요소는 SPIFFE 표준을 구현하여 메시 내 서비스에 SPIFFE SVID 표준을 준수하는 인증서를 발급하고, 서비스에 신원 인증, 세분화된 작업 권한 부여 및 통신 암호화를 제공합니다. Istio의 아키텍처는 아래 그림과 같습니다.
-![](/img/2018-05-23-service_2_service_auth/auth.png)
+![Citadel을 통한 서비스 간 상호 TLS (mTLS) 인증](/img/2018-05-23-service_2_service_auth/auth.png)
 
 Istio Auth는 Kubernetes의 서비스 계정을 서비스 식별자로 사용하며, SPIFFE ID 형식은 spiffe://<domain>/ns/<namespace>/sa/<serviceaccount>입니다. 각 구성 요소는 다음과 같습니다.
 * domain 도메인 이름

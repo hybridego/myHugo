@@ -107,9 +107,9 @@ Gateway는 첫 번째 다이어그램에서 보여지는 것처럼 엣지 프록
 
 라우팅 규칙을 "가상 서비스"라는 것으로 대체하는 것이 처음에는 다소 이상하게 들릴 수 있지만, 구성하는 내용에 대해서는 실제로 더 나은 이름입니다. 특히 이전 모델의 확장성 문제를 해결하기 위해 API를 재설계한 후에는 더욱 그렇습니다.
 
-실제로 변경 사항은 다음과 같습니다. 이전 모델에서는 특정 대상 서비스에 대한 라우팅을 설정하기 위해 일련의 독립적인 구성 규칙이 필요했으며, `precedence` 필드를 사용하여 이러한 규칙의 순서를 제어했습니다. 새로운 API에서는 (가상) 서비스를 직접 구성하고, 해당 가상 서비스에 대한 모든 규칙은 해당 [VirtualService](/docs/reference/config/istio.networking.v1alpha3/#VirtualService) 리소스 내에서 순서가 지정된 목록으로 지정됩니다.
+실제로 변경 사항은 다음과 같습니다. 이전 모델에서는 특정 대상 서비스에 대한 라우팅을 설정하기 위해 일련의 독립적인 구성 규칙이 필요했으며, `precedence` 필드를 사용하여 이러한 규칙의 순서를 제어했습니다. 새로운 API에서는 (가상) 서비스를 직접 구성하고, 해당 가상 서비스에 대한 모든 규칙은 해당 [VirtualService](https://istio.io/docs/reference/config/istio.networking.v1alpha3/#VirtualService) 리소스 내에서 순서가 지정된 목록으로 지정됩니다.
 
-예를 들어, 이전에 [Bookinfo](/docs/guides/bookinfo/) 애플리케이션의 reviews 서비스에는 아래와 같이 두 개의 `RouteRule` 리소스가 있었습니다.
+예를 들어, 이전에 [Bookinfo](https://istio.io/docs/guides/bookinfo/) 애플리케이션의 reviews 서비스에는 아래와 같이 두 개의 `RouteRule` 리소스가 있었습니다.
 
 ```yaml
 apiVersion: config.istio.io/v1alpha2

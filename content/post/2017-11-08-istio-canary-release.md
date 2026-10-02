@@ -125,10 +125,10 @@ reviews-v1-1360980140-0zs9z       2/2       Running   0          2m
 브라우저에서 애플리케이션 페이지를 엽니다. 주소는 istio-ingress의 External IP입니다. V1 버전의 reviews 서비스는 rating 서비스를 호출하지 않으므로, Product 페이지에 별점 없는 평가 정보가 표시됩니다.
 
 `http://10.12.25.116/productpage`  
-![](//img/istio-canary-release/product-page-default.PNG)
+![Product Page Default V1](/img/istio-canary-release/product-page-default.PNG)
 
 현재 시스템의 마이크로서비스 배포 상황은 아래 그림과 같습니다(아래 다이어그램은 이 예제와 관련 없는 details 및 ratings 서비스는 무시합니다).
-![](//img/istio-canary-release/canary-example-only-v1.PNG)
+![Canary Example V1 Architecture](/img/istio-canary-release/canary-example-only-v1.PNG)
 
 ### V2 버전 reviews 서비스 배포
 V2 버전 reviews 서비스를 배포하기 전에, 모든 프로덕션 트래픽을 V1 버전으로 라우팅하여 온라인 사용자에게 영향을 주지 않도록 기본 라우팅 규칙 `route-rule-default-reviews.yaml`을 먼저 생성해야 합니다.
@@ -178,14 +178,14 @@ V2 버전 reviews 서비스를 배포합니다.
 kubectl apply -f <(istioctl kube-inject -f  bookinfo-reviews-v2.yaml)
 ```
 현재 시스템에는 V1과 V2 두 가지 버전의 reviews 서비스가 배포되어 있지만, 모든 비즈니스 트래픽은 `reviews-default` 규칙에 따라 V1으로 라우팅됩니다. 아래 그림과 같습니다.
-![](/img/istio-canary-release/canary-example-deploy-v2.PNG)
+![Canary 배포를 위한 Reviews V2 서비스 추가 배포](/img/istio-canary-release/canary-example-deploy-v2.PNG)
 
 
 ### 테스트 트래픽을 V2 버전 reviews 서비스로 라우팅
 시뮬레이션 테스트를 수행할 때, 테스트 환경과 프로덕션 환경의 네트워크, 서버, 운영 체제 등 환경 차이로 인해 프로덕션 환경을 완벽하게 시뮬레이션하기 어렵습니다. 환경 요인이 테스트 결과에 미치는 영향을 줄이기 위해, 우리는 프로덕션 환경에서 출시 전 테스트를 수행하기를 원하지만, 적절한 격리 조치가 없으면 테스트가 이미 출시된 서비스에 영향을 미쳐 기업에 손실을 초래할 수 있습니다.
 
 Istio의 라우팅 규칙을 사용하면 프로덕션과 유사한 환경에서 테스트를 수행하면서도 온라인 사용자의 프로덕션 트래픽과 테스트 트래픽을 완전히 격리하여, 시뮬레이션 테스트가 이미 출시된 서비스에 미치는 영향을 최소화할 수 있습니다. 아래 그림과 같습니다.
-![](/img/istio-canary-release/canary-example-route-test.PNG)
+![테스트 사용자를 위한 카나리 라우팅 규칙 적용 다이어그램](/img/istio-canary-release/canary-example-route-test.PNG)
 
 사용자 이름이 `test-user`인 트래픽을 V2로 라우팅하는 규칙을 생성합니다.
 
@@ -215,10 +215,10 @@ spec:
 istioctl create -f route-rule-test-reviews-v2.yaml -n default
 ```
 `test-user`로 로그인하면 V2 버전의 별점 있는 평가 페이지를 볼 수 있습니다.
-![](/img/istio-canary-release/product-page-test-user.PNG)
+![테스트 사용자 로그인 시 Reviews V2 별점 표시 화면](/img/istio-canary-release/product-page-test-user.PNG)
 
 `test-user`에서 로그아웃하면 V1 버전의 별점 없는 평가 페이지를 볼 수 있습니다. 아래 그림과 같습니다.
-![](/img/istio-canary-release/product-page-default.PNG)
+![일반 사용자 접속 시 기본 Reviews V1 화면](/img/istio-canary-release/product-page-default.PNG)
 
 ### 일부 프로덕션 트래픽을 V2 버전 reviews 서비스로 라우팅
 
@@ -251,7 +251,7 @@ istioctl replace -f route-rule-default-reviews.yaml -n default
 ```
 
 현재 시스템 배포는 아래 그림과 같습니다.
-![](/img/istio-canary-release/canary-example-route-production-50.PNG)
+![프로덕션 트래픽 50% 가중치 카나리 라우팅 설정](/img/istio-canary-release/canary-example-route-production-50.PNG)
 
 ### 모든 프로덕션 트래픽을 V2 버전 reviews 서비스로 라우팅
 
@@ -276,10 +276,10 @@ spec:
 istioctl replace -f route-rule-default-reviews.yaml -n default
 ```
 시스템 배포는 아래 그림과 같습니다.
-![](/img/istio-canary-release/canary-example-route-production-100.PNG)
+![Reviews V2 서비스로 100% 트래픽 완전 전환](/img/istio-canary-release/canary-example-route-production-100.PNG)
 
 이제 어떤 사용자로 로그인하든 V2 버전의 별점 있는 평가 페이지를 볼 수 있습니다. 아래 그림과 같습니다.
-![](/img/istio-canary-release/product-page-default-v2.PNG)
+![모든 사용자에게 Reviews V2가 서비스되는 화면](/img/istio-canary-release/product-page-default-v2.PNG)
 
 > 참고: 카나리 릴리스 과정에서 새 버전 서비스에 문제가 발생하면 라우팅 규칙을 수정하여 트래픽을 V1 버전 서비스로 다시 라우팅하고, V2 버전의 문제를 수정한 후 다시 테스트를 진행할 수 있습니다.
 

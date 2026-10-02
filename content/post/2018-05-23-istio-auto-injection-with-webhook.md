@@ -27,7 +27,7 @@ Istio 0.7 버전은 Kubernetes 웹훅을 활용하여 사이드카 자동 주입
 ## Admission이란?
 ---
 Admission은 Kubernetes의 용어로, Kubernetes API 서버 리소스 요청 과정의 한 단계를 의미합니다. 아래 그림과 같이 API 서버가 리소스 생성 요청을 받으면 먼저 요청을 인증하고 권한을 부여한 다음 Admission 처리를 거쳐 마지막으로 etcd에 저장합니다.
-![](/img/2018-4-25-istio-auto-injection-with-webhook/admission-phase.png)
+![쿠버네티스 Mutating Admission Webhook 동작 단계](/img/2018-4-25-istio-auto-injection-with-webhook/admission-phase.png)
 그림에서 볼 수 있듯이, Admission에는 Mutation과 Validation이라는 두 가지 중요한 단계가 있으며, 이 두 단계에서 실행되는 로직은 다음과 같습니다.
 * Mutation
 

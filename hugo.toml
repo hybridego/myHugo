@@ -7,6 +7,11 @@ hasCJKLanguage = true
 enableRobotsTXT = true
 enableGitInfo = true
 
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
 [frontmatter]
   lastmod = ["lastmod", "modified", "date", "publishdate", "pubdate", "published"]
 
@@ -44,10 +49,10 @@ home = ["HTML", "RSS", "Algolia"]
 [params]
   title = "Lionel Blog"
   header_image = "img/home-bg-jeep.webp"
-  SEOTitle = "Lionel Blog | 주식 리서치와 프로그래밍"
-  description = "주식 리서치, 투자 후보 추적, Linux·Hugo·Rust·AI 개발 기록을 정리합니다."
+  SEOTitle = "Lionel Blog | 프로그래밍과 기술 블로그"
+  description = "Linux·Hugo·Rust·AI 개발 및 시스템 프로그래밍 기록을 정리합니다."
   descriptionLength = 160
-  keyword = "Lionel Blog, Lionel.J, hybridego, 주식 리서치, 주식 분석, 투자 후보, 국내주식, 미국주식, 프로그래밍, Linux, Hugo, Rust, AI, Kubernetes, microservices"
+  keyword = "Lionel Blog, Lionel.J, hybridego, 프로그래밍, Linux, Hugo, Rust, AI, Kubernetes, microservices, 시스템 프로그래밍"
   slogan = "The road is under your feet, the heart looks to the distance"
   upstreamAttribution = true
 
@@ -151,9 +156,6 @@ home = ["HTML", "RSS", "Algolia"]
   [[params.additional_menus]]
   title =  "NOTES"
   href =  "/notes/"
-  [[params.additional_menus]]
-  title =  "STOCK TRACKER"
-  href =  "/notes/stock-tracker/"
   [[params.additional_menus]]
   title =  "ABOUT"
   href =  "/about/"
